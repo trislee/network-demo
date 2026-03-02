@@ -250,6 +250,9 @@
 
             const formatter = Intl.NumberFormat('en', { notation: 'compact' });
             const LABEL_SIZE_THRESHOLD = 500;
+            const MOBILE_BREAKPOINT = 1280;
+            const MOBILE_RADIUS_FACTOR = 0.5;
+            function getRadiusFactor() { return window.innerWidth < MOBILE_BREAKPOINT ? MOBILE_RADIUS_FACTOR : 1; }
 
             function isConnected(a, b) {
                 return (
@@ -306,8 +309,9 @@
                 }
 
                 // Draw nodes (outline stroke scales with sqrt(zoom) so it doesn't blow up when zoomed in)
+                const radiusFactor = getRadiusFactor();
                 for (const node of nodes) {
-                    const r = currentSizingFunction(node) * data.radiusScaling[`${currentAgg}_${threshold}`];
+                    const r = currentSizingFunction(node) * data.radiusScaling[`${currentAgg}_${threshold}`] * radiusFactor;
                     ctx.beginPath();
                     ctx.arc(node.x, node.y, r, 0, 2 * Math.PI);
                     ctx.fillStyle = nodeColor(node.category);
@@ -326,7 +330,7 @@
                     // Only show label when rendered size (size * zoom) meets threshold (same logic as D3)
                     for (const node of nodes) {
                         const nodeSize = currentSizingFunction(node);
-                        if (nodeSize * k < LABEL_SIZE_THRESHOLD) continue;
+                        if (nodeSize * k * radiusFactor < LABEL_SIZE_THRESHOLD * radiusFactor) continue;
                         const baseFontSize = nodeSize * data.textScaling[`${currentAgg}_${threshold}`];
                         ctx.font = `${baseFontSize}px sans-serif`;
                         ctx.fillText(node.label, node.x, node.y);
@@ -426,9 +430,10 @@
                 const mouseY = (screenY - currentTransform.y) / currentTransform.k;
 
                 let hoveredNode = null;
+                const radiusFactor = getRadiusFactor();
                 for (let i = 0; i < currentNodes.length; i++) {
                     const node = currentNodes[i];
-                    const r = currentSizingFunction(node) * data.radiusScaling[`${currentAgg}_${currentThreshold}`];
+                    const r = currentSizingFunction(node) * data.radiusScaling[`${currentAgg}_${currentThreshold}`] * radiusFactor;
                     const dx = node.x - mouseX;
                     const dy = node.y - mouseY;
                     if (dx * dx + dy * dy <= r * r) {
