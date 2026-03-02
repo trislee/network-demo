@@ -159,7 +159,7 @@
       const nodes = d3.map(networkData.nodes, (_, i) => {
         const raw = networkData.nodes[i];
         const x = raw.x != null ? +raw.x : 0;
-        const y = raw.y != null ? -raw.y : 0;
+        const y = raw.y != null ? -raw.y : 0; // flip y axis for consistency with Gephi orientation
         return {
           id: N[i],
           radius: R[i],
@@ -277,15 +277,6 @@
       if (L) link.attr("stroke", ({ index: i }) => L[i]);
       if (T) node.attr("id", ({ index: i }) => "channel_" + T[i]);
       if (invalidation != null) invalidation.then(() => simulation.stop());
-
-      // // Fix position of node corresponding to selected channel to origin and set color
-      // d3.select("#channel_" + networkData.nodes[0].id).attr(
-      //   "fill",
-      //   "#00f"
-      // );
-
-      // nodes[0]["fx"] = 0;
-      // nodes[0]["fy"] = 0;
 
       const LABEL_SIZE_THRESHOLD = 30;
       let currentTransform = d3.zoomIdentity;

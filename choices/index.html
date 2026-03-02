@@ -2,54 +2,75 @@
 
 <!DOCTYPE html>
 <meta charset="utf-8">
-<div class="controls">
-    <div class="control-group">
-        <label class="control-group__title" for="thresholdInput">Appearance threshold</label>
-        <div class="control-group__body">
-            <input type="range" id="thresholdInput" name="thresholdInput" value="0" min="0" max="3"
-                oninput="thresholdOutput.value = thresholdInput.value">
-            <output id="thresholdOutput">0</output>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="app">
+    <aside class="sidebar">
+        <div class="controls">
+            <div class="control-group">
+                <label class="control-group__title" for="thresholdInput">Appearance threshold</label>
+                <div class="control-group__body">
+                    <input type="range" id="thresholdInput" name="thresholdInput" value="1" min="0" max="3"
+                        oninput="thresholdOutput.value = thresholdInput.value">
+                    <output id="thresholdOutput">1</output>
+                </div>
+                <p class="control-group__hint">Hide guests with fewer than this many<br>podcast appearances. 0 = show all.</p>
+            </div>
+            <div class="control-group">
+                <span class="control-group__title">Graph type</span>
+                <div class="control-group__body">
+                    <label class="control-option"><input type="radio" name="agg" value="bipartite" checked> Bipartite</label>
+                    <label class="control-option"><input type="radio" name="agg" value="guests"> Guests</label>
+                </div>
+            </div>
+            <div class="control-group">
+                <span class="control-group__title">Display</span>
+                <div class="control-group__body">
+                    <label class="control-option"><input type="checkbox" name="labelsInput" checked> Show Labels</label>
+                    <label class="control-option"><input type="checkbox" name="edgesInput" checked> Show Edges</label>
+                </div>
+            </div>
+            <div class="control-group">
+                <button type="button">Reset</button>
+            </div>
         </div>
-        <p class="control-group__hint">Hide guests with fewer than this many<br>podcast appearances. 0 = show all.</p>
+        <div id="legend" class="legend"></div>
+    </aside>
+    <div class="canvas-container">
+        <canvas id="networkCanvas"></canvas>
+        <div id="tooltip"></div>
     </div>
-    <div class="control-group">
-        <span class="control-group__title">Graph type</span>
-        <div class="control-group__body">
-            <label class="control-option"><input type="radio" name="agg" value="bipartite" checked> Bipartite</label>
-            <label class="control-option"><input type="radio" name="agg" value="guests"> Guests</label>
-        </div>
-    </div>
-    <div class="control-group">
-        <span class="control-group__title">Display</span>
-        <div class="control-group__body">
-            <label class="control-option"><input type="checkbox" name="labelsInput" checked> Show Labels</label>
-            <label class="control-option"><input type="checkbox" name="edgesInput" checked> Show Edges</label>
-        </div>
-    </div>
-    <div class="control-group">
-        <button type="button">Reset</button>
-    </div>
-</div>
-<div id="legend" class="legend"></div>
-<div class="canvas-container">
-    <canvas id="networkCanvas"></canvas>
-    <div id="tooltip"></div>
 </div>
 <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; }
+    body { overflow: hidden; }
+
+    .app {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        flex-shrink: 0;
+        padding: 0.75em;
+        font: 13px sans-serif;
+        background: #fafafa;
+        border-bottom: 1px solid #ddd;
+    }
     .controls {
         display: flex;
-        flex-wrap: wrap;
-        gap: 1em;
-        align-items: flex-start;
-        margin-bottom: 2em;
-        font: 13px sans-serif;
+        flex-direction: column;
+        gap: 0.75em;
     }
     .control-group {
         border: 1px solid #ccc;
         border-radius: 6px;
         padding: 0.6em 0.9em;
-        background: #fafafa;
-        min-width: 140px;
+        background: #fff;
     }
     .control-group__title {
         display: block;
@@ -77,16 +98,12 @@
         gap: 0.4em;
         cursor: pointer;
     }
-    .control-option input {
-        margin: 0;
-    }
+    .control-option input { margin: 0; }
     .legend {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 0.5em 1.5em;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5em 0.75em;
         font: 12px sans-serif;
-        margin: 0.5em 0 1em 0;
-        width: 600px;
     }
     .legend-item {
         display: inline-flex;
@@ -99,8 +116,22 @@
         border-radius: 2px;
         flex-shrink: 0;
     }
+    .canvas-container {
+        flex: 1 1 0;
+        min-height: 0;
+        min-width: 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #networkCanvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
     div#tooltip {
-        position: absolute;
+        position: fixed;
         text-align: left;
         font: 12px sans-serif;
         background: white;
@@ -110,22 +141,17 @@
         pointer-events: none;
         display: none;
     }
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        min-height: 100vh;
-    }
-    .controls {
-        width: 100%;
-        max-width: 600px;
-    }
-    #legend {
-        max-width: 600px;
-    }
-    .canvas-container {
-        margin: 0 auto;
+
+    @media (min-width: 769px) {
+        .app { flex-direction: row; }
+        .sidebar {
+            flex-direction: column;
+            width: 220px;
+            min-width: 220px;
+            border-bottom: none;
+            border-right: 1px solid #ddd;
+        }
+        .controls { flex-direction: column; }
     }
 </style>
 
@@ -170,12 +196,35 @@
             }));
 
             const canvas = document.getElementById("networkCanvas");
+            const canvasContainer = canvas.parentElement;
             const ctx = canvas.getContext("2d");
             const tooltip = document.getElementById("tooltip");
 
-            let width = 600, height = 600;
-            canvas.width = width;
-            canvas.height = height;
+            function getSize() {
+                const w = canvasContainer.clientWidth;
+                const h = canvasContainer.clientHeight;
+                return { width: Math.max(1, w), height: Math.max(1, h) };
+            }
+
+            function resizeCanvas() {
+                const { width: w, height: h } = getSize();
+                if (w <= 0 || h <= 0) return;
+                if (canvas.width !== w || canvas.height !== h) {
+                    canvas.width = w;
+                    canvas.height = h;
+                    width = w;
+                    height = h;
+                    zoom.translateExtent([[0, 0], [width, height]]);
+                }
+                const agg = d3.select("input[name='agg']:checked").property("value");
+                const thresholdValue = d3.select("#thresholdInput").property("value");
+                const showLabels = d3.select("input[name='labelsInput']").property("checked");
+                const showEdges = d3.select("input[name='edgesInput']").property("checked");
+                drawNetwork(agg, thresholdValue, showLabels, showEdges);
+                d3.select(canvas).call(zoom.transform, d3.zoomIdentity);
+            }
+
+            let width = 1, height = 1;
 
             var options = {
                 linkStroke: "#999",
@@ -318,21 +367,24 @@
                     x: (xExtent[1] - xExtent[0]) * marginRatio,
                     y: (yExtent[1] - yExtent[0]) * marginRatio
                 };
-                const networkAspectRatio = (xExtent[1] - xExtent[0]) / (yExtent[1] - yExtent[0]);
-                const viewAspectRatio = width / height;
+                const dataMinX = xExtent[0] - margin.x;
+                const dataMaxX = xExtent[1] + margin.x;
+                const dataMinY = yExtent[0] - margin.y;
+                const dataMaxY = yExtent[1] + margin.y;
+                const dataWidth = dataMaxX - dataMinX;
+                const dataHeight = dataMaxY - dataMinY;
+                const scale = Math.min(width / dataWidth, height / dataHeight);
+                const drawWidth = dataWidth * scale;
+                const drawHeight = dataHeight * scale;
+                const offsetX = (width - drawWidth) / 2;
+                const offsetY = (height - drawHeight) / 2;
 
                 const posX = d3.scaleLinear()
-                    .range([0, width])
-                    .domain([xExtent[0] - margin.x, xExtent[1] + margin.x]);
+                    .domain([dataMinX, dataMaxX])
+                    .range([offsetX, offsetX + drawWidth]);
                 const posY = d3.scaleLinear()
-                    .range([0, height])
-                    .domain([yExtent[0] - margin.y, yExtent[1] + margin.y]);
-
-                if (networkAspectRatio > viewAspectRatio) {
-                    posY.domain([xExtent[0] - margin.x, xExtent[1] + margin.x]);
-                } else {
-                    posX.domain([yExtent[0] - margin.y, yExtent[1] + margin.y]);
-                }
+                    .domain([dataMinY, dataMaxY])
+                    .range([offsetY, offsetY + drawHeight]);
 
                 nodes.forEach(node => {
                     node.x = posX(node.x);
@@ -423,13 +475,10 @@
                 d3.select(canvas).call(zoom.transform, d3.zoomIdentity);
             });
 
-            // Initial draw
-            const agg = d3.select("input[name='agg']:checked").property("value");
-            const thresholdValue = d3.select("#thresholdInput").property("value");
-            const showLabels = d3.select("input[name='labelsInput']").property("checked");
-            const showEdges = d3.select("input[name='edgesInput']").property("checked");
-            drawNetwork(agg, thresholdValue, showLabels, showEdges);
-            d3.select(canvas).call(zoom.transform, d3.zoomIdentity);
+            // Size canvas to container and do initial draw; redraw on resize
+            resizeCanvas();
+            requestAnimationFrame(function () { resizeCanvas(); });
+            new ResizeObserver(function () { resizeCanvas(); }).observe(canvasContainer);
         });
 
     </script>
