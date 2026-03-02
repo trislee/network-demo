@@ -27,6 +27,9 @@ export interface Dataset {
   clusters: Cluster[];
   tags?: Tag[];
   bbox?: { x: [number, number]; y: [number, number] };
+  title?: string;
+  clusterTitle?: string;
+  description?: string;
 }
 
 export interface FiltersState {

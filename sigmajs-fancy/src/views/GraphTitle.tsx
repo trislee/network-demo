@@ -7,7 +7,9 @@ function prettyPercentage(val: number): string {
   return (val * 100).toFixed(1) + "%";
 }
 
-const GraphTitle: FC<{ filters: FiltersState }> = ({ filters }) => {
+const DEFAULT_TITLE = "A cartography of Wikipedia pages around data visualization";
+
+const GraphTitle: FC<{ filters: FiltersState; title?: string }> = ({ filters, title }) => {
   const sigma = useSigma();
   const graph = sigma.getGraph();
 
@@ -26,7 +28,7 @@ const GraphTitle: FC<{ filters: FiltersState }> = ({ filters }) => {
 
   return (
     <div className="graph-title">
-      <h1>A cartography of Wikipedia pages around data visualization</h1>
+      <h1>{title ?? DEFAULT_TITLE}</h1>
       <h2>
         <i>
           {graph.order} node{graph.order > 1 ? "s" : ""}{" "}

@@ -134,12 +134,13 @@ const Root: FC = () => {
                   <GrClose />
                 </button>
               </div>
-              <GraphTitle filters={filtersState} />
+              <GraphTitle filters={filtersState} title={dataset.title} />
               <div className="panels">
                 <SearchField filters={filtersState} />
-                <DescriptionPanel />
+                <DescriptionPanel description={dataset.description} />
                 <ClustersPanel
                   clusters={dataset.clusters}
+                  clusterTitle={dataset.clusterTitle}
                   filters={filtersState}
                   setClusters={(clusters) =>
                     setFiltersState((filters) => ({

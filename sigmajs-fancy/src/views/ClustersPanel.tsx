@@ -9,10 +9,11 @@ import Panel from "./Panel";
 
 const ClustersPanel: FC<{
   clusters: Cluster[];
+  clusterTitle?: string;
   filters: FiltersState;
   toggleCluster: (cluster: string) => void;
   setClusters: (clusters: Record<string, boolean>) => void;
-}> = ({ clusters, filters, toggleCluster, setClusters }) => {
+}> = ({ clusters, clusterTitle = "Clusters", filters, toggleCluster, setClusters }) => {
   const sigma = useSigma();
   const graph = sigma.getGraph();
 
@@ -46,7 +47,7 @@ const ClustersPanel: FC<{
     <Panel
       title={
         <>
-          <MdGroupWork className="text-muted" /> Clusters
+          <MdGroupWork className="text-muted" /> {clusterTitle}
           {visibleClustersCount < clusters.length ? (
             <span className="text-muted text-small">
               {" "}
