@@ -209,6 +209,7 @@
             let currentTransform = d3.zoomIdentity;
 
             const formatter = Intl.NumberFormat('en', { notation: 'compact' });
+            const LABEL_SIZE_THRESHOLD = 500;
 
             function isConnected(a, b) {
                 return (
@@ -281,9 +282,12 @@
                     ctx.fillStyle = "black";
                     ctx.textAlign = "center";
                     ctx.textBaseline = "middle";
-                    // Use base font size in content space so labels scale 1:1 with zoom (readable when zoomed in)
+                    const k = currentTransform.k;
+                    // Only show label when rendered size (size * zoom) meets threshold (same logic as D3)
                     for (const node of nodes) {
-                        const baseFontSize = currentSizingFunction(node) * data.textScaling[threshold];
+                        const nodeSize = currentSizingFunction(node);
+                        if (nodeSize * k < LABEL_SIZE_THRESHOLD) continue;
+                        const baseFontSize = nodeSize * data.textScaling[threshold];
                         ctx.font = `${baseFontSize}px sans-serif`;
                         ctx.fillText(node.label, node.x, node.y);
                     }
