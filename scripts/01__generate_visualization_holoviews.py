@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 
 import networkx as nx
@@ -90,6 +91,13 @@ if __name__ == "__main__":
         + (nodes_df['size'] - size_min) / size_range * (LABEL_FONT_SIZE_MAX - LABEL_FONT_SIZE_MIN)
     )
     nodes_df["views_formatted"] = nodes_df["views"].apply(format_views)
+
+    # Category colors shared with other visualizations (choices/colors.json)
+    colors_path = Path(__file__).resolve().parent.parent / "choices" / "colors.json"
+    with open(colors_path, encoding="utf-8") as f:
+        category_colors = json.load(f)
+    nodes_df["category_color"] = nodes_df["category"].map(category_colors)
+
     # Convert node DataFrame to HoloViews object
     hv_nodes = hv.Nodes(nodes_df)
 
@@ -106,8 +114,7 @@ if __name__ == "__main__":
     # Specify Holoviews options
     hv_graph.opts(
         node_radius="size",
-        node_color="category",
-        node_cmap = "glasbey_dark",
+        node_color="category_color",
         node_hover_fill_color="#DF0000",
         node_hover_fill_alpha=1,
         node_line_color="#ffffff",
@@ -128,14 +135,12 @@ if __name__ == "__main__":
     )
 
     hv_graph_with_labels.opts(
-        max_width=800,
-        max_height=800,
         bgcolor="white",
         xticks=0,
         yticks=0,
         xlabel="",
         ylabel="",
-        hooks = [hide_hook],
+        hooks=[hide_hook],
     )
 
     # Generate visualization

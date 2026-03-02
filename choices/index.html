@@ -158,36 +158,26 @@
 <body>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script>
-        var color = {
-            'Intellectual': '#8c3bff',
-            'Celebrity': '#018700',
-            'Podcast': '#00acc6',
-            'Athlete': '#e6a500',
-            'Politician': '#ff7ed1',
-            'Other': '#6b004f',
-            'Influencer': '#573b00',
-            'Comedian': '#005659',
-            'Political Pundit': '#15e18c'
-        };
+        // Load shared category colors and network data
+        Promise.all([
+            fetch("colors.json").then(function (r) { return r.json(); }),
+            d3.json("full_network_data.json")
+        ]).then(function (inputs) {
+            var color = inputs[0];
+            var data = inputs[1];
 
-        (function () {
             var legend = document.getElementById("legend");
-            var line1 = ["Intellectual", "Celebrity", "Podcast", "Athlete", "Politician"];
-            var line2 = ["Influencer", "Comedian", "Political Pundit", "Other"];
-            function addItem(parent, category) {
+            var legendOrder = ["Intellectual", "Celebrity", "Podcast", "Athlete", "Politician", "Influencer", "Comedian", "Political Pundit", "Other"];
+            legendOrder.forEach(function (category) {
+                if (!(category in color)) return;
                 var item = document.createElement("span");
                 item.className = "legend-item";
                 item.innerHTML = "<span class=\"legend-swatch\" style=\"background:" + color[category] + "\"></span> " + category;
-                parent.appendChild(item);
-            }
-            line1.forEach(function (c) { addItem(legend, c); });
-            line2.forEach(function (c) { addItem(legend, c); });
-        })();
+                legend.appendChild(item);
+            });
 
-        // radiusScale for threshold 0: 0.015
-
-        // Load data from external JSON file
-        d3.json(`full_network_data.json`).then(function (data) {
+            var defaultColor = "#888";
+            function nodeColor(category) { return color[category] || defaultColor; }
             var allNodes = data.allNodes.map((list, i) => ({
                 id: i,
                 label: list[0],
@@ -320,7 +310,7 @@
                     const r = currentSizingFunction(node) * data.radiusScaling[`${currentAgg}_${threshold}`];
                     ctx.beginPath();
                     ctx.arc(node.x, node.y, r, 0, 2 * Math.PI);
-                    ctx.fillStyle = color[node.category] || "#000";
+                    ctx.fillStyle = nodeColor(node.category);
                     ctx.fill();
                     ctx.strokeStyle = (hoveredNode && isConnected(hoveredNode, node)) ? "#f00" : options.nodeStroke;
                     ctx.lineWidth = ((hoveredNode && isConnected(hoveredNode, node)) ? 2 : options.nodeStrokeWidth) * strokeScale;

@@ -37,8 +37,6 @@
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script>
 
-    console.log('in script')
-
     const update = () => null,
       width = 1200,
       height = 500,
@@ -79,6 +77,7 @@
         links: (data.edges || []).map((e) => ({ source: e[0], target: e[1], weight: 1 })),
       };
       const textScaling = 0.7;
+      const nodeScaling = 2;
 
       function isConnected(a, b) {
         return (
@@ -135,7 +134,7 @@
         };
       }
 
-      const nodeRadius = (n) => (n.size != null ? +n.size : 5);
+      const nodeRadius = (n) => nodeScaling * (n.size != null ? +n.size : 5);
 
       const N = d3.map(networkData.nodes, nodeId).map(intern);
       const LS = d3.map(networkData.links, linkSource).map(intern);
