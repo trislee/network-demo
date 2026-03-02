@@ -34,7 +34,7 @@ jobs:
       - name: Install and build sigmajs-fancy
         working-directory: sigmajs-fancy
         env:
-          VITE_BASE_PATH: /${{ github.event.repository.name }}/
+          VITE_BASE_PATH: /${{ github.event.repository.name }}/sigmajs-fancy/
         run: |
           npm ci
           npm run build
@@ -42,7 +42,7 @@ jobs:
       - name: Assemble site
         run: |
           mkdir -p site
-          cp -r d3 holoviews sigmajs site/
+          cp -r d3 graphs holoviews sigmajs site/
           mkdir -p site/sigmajs-fancy
           cp -r sigmajs-fancy/build/* site/sigmajs-fancy/
 
