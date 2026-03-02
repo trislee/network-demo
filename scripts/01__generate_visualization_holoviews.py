@@ -78,7 +78,7 @@ if __name__ == "__main__":
     hv_graph.opts(
         node_radius="size",
         node_color="category",
-        node_cmap = "glasbey",
+        node_cmap = "glasbey_dark",
         node_hover_fill_color="#DF0000",
         node_hover_fill_alpha=1,
         node_line_color="#ffffff",

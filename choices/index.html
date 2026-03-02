@@ -1,0 +1,415 @@
+<!-- https://jsfiddle.net/zbxbzmen/ -->
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<div class="controls">
+    <div class="control-group">
+        <label class="control-group__title" for="thresholdInput">Appearance threshold</label>
+        <div class="control-group__body">
+            <input type="range" id="thresholdInput" name="thresholdInput" value="0" min="0" max="3"
+                oninput="thresholdOutput.value = thresholdInput.value">
+            <output id="thresholdOutput">0</output>
+        </div>
+        <p class="control-group__hint">Hide guests with fewer than this many<br>podcast appearances. 0 = show all.</p>
+    </div>
+    <div class="control-group">
+        <span class="control-group__title">Graph type</span>
+        <div class="control-group__body">
+            <label class="control-option"><input type="radio" name="agg" value="bipartite" checked> Bipartite</label>
+            <label class="control-option"><input type="radio" name="agg" value="guests"> Guests</label>
+        </div>
+    </div>
+    <div class="control-group">
+        <span class="control-group__title">Display</span>
+        <div class="control-group__body">
+            <label class="control-option"><input type="checkbox" name="labelsInput" checked> Show Labels</label>
+            <label class="control-option"><input type="checkbox" name="edgesInput" checked> Show Edges</label>
+        </div>
+    </div>
+    <div class="control-group">
+        <button type="button">Reset</button>
+    </div>
+</div>
+<div id="legend" class="legend"></div>
+<div class="canvas-container">
+    <canvas id="networkCanvas"></canvas>
+    <div id="tooltip"></div>
+</div>
+<style>
+    .controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        align-items: flex-start;
+        margin-bottom: 2em;
+        font: 13px sans-serif;
+    }
+    .control-group {
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 0.6em 0.9em;
+        background: #fafafa;
+        min-width: 140px;
+    }
+    .control-group__title {
+        display: block;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 0.4em;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+    }
+    .control-group__body {
+        display: flex;
+        flex-direction: column;
+        gap: 0.35em;
+    }
+    .control-group__hint {
+        margin: 0.35em 0 0 0;
+        font-size: 11px;
+        color: #666;
+        line-height: 1.3;
+    }
+    .control-option {
+        display: flex;
+        align-items: center;
+        gap: 0.4em;
+        cursor: pointer;
+    }
+    .control-option input {
+        margin: 0;
+    }
+    .legend {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0.5em 1.5em;
+        font: 12px sans-serif;
+        margin: 0.5em 0 1em 0;
+        width: 600px;
+    }
+    .legend-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35em;
+    }
+    .legend-swatch {
+        width: 12px;
+        height: 12px;
+        border-radius: 2px;
+        flex-shrink: 0;
+    }
+    div#tooltip {
+        position: absolute;
+        text-align: left;
+        font: 12px sans-serif;
+        background: white;
+        padding: 5px;
+        border: 1px solid #e3e3e3;
+        border-radius: 5px;
+        pointer-events: none;
+        display: none;
+    }
+</style>
+
+<body>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+        var color = {
+            'Intellectual': '#8c3bff',
+            'Celebrity': '#018700',
+            'Podcast': '#00acc6',
+            'Athlete': '#e6a500',
+            'Politician': '#ff7ed1',
+            'Other': '#6b004f',
+            'Influencer': '#573b00',
+            'Comedian': '#005659',
+            'Political Pundit': '#15e18c'
+        };
+
+        (function () {
+            var legend = document.getElementById("legend");
+            var line1 = ["Intellectual", "Celebrity", "Podcast", "Athlete", "Politician"];
+            var line2 = ["Influencer", "Comedian", "Political Pundit", "Other"];
+            function addItem(parent, category) {
+                var item = document.createElement("span");
+                item.className = "legend-item";
+                item.innerHTML = "<span class=\"legend-swatch\" style=\"background:" + color[category] + "\"></span> " + category;
+                parent.appendChild(item);
+            }
+            line1.forEach(function (c) { addItem(legend, c); });
+            line2.forEach(function (c) { addItem(legend, c); });
+        })();
+
+        // radiusScale for threshold 0: 0.015
+
+        // Load data from external JSON file
+        d3.json(`full_network_data.json`).then(function (data) {
+            var allNodes = data.allNodes.map((list, i) => ({
+                id: i,
+                label: list[0],
+                views: list[1],
+                category: list[2]
+            }));
+
+            const canvas = document.getElementById("networkCanvas");
+            const ctx = canvas.getContext("2d");
+            const tooltip = document.getElementById("tooltip");
+
+            let width = 600, height = 600;
+            canvas.width = width;
+            canvas.height = height;
+
+            var options = {
+                linkStroke: "#999",
+                nodeStrokeOpacity: 1,
+                linkStrokeOpacity: 0.5,
+                linkStrokeLinecap: "butt",
+                nodeFill: "#000",
+                nodeStrokeWidth: 1,
+                nodeStroke: "#fff",
+                }
+
+            const sizing = "cube"
+            const sizingFunctions = {
+                "cube": d => allNodes[d.id].views ** (1 / 3.),
+                "square": d => allNodes[d.id].views ** (1 / 2.),
+                "linear": d => allNodes[d.id].views,
+                "same": d => 1
+            }
+            const sizingFunction = sizingFunctions[sizing]
+
+
+            let currentNodes = [];
+            let currentEdges = [];
+            let currentIndexToXY = {};
+            let currentLinkedByIndex = {};
+            let currentThreshold = 0;
+            let currentShowLabels = true;
+            let currentShowEdges = true;
+            let currentSizingFunction = sizingFunctions[sizing];
+            let lastHoveredNode = null;
+            let currentTransform = d3.zoomIdentity;
+
+            const formatter = Intl.NumberFormat('en', { notation: 'compact' });
+
+            function isConnected(a, b) {
+                return (
+                    currentLinkedByIndex[`${a.id},${b.id}`] ||
+                    currentLinkedByIndex[`${b.id},${a.id}`] ||
+                    a.id === b.id
+                );
+            }
+
+            function drawFrame(hoveredNode) {
+                ctx.clearRect(0, 0, width, height);
+                ctx.save();
+                ctx.setTransform(
+                    currentTransform.k, 0, 0, currentTransform.k,
+                    currentTransform.x, currentTransform.y
+                );
+
+                const nodes = currentNodes;
+                const links = currentEdges;
+                const indexToXY = currentIndexToXY;
+                const threshold = currentThreshold;
+                const strokeScale = 1 / Math.sqrt(currentTransform.k);
+
+                // Draw links in two passes so highlighted edges always appear on top (stroke scales with sqrt(zoom))
+                if (currentShowEdges) {
+                    ctx.lineWidth = 1 * strokeScale;
+                    ctx.strokeStyle = options.linkStroke;
+                    ctx.globalAlpha = options.linkStrokeOpacity;
+                    for (const link of links) {
+                        const highlighted = hoveredNode && (link.source === hoveredNode.id || link.target === hoveredNode.id);
+                        if (highlighted) continue;
+                        const src = indexToXY[link.source];
+                        const tgt = indexToXY[link.target];
+                        ctx.beginPath();
+                        ctx.moveTo(src.x, src.y);
+                        ctx.lineTo(tgt.x, tgt.y);
+                        ctx.stroke();
+                    }
+                    ctx.strokeStyle = "#f00";
+                    ctx.globalAlpha = 1;
+                    ctx.lineWidth = 2 * strokeScale;
+                    for (const link of links) {
+                        const highlighted = hoveredNode && (link.source === hoveredNode.id || link.target === hoveredNode.id);
+                        if (!highlighted) continue;
+                        const src = indexToXY[link.source];
+                        const tgt = indexToXY[link.target];
+                        ctx.beginPath();
+                        ctx.moveTo(src.x, src.y);
+                        ctx.lineTo(tgt.x, tgt.y);
+                        ctx.stroke();
+                    }
+                    ctx.globalAlpha = 1;
+                    ctx.lineWidth = 1;
+                }
+
+                // Draw nodes (outline stroke scales with sqrt(zoom) so it doesn't blow up when zoomed in)
+                for (const node of nodes) {
+                    const r = currentSizingFunction(node) * data.radiusScaling[threshold];
+                    ctx.beginPath();
+                    ctx.arc(node.x, node.y, r, 0, 2 * Math.PI);
+                    ctx.fillStyle = color[node.category] || "#000";
+                    ctx.fill();
+                    ctx.strokeStyle = (hoveredNode && isConnected(hoveredNode, node)) ? "#f00" : options.nodeStroke;
+                    ctx.lineWidth = ((hoveredNode && isConnected(hoveredNode, node)) ? 2 : options.nodeStrokeWidth) * strokeScale;
+                    ctx.stroke();
+                }
+                ctx.lineWidth = 1;
+
+                if (currentShowLabels) {
+                    ctx.fillStyle = "black";
+                    ctx.textAlign = "center";
+                    ctx.textBaseline = "middle";
+                    // Use base font size in content space so labels scale 1:1 with zoom (readable when zoomed in)
+                    for (const node of nodes) {
+                        const baseFontSize = currentSizingFunction(node) * data.textScaling[threshold];
+                        ctx.font = `${baseFontSize}px sans-serif`;
+                        ctx.fillText(node.label, node.x, node.y);
+                    }
+                }
+
+                ctx.restore();
+            }
+
+            function drawNetwork(agg, threshold, showLabels, showEdges) {
+                const nodes = data.layouts[`${agg}_${threshold}`].map(list => ({
+                    id: list[0],
+                    x: list[1],
+                    y: -list[2],
+                    label: allNodes[list[0]].label,
+                    category: allNodes[list[0]].category
+                }));
+
+                const links = data.edges[`${agg}_${threshold}`].map((link) => ({
+                    source: link[0],
+                    target: link[1],
+                }));
+
+                const xExtent = d3.extent(nodes, d => +d.x);
+                const yExtent = d3.extent(nodes, d => +d.y);
+
+                const marginRatio = 0.15;
+                const margin = {
+                    x: (xExtent[1] - xExtent[0]) * marginRatio,
+                    y: (yExtent[1] - yExtent[0]) * marginRatio
+                };
+                const networkAspectRatio = (xExtent[1] - xExtent[0]) / (yExtent[1] - yExtent[0]);
+                const viewAspectRatio = width / height;
+
+                const posX = d3.scaleLinear()
+                    .range([0, width])
+                    .domain([xExtent[0] - margin.x, xExtent[1] + margin.x]);
+                const posY = d3.scaleLinear()
+                    .range([0, height])
+                    .domain([yExtent[0] - margin.y, yExtent[1] + margin.y]);
+
+                if (networkAspectRatio > viewAspectRatio) {
+                    posY.domain([xExtent[0] - margin.x, xExtent[1] + margin.x]);
+                } else {
+                    posX.domain([yExtent[0] - margin.y, yExtent[1] + margin.y]);
+                }
+
+                nodes.forEach(node => {
+                    node.x = posX(node.x);
+                    node.y = posY(node.y);
+                });
+
+                const linkedByIndex = {};
+                links.forEach(d => {
+                    linkedByIndex[`${d.source},${d.target}`] = 1;
+                    linkedByIndex[`${d.target},${d.source}`] = 1;
+                });
+
+                const indexToXY = nodes.reduce((map, obj) => {
+                    map[obj.id] = { x: obj.x, y: obj.y };
+                    return map;
+                }, {});
+
+                currentNodes = nodes;
+                currentEdges = links;
+                currentIndexToXY = indexToXY;
+                currentLinkedByIndex = linkedByIndex;
+                currentThreshold = threshold;
+                currentShowLabels = showLabels;
+                currentShowEdges = showEdges;
+                lastHoveredNode = null;
+                currentTransform = d3.zoomIdentity;
+
+                drawFrame(null);
+            }
+
+            const zoom = d3.zoom()
+                .scaleExtent([1, 9])
+                .translateExtent([[0, 0], [width, height]])
+                .on("zoom", (event) => {
+                    currentTransform = event.transform;
+                    drawFrame(lastHoveredNode);
+                });
+
+            d3.select(canvas).call(zoom);
+
+            // Single mousemove listener: only redraw when hovered node changes
+            canvas.addEventListener("mousemove", function (event) {
+                const rect = canvas.getBoundingClientRect();
+                const screenX = event.clientX - rect.left;
+                const screenY = event.clientY - rect.top;
+                const mouseX = (screenX - currentTransform.x) / currentTransform.k;
+                const mouseY = (screenY - currentTransform.y) / currentTransform.k;
+
+                let hoveredNode = null;
+                for (let i = 0; i < currentNodes.length; i++) {
+                    const node = currentNodes[i];
+                    const r = currentSizingFunction(node) * data.radiusScaling[currentThreshold];
+                    const dx = node.x - mouseX;
+                    const dy = node.y - mouseY;
+                    if (dx * dx + dy * dy <= r * r) {
+                        hoveredNode = node;
+                        break;
+                    }
+                }
+
+                if (hoveredNode) {
+                    tooltip.style.display = "block";
+                    tooltip.style.left = `${event.clientX + 10}px`;
+                    tooltip.style.top = `${event.clientY + 10}px`;
+                    tooltip.innerHTML = `
+                        <strong>${hoveredNode.label}</strong><br>
+                        Category: ${hoveredNode.category}<br>
+                        Views: ${formatter.format(allNodes[hoveredNode.id].views)}
+                    `;
+                } else {
+                    tooltip.style.display = "none";
+                }
+
+                if (hoveredNode !== lastHoveredNode) {
+                    lastHoveredNode = hoveredNode;
+                    drawFrame(hoveredNode);
+                }
+            });
+
+            // Handle controls and redraw network
+            d3.selectAll(".controls input, .controls button").on("change click", function () {
+                const agg = d3.select("input[name='agg']:checked").property("value");
+                const thresholdValue = d3.select("#thresholdInput").property("value");
+                const showLabels = d3.select("input[name='labelsInput']").property("checked");
+                const showEdges = d3.select("input[name='edgesInput']").property("checked");
+
+                drawNetwork(agg, thresholdValue, showLabels, showEdges);
+                d3.select(canvas).call(zoom.transform, d3.zoomIdentity);
+            });
+
+            // Initial draw
+            const agg = d3.select("input[name='agg']:checked").property("value");
+            const thresholdValue = d3.select("#thresholdInput").property("value");
+            const showLabels = d3.select("input[name='labelsInput']").property("checked");
+            const showEdges = d3.select("input[name='edgesInput']").property("checked");
+            drawNetwork(agg, thresholdValue, showLabels, showEdges);
+            d3.select(canvas).call(zoom.transform, d3.zoomIdentity);
+        });
+
+    </script>
+</body>

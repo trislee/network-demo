@@ -42,7 +42,7 @@ jobs:
       - name: Assemble site
         run: |
           mkdir -p site
-          cp -r d3 graphs holoviews sigmajs site/
+          cp -r d3 graphs holoviews sigmajs choices site/
           mkdir -p site/sigmajs-fancy
           cp -r sigmajs-fancy/build/* site/sigmajs-fancy/
 
