@@ -287,13 +287,27 @@
       // nodes[0]["fx"] = 0;
       // nodes[0]["fy"] = 0;
 
+      const LABEL_SIZE_THRESHOLD = 30;
+      let currentTransform = d3.zoomIdentity;
+
+      function updateLabelVisibility() {
+        const k = currentTransform.k;
+        label.attr(
+          "visibility",
+          (d) => (d.radius * k >= LABEL_SIZE_THRESHOLD ? "visible" : "hidden")
+        );
+      }
+
       let zoom = d3
         .zoom()
-        .on("zoom", (e) =>
-          d3.select("#svg g").attr("transform", e.transform)
-        );
+        .on("zoom", (e) => {
+          currentTransform = e.transform;
+          d3.select("#svg g").attr("transform", e.transform);
+          updateLabelVisibility();
+        });
 
       d3.select("#svg").call(zoom);
+      updateLabelVisibility();
 
       function ticked() {
         link
