@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Network visualizations</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, sans-serif; }
+    h1 { margin: 0 0 0.5rem 0; font-size: 1rem; font-weight: 600; }
+    section { margin-bottom: 1.5rem; }
+    section:last-child { margin-bottom: 0; }
+    iframe {
+      display: block;
+      width: 100%;
+      height: 800px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1>Sigma.js</h1>
+    <iframe src="sigmajs/" title="Sigma.js"></iframe>
+  </section>
+  <section>
+    <h1>HoloViews</h1>
+    <iframe src="holoviews/" title="HoloViews"></iframe>
+  </section>
+  <section>
+    <h1>D3</h1>
+    <iframe src="d3/" title="D3"></iframe>
+  </section>
+  <section>
+    <h1>Sigma.js (fancy)</h1>
+    <iframe src="sigmajs-fancy/" title="Sigma.js fancy"></iframe>
+  </section>
+  <section>
+    <h1>Choices</h1>
+    <iframe src="choices/" title="Choices"></iframe>
+  </section>
+</body>
+</html>
