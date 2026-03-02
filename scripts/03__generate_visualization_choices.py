@@ -84,19 +84,25 @@ if __name__ == "__main__":
         full_network_data["layouts"][threshold] = layout
         full_network_data["edges"][threshold] = edges
 
-    full_network_data["radiusScaling"] = {
-        0: 0.02,
-        1: 0.03,
-        2: 0.04,
-        3: 0.055
-    }
+    full_network_data["radiusScaling"] = {}
+    full_network_data["radiusScaling"]["bipartite_0"] = 0.02
+    full_network_data["radiusScaling"]["bipartite_1"] = 0.05
+    full_network_data["radiusScaling"]["bipartite_2"] = 0.05
+    full_network_data["radiusScaling"]["bipartite_3"] = 0.06
+    full_network_data["radiusScaling"]["guests_0"] = 0.02
+    full_network_data["radiusScaling"]["guests_1"] = 0.03
+    full_network_data["radiusScaling"]["guests_2"] = 0.04
+    full_network_data["radiusScaling"]["guests_3"] = 0.055
 
-    full_network_data["textScaling"] = {
-        0: 0.02,
-        1: 0.03,
-        2: 0.03,
-        3: 0.03
-    }
+    full_network_data["textScaling"] = {}
+    full_network_data["textScaling"]["bipartite_0"] = 0.02
+    full_network_data["textScaling"]["bipartite_1"] = 0.03
+    full_network_data["textScaling"]["bipartite_2"] = 0.03
+    full_network_data["textScaling"]["bipartite_3"] = 0.03
+    full_network_data["textScaling"]["guests_0"] = 0.02
+    full_network_data["textScaling"]["guests_1"] = 0.03
+    full_network_data["textScaling"]["guests_2"] = 0.03
+    full_network_data["textScaling"]["guests_3"] = 0.03
 
     with open(OUTPUT_DIR / "full_network_data.json", "w") as f:
         json.dump(obj = full_network_data, fp = f, separators=(',', ':'))

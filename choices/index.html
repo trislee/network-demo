@@ -250,6 +250,7 @@
             let currentEdges = [];
             let currentIndexToXY = {};
             let currentLinkedByIndex = {};
+            let currentAgg = "bipartite";
             let currentThreshold = 0;
             let currentShowLabels = true;
             let currentShowEdges = true;
@@ -316,7 +317,7 @@
 
                 // Draw nodes (outline stroke scales with sqrt(zoom) so it doesn't blow up when zoomed in)
                 for (const node of nodes) {
-                    const r = currentSizingFunction(node) * data.radiusScaling[threshold];
+                    const r = currentSizingFunction(node) * data.radiusScaling[`${currentAgg}_${threshold}`];
                     ctx.beginPath();
                     ctx.arc(node.x, node.y, r, 0, 2 * Math.PI);
                     ctx.fillStyle = color[node.category] || "#000";
@@ -336,7 +337,7 @@
                     for (const node of nodes) {
                         const nodeSize = currentSizingFunction(node);
                         if (nodeSize * k < LABEL_SIZE_THRESHOLD) continue;
-                        const baseFontSize = nodeSize * data.textScaling[threshold];
+                        const baseFontSize = nodeSize * data.textScaling[`${currentAgg}_${threshold}`];
                         ctx.font = `${baseFontSize}px sans-serif`;
                         ctx.fillText(node.label, node.x, node.y);
                     }
@@ -406,6 +407,7 @@
                 currentEdges = links;
                 currentIndexToXY = indexToXY;
                 currentLinkedByIndex = linkedByIndex;
+                currentAgg = agg;
                 currentThreshold = threshold;
                 currentShowLabels = showLabels;
                 currentShowEdges = showEdges;
@@ -436,7 +438,7 @@
                 let hoveredNode = null;
                 for (let i = 0; i < currentNodes.length; i++) {
                     const node = currentNodes[i];
-                    const r = currentSizingFunction(node) * data.radiusScaling[currentThreshold];
+                    const r = currentSizingFunction(node) * data.radiusScaling[`${currentAgg}_${currentThreshold}`];
                     const dx = node.x - mouseX;
                     const dy = node.y - mouseY;
                     if (dx * dx + dy * dy <= r * r) {
