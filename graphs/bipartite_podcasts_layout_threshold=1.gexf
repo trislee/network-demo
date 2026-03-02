@@ -1,0 +1,2006 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<gexf xmlns="http://gexf.net/1.3" version="1.3" xmlns:viz="http://gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://gexf.net/1.3 http://gexf.net/1.3/gexf.xsd">
+  <meta lastmodifieddate="2026-03-01">
+    <creator>Gephi 0.10.1</creator>
+    <title></title>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="d3" title="views" type="integer"/>
+      <attribute id="d2" title="views_root_3" type="double"/>
+      <attribute id="d1" title="views" type="double"/>
+      <attribute id="d0" title="category" type="string"/>
+    </attributes>
+    <nodes>
+      <node id="PowerfulJRE" label="PowerfulJRE">
+        <attvalues>
+          <attvalue for="d3" value="349288745"/>
+          <attvalue for="d2" value="704.2521755260872"/>
+          <attvalue for="d0" value="Podcast"/>
+        </attvalues>
+        <viz:size value="100.0"/>
+        <viz:position x="-274.86783" y="203.73726"/>
+        <viz:color r="255" g="94" b="180"/>
+      </node>
+      <node id="Theo Von" label="Theo Von">
+        <attvalues>
+          <attvalue for="d3" value="273721303"/>
+          <attvalue for="d2" value="649.2862405769024"/>
+          <attvalue for="d0" value="Podcast"/>
+        </attvalues>
+        <viz:size value="91.86017"/>
+        <viz:position x="-445.96243" y="-459.02368"/>
+        <viz:color r="255" g="94" b="180"/>
+      </node>
+      <node id="Lex Fridman" label="Lex Fridman">
+        <attvalues>
+          <attvalue for="d3" value="270171623"/>
+          <attvalue for="d2" value="646.4673226501665"/>
+          <attvalue for="d0" value="Podcast"/>
+        </attvalues>
+        <viz:size value="91.44272"/>
+        <viz:position x="184.62881" y="179.63196"/>
+        <viz:color r="255" g="94" b="180"/>
+      </node>
+      <node id="FLAGRANT" label="FLAGRANT">
+        <attvalues>
+          <attvalue for="d3" value="152751492"/>
+          <attvalue for="d2" value="534.5583941373168"/>
+          <attvalue for="d0" value="Podcast"/>
+        </attvalues>
+        <viz:size value="74.87029"/>
+        <viz:position x="-714.887" y="151.86221"/>
+        <viz:color r="255" g="94" b="180"/>
+      </node>
+      <node id="FULL SEND PODCAST" label="FULL SEND PODCAST">
+        <attvalues>
+          <attvalue for="d3" value="150233745"/>
+          <attvalue for="d2" value="531.605131498199"/>
+          <attvalue for="d0" value="Podcast"/>
+        </attvalues>
+        <viz:size value="74.43295"/>
+        <viz:position x="469.44293" y="-342.8629"/>
+        <viz:color r="255" g="94" b="180"/>
+      </node>
+      <node id="Adin Live" label="Adin Live">
+        <attvalues>
+          <attvalue for="d3" value="147795456"/>
+          <attvalue for="d2" value="528.7134524196795"/>
+          <attvalue for="d0" value="Podcast"/>
+        </attvalues>
+        <viz:size value="74.00472"/>
+        <viz:position x="476.59668" y="-828.8566"/>
+        <viz:color r="255" g="94" b="180"/>
+      </node>
+      <node id="Shawn Ryan Show" label="Shawn Ryan Show">
+        <attvalues>
+          <attvalue for="d3" value="114693423"/>
+          <attvalue for="d2" value="485.8618932207384"/>
+          <attvalue for="d0" value="Podcast"/>
+        </attvalues>
+        <viz:size value="67.6589"/>
+        <viz:position x="196.15445" y="942.99493"/>
+        <viz:color r="255" g="94" b="180"/>
+      </node>
+      <node id="Donald Trump" label="Donald Trump">
+        <attvalues>
+          <attvalue for="d2" value="484.3385221950354"/>
+          <attvalue for="d1" value="1.13617973E8"/>
+          <attvalue for="d0" value="Politician"/>
+        </attvalues>
+        <viz:size value="67.43329"/>
+        <viz:position x="95.344025" y="-179.25696"/>
+        <viz:color r="0" g="255" b="255"/>
+      </node>
+      <node id="IMPAULSIVE" label="IMPAULSIVE">
+        <attvalues>
+          <attvalue for="d3" value="94551111"/>
+          <attvalue for="d2" value="455.5704490228543"/>
+          <attvalue for="d0" value="Podcast"/>
+        </attvalues>
+        <viz:size value="63.17308"/>
+        <viz:position x="49.0494" y="-642.11505"/>
+        <viz:color r="255" g="94" b="180"/>
+      </node>
+      <node id="PBD Podcast" label="PBD Podcast">
+        <attvalues>
+          <attvalue for="d3" value="88837849"/>
+          <attvalue for="d2" value="446.20319757516984"/>
+          <attvalue for="d0" value="Podcast"/>
+        </attvalues>
+        <viz:size value="61.78589"/>
+        <viz:position x="447.21045" y="523.68195"/>
+        <viz:color r="255" g="94" b="180"/>
+      </node>
+      <node id="Andrew Tate" label="Andrew Tate">
+        <attvalues>
+          <attvalue for="d2" value="432.013359783455"/>
+          <attvalue for="d1" value="8.0629048E7"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="59.684536"/>
+        <viz:position x="770.2221" y="-291.8697"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="Tucker Carlson" label="Tucker Carlson">
+        <attvalues>
+          <attvalue for="d2" value="365.95508670807527"/>
+          <attvalue for="d1" value="4.9009849E7"/>
+          <attvalue for="d0" value="Political Pundit"/>
+        </attvalues>
+        <viz:size value="49.902065"/>
+        <viz:position x="224.70287" y="-42.54523"/>
+        <viz:color r="128" g="15" b="37"/>
+      </node>
+      <node id="Elon Musk" label="Elon Musk">
+        <attvalues>
+          <attvalue for="d2" value="337.48251578377324"/>
+          <attvalue for="d1" value="3.8437385E7"/>
+          <attvalue for="d0" value="Politician"/>
+        </attvalues>
+        <viz:size value="45.685608"/>
+        <viz:position x="-61.364807" y="117.13012"/>
+        <viz:color r="0" g="255" b="255"/>
+      </node>
+      <node id="Shane Gillis" label="Shane Gillis">
+        <attvalues>
+          <attvalue for="d2" value="320.1874715288412"/>
+          <attvalue for="d1" value="3.2825625E7"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="43.124405"/>
+        <viz:position x="-664.3075" y="-124.983086"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="JD Vance" label="JD Vance">
+        <attvalues>
+          <attvalue for="d2" value="301.5300462251568"/>
+          <attvalue for="d1" value="2.7415223E7"/>
+          <attvalue for="d0" value="Politician"/>
+        </attvalues>
+        <viz:size value="40.361454"/>
+        <viz:position x="-78.81887" y="-119.63788"/>
+        <viz:color r="0" g="255" b="255"/>
+      </node>
+      <node id="Ben Shapiro" label="Ben Shapiro">
+        <attvalues>
+          <attvalue for="d2" value="294.64044674891994"/>
+          <attvalue for="d1" value="2.5578619E7"/>
+          <attvalue for="d0" value="Political Pundit"/>
+        </attvalues>
+        <viz:size value="39.341187"/>
+        <viz:position x="546.57184" y="-117.90825"/>
+        <viz:color r="128" g="15" b="37"/>
+      </node>
+      <node id="Dana White" label="Dana White">
+        <attvalues>
+          <attvalue for="d2" value="294.0670478147509"/>
+          <attvalue for="d1" value="2.5429574E7"/>
+          <attvalue for="d0" value="Athlete"/>
+        </attvalues>
+        <viz:size value="39.25627"/>
+        <viz:position x="24.753967" y="-341.06073"/>
+        <viz:color r="199" g="224" b="0"/>
+      </node>
+      <node id="Kai Cenat" label="Kai Cenat">
+        <attvalues>
+          <attvalue for="d2" value="282.4572707974017"/>
+          <attvalue for="d1" value="2.2535037E7"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="37.536995"/>
+        <viz:position x="685.973" y="-812.0174"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="Jake Paul" label="Jake Paul">
+        <attvalues>
+          <attvalue for="d2" value="277.0407695425064"/>
+          <attvalue for="d1" value="2.1263319E7"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="36.734875"/>
+        <viz:position x="275.12555" y="-720.65283"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="Graham Hancock" label="Graham Hancock">
+        <attvalues>
+          <attvalue for="d2" value="274.7558030547209"/>
+          <attvalue for="d1" value="2.0741522E7"/>
+          <attvalue for="d0" value="Other"/>
+        </attvalues>
+        <viz:size value="36.396496"/>
+        <viz:position x="-105.41803" y="443.6748"/>
+        <viz:color r="0" g="241" b="255"/>
+      </node>
+      <node id="iShowSpeed" label="iShowSpeed">
+        <attvalues>
+          <attvalue for="d2" value="266.7207168217153"/>
+          <attvalue for="d1" value="1.8974496E7"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="35.206593"/>
+        <viz:position x="375.84134" y="-661.05994"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="Destiny" label="Destiny">
+        <attvalues>
+          <attvalue for="d2" value="264.92595059295525"/>
+          <attvalue for="d1" value="1.8594029E7"/>
+          <attvalue for="d0" value="Political Pundit"/>
+        </attvalues>
+        <viz:size value="34.940804"/>
+        <viz:position x="541.23944" y="129.11894"/>
+        <viz:color r="128" g="15" b="37"/>
+      </node>
+      <node id="Bobby Lee" label="Bobby Lee">
+        <attvalues>
+          <attvalue for="d2" value="261.63301571848314"/>
+          <attvalue for="d1" value="1.790926E7"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="34.453163"/>
+        <viz:position x="-194.18521" y="-514.4956"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Paul Rosolie" label="Paul Rosolie">
+        <attvalues>
+          <attvalue for="d2" value="255.26385095157264"/>
+          <attvalue for="d1" value="1.6632899E7"/>
+          <attvalue for="d0" value="Other"/>
+        </attvalues>
+        <viz:size value="33.50996"/>
+        <viz:position x="18.6331" y="277.02737"/>
+        <viz:color r="0" g="241" b="255"/>
+      </node>
+      <node id="Joey Diaz" label="Joey Diaz">
+        <attvalues>
+          <attvalue for="d2" value="253.7710390476116"/>
+          <attvalue for="d1" value="1.6342789E7"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="33.288887"/>
+        <viz:position x="-875.6652" y="-10.3513365"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Dave Smith" label="Dave Smith">
+        <attvalues>
+          <attvalue for="d2" value="253.10577422436938"/>
+          <attvalue for="d1" value="1.6214597E7"/>
+          <attvalue for="d0" value="Political Pundit"/>
+        </attvalues>
+        <viz:size value="33.190372"/>
+        <viz:position x="-404.14996" y="501.88876"/>
+        <viz:color r="128" g="15" b="37"/>
+      </node>
+      <node id="KSI" label="KSI">
+        <attvalues>
+          <attvalue for="d2" value="247.59629079867028"/>
+          <attvalue for="d1" value="1.5178624E7"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="32.37448"/>
+        <viz:position x="17.711348" y="-847.1847"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="George Janko" label="George Janko">
+        <attvalues>
+          <attvalue for="d2" value="243.79714731212104"/>
+          <attvalue for="d1" value="1.4490583E7"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="31.81187"/>
+        <viz:position x="685.2476" y="326.20615"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="Druski" label="Druski">
+        <attvalues>
+          <attvalue for="d2" value="243.79529099227972"/>
+          <attvalue for="d1" value="1.4490252E7"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="31.8116"/>
+        <viz:position x="-850.013" y="-332.54776"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Tim Dillon" label="Tim Dillon">
+        <attvalues>
+          <attvalue for="d2" value="241.71846457414566"/>
+          <attvalue for="d1" value="1.4123082E7"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="31.504044"/>
+        <viz:position x="-515.29944" y="45.219727"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Jordan Peterson" label="Jordan Peterson">
+        <attvalues>
+          <attvalue for="d2" value="236.65905505727855"/>
+          <attvalue for="d1" value="1.3254684E7"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="30.754803"/>
+        <viz:position x="61.16158" y="-13.087481"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="David Kipping" label="David Kipping">
+        <attvalues>
+          <attvalue for="d2" value="229.85518924782906"/>
+          <attvalue for="d1" value="1.2144033E7"/>
+          <attvalue for="d0" value="Intellectual"/>
+        </attvalues>
+        <viz:size value="29.747227"/>
+        <viz:position x="379.13498" y="295.2125"/>
+        <viz:color r="0" g="255" b="103"/>
+      </node>
+      <node id="RFK Jr." label="RFK Jr.">
+        <attvalues>
+          <attvalue for="d2" value="225.95746713097122"/>
+          <attvalue for="d1" value="1.153666E7"/>
+          <attvalue for="d0" value="Politician"/>
+        </attvalues>
+        <viz:size value="29.170017"/>
+        <viz:position x="41.65104" y="386.08878"/>
+        <viz:color r="0" g="255" b="255"/>
+      </node>
+      <node id="Billy Carson" label="Billy Carson">
+        <attvalues>
+          <attvalue for="d2" value="224.69589203626808"/>
+          <attvalue for="d1" value="1.1344501E7"/>
+          <attvalue for="d0" value="Other"/>
+        </attvalues>
+        <viz:size value="28.983196"/>
+        <viz:position x="-178.50122" y="705.951"/>
+        <viz:color r="0" g="241" b="255"/>
+      </node>
+      <node id="Louis C.K." label="Louis C.K.">
+        <attvalues>
+          <attvalue for="d2" value="218.90520142438004"/>
+          <attvalue for="d1" value="1.0489825E7"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="28.12566"/>
+        <viz:position x="-576.5488" y="-214.51709"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Neil deGrasse Tyson" label="Neil deGrasse Tyson">
+        <attvalues>
+          <attvalue for="d2" value="218.40385396867467"/>
+          <attvalue for="d1" value="1.0417917E7"/>
+          <attvalue for="d0" value="Intellectual"/>
+        </attvalues>
+        <viz:size value="28.051414"/>
+        <viz:position x="-210.53772" y="-72.41853"/>
+        <viz:color r="0" g="255" b="103"/>
+      </node>
+      <node id="Coffeezilla" label="Coffeezilla">
+        <attvalues>
+          <attvalue for="d2" value="217.0234212015499"/>
+          <attvalue for="d1" value="1.0221622E7"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="27.846989"/>
+        <viz:position x="-27.485836" y="23.127308"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="Candace Owens" label="Candace Owens">
+        <attvalues>
+          <attvalue for="d2" value="216.9600257654321"/>
+          <attvalue for="d1" value="1.0212667E7"/>
+          <attvalue for="d0" value="Political Pundit"/>
+        </attvalues>
+        <viz:size value="27.837603"/>
+        <viz:position x="707.5548" y="-483.4416"/>
+        <viz:color r="128" g="15" b="37"/>
+      </node>
+      <node id="Sean O'Malley" label="Sean O'Malley">
+        <attvalues>
+          <attvalue for="d2" value="216.80744880749162"/>
+          <attvalue for="d1" value="1.0191136E7"/>
+          <attvalue for="d0" value="Athlete"/>
+        </attvalues>
+        <viz:size value="27.815006"/>
+        <viz:position x="284.4174" y="-512.44293"/>
+        <viz:color r="199" g="224" b="0"/>
+      </node>
+      <node id="Dillon Danis" label="Dillon Danis">
+        <attvalues>
+          <attvalue for="d2" value="213.61304428514194"/>
+          <attvalue for="d1" value="9747277.0"/>
+          <attvalue for="d0" value="Athlete"/>
+        </attvalues>
+        <viz:size value="27.341953"/>
+        <viz:position x="491.01486" y="-617.675"/>
+        <viz:color r="199" g="224" b="0"/>
+      </node>
+      <node id="Stavros Halkias" label="Stavros Halkias">
+        <attvalues>
+          <attvalue for="d2" value="213.30085253105509"/>
+          <attvalue for="d1" value="9704603.0"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="27.295717"/>
+        <viz:position x="-722.16766" y="-420.66495"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Vivek Ramaswamy" label="Vivek Ramaswamy">
+        <attvalues>
+          <attvalue for="d2" value="213.20104890322153"/>
+          <attvalue for="d1" value="9690987.0"/>
+          <attvalue for="d0" value="Politician"/>
+        </attvalues>
+        <viz:size value="27.280937"/>
+        <viz:position x="148.43848" y="587.66455"/>
+        <viz:color r="0" g="255" b="255"/>
+      </node>
+      <node id="Israel Adesanya" label="Israel Adesanya">
+        <attvalues>
+          <attvalue for="d2" value="212.02634062171356"/>
+          <attvalue for="d1" value="9531680.0"/>
+          <attvalue for="d0" value="Athlete"/>
+        </attvalues>
+        <viz:size value="27.106977"/>
+        <viz:position x="-557.9326" y="-672.66345"/>
+        <viz:color r="199" g="224" b="0"/>
+      </node>
+      <node id="Matt McCusker" label="Matt McCusker">
+        <attvalues>
+          <attvalue for="d2" value="210.44950577661135"/>
+          <attvalue for="d1" value="9320597.0"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="26.873465"/>
+        <viz:position x="-414.19702" y="-110.950745"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Ryan Montgomery" label="Ryan Montgomery">
+        <attvalues>
+          <attvalue for="d2" value="210.41143826937216"/>
+          <attvalue for="d1" value="9315540.0"/>
+          <attvalue for="d0" value="Intellectual"/>
+        </attvalues>
+        <viz:size value="26.86783"/>
+        <viz:position x="454.5279" y="990.85846"/>
+        <viz:color r="0" g="255" b="103"/>
+      </node>
+      <node id="Ari Shaffir" label="Ari Shaffir">
+        <attvalues>
+          <attvalue for="d2" value="209.46614209726206"/>
+          <attvalue for="d1" value="9190550.0"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="26.727842"/>
+        <viz:position x="-756.49475" y="-57.235138"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Sam Altman" label="Sam Altman">
+        <attvalues>
+          <attvalue for="d2" value="209.10241235905178"/>
+          <attvalue for="d1" value="9142756.0"/>
+          <attvalue for="d0" value="Other"/>
+        </attvalues>
+        <viz:size value="26.673977"/>
+        <viz:position x="-60.64988" y="322.27362"/>
+        <viz:color r="0" g="241" b="255"/>
+      </node>
+      <node id="DJ Akademiks" label="DJ Akademiks">
+        <attvalues>
+          <attvalue for="d2" value="208.63530027406358"/>
+          <attvalue for="d1" value="9081621.0"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="26.604803"/>
+        <viz:position x="411.7565" y="-550.63715"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="Steven Greer" label="Steven Greer">
+        <attvalues>
+          <attvalue for="d2" value="207.97676022403644"/>
+          <attvalue for="d1" value="8995896.0"/>
+          <attvalue for="d0" value="Other"/>
+        </attvalues>
+        <viz:size value="26.50728"/>
+        <viz:position x="485.81882" y="809.5383"/>
+        <viz:color r="0" g="241" b="255"/>
+      </node>
+      <node id="That Mexican OT" label="That Mexican OT">
+        <attvalues>
+          <attvalue for="d2" value="207.10711936544647"/>
+          <attvalue for="d1" value="8883520.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="26.3785"/>
+        <viz:position x="-428.25146" y="-14.942169"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Andrew Bustamante" label="Andrew Bustamante">
+        <attvalues>
+          <attvalue for="d2" value="205.66597610357815"/>
+          <attvalue for="d1" value="8699361.0"/>
+          <attvalue for="d0" value="Other"/>
+        </attvalues>
+        <viz:size value="26.165081"/>
+        <viz:position x="-256.94562" y="915.8782"/>
+        <viz:color r="0" g="241" b="255"/>
+      </node>
+      <node id="Mark Normand" label="Mark Normand">
+        <attvalues>
+          <attvalue for="d2" value="201.42087335640556"/>
+          <attvalue for="d1" value="8171719.0"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="25.536432"/>
+        <viz:position x="-658.0867" y="-275.58075"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Yeonmi Park" label="Yeonmi Park">
+        <attvalues>
+          <attvalue for="d2" value="199.93089279038486"/>
+          <attvalue for="d1" value="7991710.0"/>
+          <attvalue for="d0" value="Political Pundit"/>
+        </attvalues>
+        <viz:size value="25.315779"/>
+        <viz:position x="49.089664" y="827.1227"/>
+        <viz:color r="128" g="15" b="37"/>
+      </node>
+      <node id="Duncan Trussell" label="Duncan Trussell">
+        <attvalues>
+          <attvalue for="d2" value="199.3937642477706"/>
+          <attvalue for="d1" value="7927472.0"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="25.23624"/>
+        <viz:position x="-644.6184" y="-364.81824"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Andrew Schulz" label="Andrew Schulz">
+        <attvalues>
+          <attvalue for="d2" value="192.67697223936287"/>
+          <attvalue for="d1" value="7153020.0"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="24.241558"/>
+        <viz:position x="274.52594" y="639.1356"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Ryan Garcia" label="Ryan Garcia">
+        <attvalues>
+          <attvalue for="d2" value="191.1066170096767"/>
+          <attvalue for="d1" value="6979546.0"/>
+          <attvalue for="d0" value="Athlete"/>
+        </attvalues>
+        <viz:size value="24.009005"/>
+        <viz:position x="572.014" y="-544.37006"/>
+        <viz:color r="199" g="224" b="0"/>
+      </node>
+      <node id="Sean Strickland" label="Sean Strickland">
+        <attvalues>
+          <attvalue for="d2" value="190.45902862539546"/>
+          <attvalue for="d1" value="6908833.0"/>
+          <attvalue for="d0" value="Athlete"/>
+        </attvalues>
+        <viz:size value="23.913105"/>
+        <viz:position x="-194.82526" y="-636.0258"/>
+        <viz:color r="199" g="224" b="0"/>
+      </node>
+      <node id="Chael Sonnen" label="Chael Sonnen">
+        <attvalues>
+          <attvalue for="d2" value="189.7905170435883"/>
+          <attvalue for="d1" value="6836338.0"/>
+          <attvalue for="d0" value="Athlete"/>
+        </attvalues>
+        <viz:size value="23.814108"/>
+        <viz:position x="-452.44403" y="649.3023"/>
+        <viz:color r="199" g="224" b="0"/>
+      </node>
+      <node id="Andrew Santino" label="Andrew Santino">
+        <attvalues>
+          <attvalue for="d2" value="185.98841797847177"/>
+          <attvalue for="d1" value="6433654.0"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="23.251059"/>
+        <viz:position x="-532.705" y="-115.13557"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Lil Yachty" label="Lil Yachty">
+        <attvalues>
+          <attvalue for="d2" value="184.953404383853"/>
+          <attvalue for="d1" value="6326842.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="23.097786"/>
+        <viz:position x="260.7759" y="-289.52344"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Jelly Roll" label="Jelly Roll">
+        <attvalues>
+          <attvalue for="d2" value="182.8235631116275"/>
+          <attvalue for="d1" value="6110778.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="22.782381"/>
+        <viz:position x="-133.93944" y="-333.58316"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Andrew Huberman" label="Andrew Huberman">
+        <attvalues>
+          <attvalue for="d2" value="182.11470851144585"/>
+          <attvalue for="d1" value="6039974.0"/>
+          <attvalue for="d0" value="Intellectual"/>
+        </attvalues>
+        <viz:size value="22.677408"/>
+        <viz:position x="-483.90268" y="385.4436"/>
+        <viz:color r="0" g="255" b="103"/>
+      </node>
+      <node id="Bert Kreischer" label="Bert Kreischer">
+        <attvalues>
+          <attvalue for="d2" value="180.9604728353868"/>
+          <attvalue for="d1" value="5925857.0"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="22.506477"/>
+        <viz:position x="-110.55767" y="-12.14583"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Tom Segura" label="Tom Segura">
+        <attvalues>
+          <attvalue for="d2" value="179.774645965498"/>
+          <attvalue for="d1" value="5810123.0"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="22.33087"/>
+        <viz:position x="-502.02713" y="-257.96704"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="MrBeast" label="MrBeast">
+        <attvalues>
+          <attvalue for="d2" value="179.58546582715547"/>
+          <attvalue for="d1" value="5791800.0"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="22.302855"/>
+        <viz:position x="83.790504" y="-452.55933"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="Dave Portnoy" label="Dave Portnoy">
+        <attvalues>
+          <attvalue for="d2" value="179.4895000362809"/>
+          <attvalue for="d1" value="5782520.0"/>
+          <attvalue for="d0" value="Other"/>
+        </attvalues>
+        <viz:size value="22.288641"/>
+        <viz:position x="-301.44473" y="-203.76245"/>
+        <viz:color r="0" g="241" b="255"/>
+      </node>
+      <node id="Bassem Youssef" label="Bassem Youssef">
+        <attvalues>
+          <attvalue for="d2" value="178.6455434824511"/>
+          <attvalue for="d1" value="5701335.0"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="22.163664"/>
+        <viz:position x="385.1141" y="182.96048"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Post Malone" label="Post Malone">
+        <attvalues>
+          <attvalue for="d2" value="178.5462744911766"/>
+          <attvalue for="d1" value="5691836.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="22.148962"/>
+        <viz:position x="-470.7772" y="-183.72266"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Matt Walsh" label="Matt Walsh">
+        <attvalues>
+          <attvalue for="d2" value="176.80579207494165"/>
+          <attvalue for="d1" value="5527000.0"/>
+          <attvalue for="d0" value="Political Pundit"/>
+        </attvalues>
+        <viz:size value="21.89122"/>
+        <viz:position x="425.88065" y="-156.2517"/>
+        <viz:color r="128" g="15" b="37"/>
+      </node>
+      <node id="Tulsi Gabbard" label="Tulsi Gabbard">
+        <attvalues>
+          <attvalue for="d2" value="176.24865850797266"/>
+          <attvalue for="d1" value="5474916.0"/>
+          <attvalue for="d0" value="Politician"/>
+        </attvalues>
+        <viz:size value="21.808714"/>
+        <viz:position x="150.52467" y="703.4895"/>
+        <viz:color r="0" g="255" b="255"/>
+      </node>
+      <node id="Bernie Sanders" label="Bernie Sanders">
+        <attvalues>
+          <attvalue for="d2" value="175.94783664176046"/>
+          <attvalue for="d1" value="5446930.0"/>
+          <attvalue for="d0" value="Politician"/>
+        </attvalues>
+        <viz:size value="21.764166"/>
+        <viz:position x="-234.42647" y="-381.81516"/>
+        <viz:color r="0" g="255" b="255"/>
+      </node>
+      <node id="Trevor Wallace" label="Trevor Wallace">
+        <attvalues>
+          <attvalue for="d2" value="175.58324041009075"/>
+          <attvalue for="d1" value="5413139.0"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="21.71017"/>
+        <viz:position x="-770.82007" y="-257.8132"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Hulk Hogan" label="Hulk Hogan">
+        <attvalues>
+          <attvalue for="d2" value="174.20371832410973"/>
+          <attvalue for="d1" value="5286549.0"/>
+          <attvalue for="d0" value="Athlete"/>
+        </attvalues>
+        <viz:size value="21.50588"/>
+        <viz:position x="191.0454" y="-388.41708"/>
+        <viz:color r="199" g="224" b="0"/>
+      </node>
+      <node id="Ice Cube" label="Ice Cube">
+        <attvalues>
+          <attvalue for="d2" value="174.1308413858901"/>
+          <attvalue for="d1" value="5279917.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="21.495085"/>
+        <viz:position x="343.12332" y="-112.89814"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Ben van Kerkwyk" label="Ben van Kerkwyk">
+        <attvalues>
+          <attvalue for="d2" value="173.89235646237717"/>
+          <attvalue for="d1" value="5258253.0"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="21.459772"/>
+        <viz:position x="-723.93744" y="407.28427"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="JiDion" label="JiDion">
+        <attvalues>
+          <attvalue for="d2" value="173.36611518366485"/>
+          <attvalue for="d1" value="5210659.0"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="21.38184"/>
+        <viz:position x="210.6343" y="-855.16205"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="Noland Arbaugh" label="Noland Arbaugh">
+        <attvalues>
+          <attvalue for="d2" value="171.59589420430086"/>
+          <attvalue for="d1" value="5052667.0"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="21.11969"/>
+        <viz:position x="30.509218" y="79.25282"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="Sal Vulcano" label="Sal Vulcano">
+        <attvalues>
+          <attvalue for="d2" value="170.2436759258711"/>
+          <attvalue for="d1" value="4934157.0"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="20.919445"/>
+        <viz:position x="-387.6063" y="-190.58144"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Patrick Bet-David" label="Patrick Bet-David">
+        <attvalues>
+          <attvalue for="d2" value="169.6480839988273"/>
+          <attvalue for="d1" value="4882552.0"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="20.831242"/>
+        <viz:position x="-614.7013" y="-19.252333"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="xQc" label="xQc">
+        <attvalues>
+          <attvalue for="d2" value="168.08116826068616"/>
+          <attvalue for="d1" value="4748508.0"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="20.599201"/>
+        <viz:position x="337.8599" y="-931.191"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="Mark Cuban" label="Mark Cuban">
+        <attvalues>
+          <attvalue for="d2" value="168.02731273623982"/>
+          <attvalue for="d1" value="4743945.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="20.591225"/>
+        <viz:position x="-235.06683" y="-289.72842"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Cliffe Knechtle" label="Cliffe Knechtle">
+        <attvalues>
+          <attvalue for="d2" value="167.7128029654638"/>
+          <attvalue for="d1" value="4717356.0"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="20.544651"/>
+        <viz:position x="661.35187" y="192.78156"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="Rice Gum" label="Rice Gum">
+        <attvalues>
+          <attvalue for="d2" value="167.61941436403092"/>
+          <attvalue for="d1" value="4709480.0"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="20.53082"/>
+        <viz:position x="669.39355" y="-664.62756"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="Michael Malice" label="Michael Malice">
+        <attvalues>
+          <attvalue for="d2" value="167.0590824451141"/>
+          <attvalue for="d1" value="4662408.0"/>
+          <attvalue for="d0" value="Political Pundit"/>
+        </attvalues>
+        <viz:size value="20.447842"/>
+        <viz:position x="-218.66486" y="494.15875"/>
+        <viz:color r="128" g="15" b="37"/>
+      </node>
+      <node id="Stephen A. Smith" label="Stephen A. Smith">
+        <attvalues>
+          <attvalue for="d2" value="166.58632839190298"/>
+          <attvalue for="d1" value="4622938.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="20.37783"/>
+        <viz:position x="446.2801" y="63.283417"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Annie Jacobsen" label="Annie Jacobsen">
+        <attvalues>
+          <attvalue for="d2" value="166.28354308386835"/>
+          <attvalue for="d1" value="4597776.0"/>
+          <attvalue for="d0" value="Intellectual"/>
+        </attvalues>
+        <viz:size value="20.33299"/>
+        <viz:position x="-20.497118" y="692.9045"/>
+        <viz:color r="0" g="255" b="103"/>
+      </node>
+      <node id="Kyle Forgeard" label="Kyle Forgeard">
+        <attvalues>
+          <attvalue for="d2" value="163.00523149305138"/>
+          <attvalue for="d1" value="4331164.0"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="19.847511"/>
+        <viz:position x="167.98878" y="-985.0379"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="Sketch" label="Sketch">
+        <attvalues>
+          <attvalue for="d2" value="159.67459907930873"/>
+          <attvalue for="d1" value="4071060.0"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="19.354282"/>
+        <viz:position x="57.57201" y="-980.85596"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="Sexxy Red" label="Sexxy Red">
+        <attvalues>
+          <attvalue for="d2" value="158.40777539800425"/>
+          <attvalue for="d1" value="3974930.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="19.166681"/>
+        <viz:position x="-98.4878" y="-934.58984"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Bret Weinstein" label="Bret Weinstein">
+        <attvalues>
+          <attvalue for="d2" value="157.63004292971908"/>
+          <attvalue for="d1" value="3916670.0"/>
+          <attvalue for="d0" value="Other"/>
+        </attvalues>
+        <viz:size value="19.05151"/>
+        <viz:position x="11.028717" y="585.5996"/>
+        <viz:color r="0" g="241" b="255"/>
+      </node>
+      <node id="Erik Prince" label="Erik Prince">
+        <attvalues>
+          <attvalue for="d2" value="154.26704943554262"/>
+          <attvalue for="d1" value="3671297.0"/>
+          <attvalue for="d0" value="Other"/>
+        </attvalues>
+        <viz:size value="18.553486"/>
+        <viz:position x="370.14792" y="1046.1984"/>
+        <viz:color r="0" g="241" b="255"/>
+      </node>
+      <node id="Konstantin Kisin" label="Konstantin Kisin">
+        <attvalues>
+          <attvalue for="d2" value="154.1998725972873"/>
+          <attvalue for="d1" value="3666503.0"/>
+          <attvalue for="d0" value="Political Pundit"/>
+        </attvalues>
+        <viz:size value="18.54354"/>
+        <viz:position x="245.13774" y="436.43616"/>
+        <viz:color r="128" g="15" b="37"/>
+      </node>
+      <node id="Randall Carlson" label="Randall Carlson">
+        <attvalues>
+          <attvalue for="d2" value="153.6230449997199"/>
+          <attvalue for="d1" value="3625510.0"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="18.458117"/>
+        <viz:position x="235.94957" y="771.12946"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="Casey Neistat" label="Casey Neistat">
+        <attvalues>
+          <attvalue for="d2" value="153.40925928900333"/>
+          <attvalue for="d1" value="3610395.0"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="18.42646"/>
+        <viz:position x="-786.7918" y="-155.60248"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="Nick Irving" label="Nick Irving">
+        <attvalues>
+          <attvalue for="d2" value="152.47941314860566"/>
+          <attvalue for="d1" value="3545142.0"/>
+          <attvalue for="d0" value="Other"/>
+        </attvalues>
+        <viz:size value="18.288757"/>
+        <viz:position x="358.39023" y="966.3353"/>
+        <viz:color r="0" g="241" b="255"/>
+      </node>
+      <node id="Mike Rowe" label="Mike Rowe">
+        <attvalues>
+          <attvalue for="d2" value="152.07778221226235"/>
+          <attvalue for="d1" value="3517202.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="18.229282"/>
+        <viz:position x="-160.55597" y="-214.22017"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Jimmy Dore" label="Jimmy Dore">
+        <attvalues>
+          <attvalue for="d2" value="149.93177638236503"/>
+          <attvalue for="d1" value="3370397.0"/>
+          <attvalue for="d0" value="Political Pundit"/>
+        </attvalues>
+        <viz:size value="17.911484"/>
+        <viz:position x="68.42151" y="517.96106"/>
+        <viz:color r="128" g="15" b="37"/>
+      </node>
+      <node id="Chris Bumstead" label="Chris Bumstead">
+        <attvalues>
+          <attvalue for="d2" value="147.79820928845098"/>
+          <attvalue for="d1" value="3228550.0"/>
+          <attvalue for="d0" value="Athlete"/>
+        </attvalues>
+        <viz:size value="17.595526"/>
+        <viz:position x="751.37836" y="124.346664"/>
+        <viz:color r="199" g="224" b="0"/>
+      </node>
+      <node id="Ralph Barbosa" label="Ralph Barbosa">
+        <attvalues>
+          <attvalue for="d2" value="147.76200487849206"/>
+          <attvalue for="d1" value="3226178.0"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="17.590164"/>
+        <viz:position x="-780.582" y="344.98572"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Alex Volkanovski" label="Alex Volkanovski">
+        <attvalues>
+          <attvalue for="d2" value="142.4092044980255"/>
+          <attvalue for="d1" value="2888113.0"/>
+          <attvalue for="d0" value="Athlete"/>
+        </attvalues>
+        <viz:size value="16.797476"/>
+        <viz:position x="161.18944" y="-493.38596"/>
+        <viz:color r="199" g="224" b="0"/>
+      </node>
+      <node id="Ric Flair" label="Ric Flair">
+        <attvalues>
+          <attvalue for="d2" value="142.1434937761657"/>
+          <attvalue for="d1" value="2871977.0"/>
+          <attvalue for="d0" value="Athlete"/>
+        </attvalues>
+        <viz:size value="16.758125"/>
+        <viz:position x="-326.90527" y="-676.1616"/>
+        <viz:color r="199" g="224" b="0"/>
+      </node>
+      <node id="Eric Hecker" label="Eric Hecker">
+        <attvalues>
+          <attvalue for="d2" value="142.0747804229031"/>
+          <attvalue for="d1" value="2867814.0"/>
+          <attvalue for="d0" value="Other"/>
+        </attvalues>
+        <viz:size value="16.747952"/>
+        <viz:position x="473.4038" y="899.2266"/>
+        <viz:color r="0" g="241" b="255"/>
+      </node>
+      <node id="Chris Distefano" label="Chris Distefano">
+        <attvalues>
+          <attvalue for="d2" value="141.41760405865472"/>
+          <attvalue for="d1" value="2828202.0"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="16.65063"/>
+        <viz:position x="-851.547" y="301.00967"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Luis Elizondo" label="Luis Elizondo">
+        <attvalues>
+          <attvalue for="d2" value="140.5029022167017"/>
+          <attvalue for="d1" value="2773677.0"/>
+          <attvalue for="d0" value="Other"/>
+        </attvalues>
+        <viz:size value="16.515173"/>
+        <viz:position x="253.02963" y="507.9322"/>
+        <viz:color r="0" g="241" b="255"/>
+      </node>
+      <node id="Georges St-Pierre" label="Georges St-Pierre">
+        <attvalues>
+          <attvalue for="d2" value="140.0331554126763"/>
+          <attvalue for="d1" value="2745950.0"/>
+          <attvalue for="d0" value="Athlete"/>
+        </attvalues>
+        <viz:size value="16.44561"/>
+        <viz:position x="-271.8786" y="-609.10126"/>
+        <viz:color r="199" g="224" b="0"/>
+      </node>
+      <node id="Mike Majlak" label="Mike Majlak">
+        <attvalues>
+          <attvalue for="d2" value="139.97588019851707"/>
+          <attvalue for="d1" value="2742582.0"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="16.437126"/>
+        <viz:position x="671.8712" y="-387.2315"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="Mike Tyson" label="Mike Tyson">
+        <attvalues>
+          <attvalue for="d2" value="139.96494020039935"/>
+          <attvalue for="d1" value="2741939.0"/>
+          <attvalue for="d0" value="Athlete"/>
+        </attvalues>
+        <viz:size value="16.435509"/>
+        <viz:position x="589.85187" y="252.93314"/>
+        <viz:color r="199" g="224" b="0"/>
+      </node>
+      <node id="Chamath Palihapitiya" label="Chamath Palihapitiya">
+        <attvalues>
+          <attvalue for="d2" value="139.76564533307976"/>
+          <attvalue for="d1" value="2730243.0"/>
+          <attvalue for="d0" value="Other"/>
+        </attvalues>
+        <viz:size value="16.405994"/>
+        <viz:position x="20.19282" y="146.5387"/>
+        <viz:color r="0" g="241" b="255"/>
+      </node>
+      <node id="Kid Rock" label="Kid Rock">
+        <attvalues>
+          <attvalue for="d2" value="137.55566671655095"/>
+          <attvalue for="d1" value="2602768.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="16.078722"/>
+        <viz:position x="-328.21008" y="-110.38253"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Kamaru Usman" label="Kamaru Usman">
+        <attvalues>
+          <attvalue for="d2" value="136.7093131500081"/>
+          <attvalue for="d1" value="2555020.0"/>
+          <attvalue for="d0" value="Athlete"/>
+        </attvalues>
+        <viz:size value="15.953386"/>
+        <viz:position x="444.56738" y="-24.249308"/>
+        <viz:color r="199" g="224" b="0"/>
+      </node>
+      <node id="Cody Rhodes" label="Cody Rhodes">
+        <attvalues>
+          <attvalue for="d2" value="136.31946237858017"/>
+          <attvalue for="d1" value="2533224.0"/>
+          <attvalue for="d0" value="Athlete"/>
+        </attvalues>
+        <viz:size value="15.895654"/>
+        <viz:position x="-864.9892" y="-114.72646"/>
+        <viz:color r="199" g="224" b="0"/>
+      </node>
+      <node id="FaZe Banks" label="FaZe Banks">
+        <attvalues>
+          <attvalue for="d2" value="134.3551874881784"/>
+          <attvalue for="d1" value="2425288.0"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="15.604768"/>
+        <viz:position x="259.91995" y="-929.9338"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="Action Bronson" label="Action Bronson">
+        <attvalues>
+          <attvalue for="d2" value="134.2107584123548"/>
+          <attvalue for="d1" value="2417475.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="15.58338"/>
+        <viz:position x="-620.60693" y="369.25003"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Craig Jones" label="Craig Jones">
+        <attvalues>
+          <attvalue for="d2" value="133.6036218495333"/>
+          <attvalue for="d1" value="2384815.0"/>
+          <attvalue for="d0" value="Athlete"/>
+        </attvalues>
+        <viz:size value="15.493469"/>
+        <viz:position x="-624.4321" y="448.42297"/>
+        <viz:color r="199" g="224" b="0"/>
+      </node>
+      <node id="Jim Gaffigan" label="Jim Gaffigan">
+        <attvalues>
+          <attvalue for="d2" value="132.22186822346615"/>
+          <attvalue for="d1" value="2311585.0"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="15.288848"/>
+        <viz:position x="-575.81995" y="-298.258"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Tim Kennedy" label="Tim Kennedy">
+        <attvalues>
+          <attvalue for="d2" value="130.95365763624798"/>
+          <attvalue for="d1" value="2245706.0"/>
+          <attvalue for="d0" value="Athlete"/>
+        </attvalues>
+        <viz:size value="15.10104"/>
+        <viz:position x="11.932666" y="981.9084"/>
+        <viz:color r="199" g="224" b="0"/>
+      </node>
+      <node id="Dr. Phil" label="Dr. Phil">
+        <attvalues>
+          <attvalue for="d2" value="128.318319864331"/>
+          <attvalue for="d1" value="2112837.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="14.710777"/>
+        <viz:position x="268.5543" y="-193.4959"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Jynxzi" label="Jynxzi">
+        <attvalues>
+          <attvalue for="d2" value="127.67896436682358"/>
+          <attvalue for="d1" value="2081412.0"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="14.616096"/>
+        <viz:position x="624.4031" y="-733.0512"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="Dax Shepard" label="Dax Shepard">
+        <attvalues>
+          <attvalue for="d2" value="126.37241793885197"/>
+          <attvalue for="d1" value="2018166.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="14.42261"/>
+        <viz:position x="-865.6749" y="-211.4917"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Mike Baker" label="Mike Baker">
+        <attvalues>
+          <attvalue for="d2" value="125.65666165643478"/>
+          <attvalue for="d1" value="1984068.0"/>
+          <attvalue for="d0" value="Other"/>
+        </attvalues>
+        <viz:size value="14.316616"/>
+        <viz:position x="-7.37492" y="498.24063"/>
+        <viz:color r="0" g="241" b="255"/>
+      </node>
+      <node id="Yung Gravy" label="Yung Gravy">
+        <attvalues>
+          <attvalue for="d2" value="124.4676668562309"/>
+          <attvalue for="d1" value="1928278.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="14.140539"/>
+        <viz:position x="-277.2364" y="-750.1401"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Myron Gaines" label="Myron Gaines">
+        <attvalues>
+          <attvalue for="d2" value="123.56861021815124"/>
+          <attvalue for="d1" value="1886794.0"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="14.0074"/>
+        <viz:position x="823.34576" y="-114.00063"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="David Pakman" label="David Pakman">
+        <attvalues>
+          <attvalue for="d2" value="122.59986303626916"/>
+          <attvalue for="d1" value="1842765.0"/>
+          <attvalue for="d0" value="Political Pundit"/>
+        </attvalues>
+        <viz:size value="13.863938"/>
+        <viz:position x="531.3236" y="350.3893"/>
+        <viz:color r="128" g="15" b="37"/>
+      </node>
+      <node id="Bradley Martyn" label="Bradley Martyn">
+        <attvalues>
+          <attvalue for="d2" value="122.07916120143483"/>
+          <attvalue for="d1" value="1819385.0"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="13.786829"/>
+        <viz:position x="581.6793" y="-673.9"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="Max Tegmark" label="Max Tegmark">
+        <attvalues>
+          <attvalue for="d2" value="121.330019096634"/>
+          <attvalue for="d1" value="1786096.0"/>
+          <attvalue for="d0" value="Intellectual"/>
+        </attvalues>
+        <viz:size value="13.675888"/>
+        <viz:position x="326.6656" y="358.7973"/>
+        <viz:color r="0" g="255" b="103"/>
+      </node>
+      <node id="Pete Hegseth" label="Pete Hegseth">
+        <attvalues>
+          <attvalue for="d2" value="119.96299785077322"/>
+          <attvalue for="d1" value="1726402.0"/>
+          <attvalue for="d0" value="Politician"/>
+        </attvalues>
+        <viz:size value="13.473449"/>
+        <viz:position x="327.9687" y="830.92957"/>
+        <viz:color r="0" g="255" b="255"/>
+      </node>
+      <node id="Mike Vecchione" label="Mike Vecchione">
+        <attvalues>
+          <attvalue for="d2" value="119.43395450612995"/>
+          <attvalue for="d1" value="1703662.0"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="13.395104"/>
+        <viz:position x="-654.6404" y="-471.3237"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Michael Shellenberger" label="Michael Shellenberger">
+        <attvalues>
+          <attvalue for="d2" value="119.37258175158443"/>
+          <attvalue for="d1" value="1701037.0"/>
+          <attvalue for="d0" value="Political Pundit"/>
+        </attvalues>
+        <viz:size value="13.386015"/>
+        <viz:position x="-56.068485" y="892.7041"/>
+        <viz:color r="128" g="15" b="37"/>
+      </node>
+      <node id="Dwayne Johnson" label="Dwayne Johnson">
+        <attvalues>
+          <attvalue for="d2" value="118.57589777789055"/>
+          <attvalue for="d1" value="1667206.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="13.268035"/>
+        <viz:position x="180.92656" y="492.41162"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Colby Covington" label="Colby Covington">
+        <attvalues>
+          <attvalue for="d2" value="117.86868951544491"/>
+          <attvalue for="d1" value="1637553.0"/>
+          <attvalue for="d0" value="Athlete"/>
+        </attvalues>
+        <viz:size value="13.163306"/>
+        <viz:position x="669.5766" y="-29.814333"/>
+        <viz:color r="199" g="224" b="0"/>
+      </node>
+      <node id="Marc Andreessen" label="Marc Andreessen">
+        <attvalues>
+          <attvalue for="d2" value="116.73876994144375"/>
+          <attvalue for="d1" value="1590909.0"/>
+          <attvalue for="d0" value="Other"/>
+        </attvalues>
+        <viz:size value="12.995977"/>
+        <viz:position x="2.2137282" y="198.92578"/>
+        <viz:color r="0" g="241" b="255"/>
+      </node>
+      <node id="Sebastian Maniscalco" label="Sebastian Maniscalco">
+        <attvalues>
+          <attvalue for="d2" value="116.31683596424358"/>
+          <attvalue for="d1" value="1573721.0"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="12.933494"/>
+        <viz:position x="-550.86304" y="242.40906"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Nick Kyrgios" label="Nick Kyrgios">
+        <attvalues>
+          <attvalue for="d2" value="114.55756911273143"/>
+          <attvalue for="d1" value="1503389.0"/>
+          <attvalue for="d0" value="Athlete"/>
+        </attvalues>
+        <viz:size value="12.672967"/>
+        <viz:position x="-193.72534" y="-731.9054"/>
+        <viz:color r="199" g="224" b="0"/>
+      </node>
+      <node id="Neal Brennan" label="Neal Brennan">
+        <attvalues>
+          <attvalue for="d2" value="113.56490042548013"/>
+          <attvalue for="d1" value="1464645.0"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="12.525964"/>
+        <viz:position x="-614.8447" y="303.6613"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Brian Simpson" label="Brian Simpson">
+        <attvalues>
+          <attvalue for="d2" value="112.37100605989237"/>
+          <attvalue for="d1" value="1418936.0"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="12.349162"/>
+        <viz:position x="-554.54425" y="310.8298"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Sara Walker" label="Sara Walker">
+        <attvalues>
+          <attvalue for="d2" value="112.11679992081642"/>
+          <attvalue for="d1" value="1409328.0"/>
+          <attvalue for="d0" value="Intellectual"/>
+        </attvalues>
+        <viz:size value="12.311516"/>
+        <viz:position x="-43.253044" y="224.1618"/>
+        <viz:color r="0" g="255" b="103"/>
+      </node>
+      <node id="Cenk Uygur" label="Cenk Uygur">
+        <attvalues>
+          <attvalue for="d2" value="112.10563481858642"/>
+          <attvalue for="d1" value="1408907.0"/>
+          <attvalue for="d0" value="Political Pundit"/>
+        </attvalues>
+        <viz:size value="12.309864"/>
+        <viz:position x="448.66513" y="335.5212"/>
+        <viz:color r="128" g="15" b="37"/>
+      </node>
+      <node id="Machine Gun Kelly" label="Machine Gun Kelly">
+        <attvalues>
+          <attvalue for="d2" value="112.00156779267952"/>
+          <attvalue for="d1" value="1404987.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="12.294453"/>
+        <viz:position x="412.03192" y="-987.5333"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Dennis Quaid" label="Dennis Quaid">
+        <attvalues>
+          <attvalue for="d2" value="111.92205993276166"/>
+          <attvalue for="d1" value="1401997.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="12.282677"/>
+        <viz:position x="122.30715" y="464.06067"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Luke Combs" label="Luke Combs">
+        <attvalues>
+          <attvalue for="d2" value="111.84499710412535"/>
+          <attvalue for="d1" value="1399103.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="12.271266"/>
+        <viz:position x="-367.3991" y="-262.19138"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Liver King" label="Liver King">
+        <attvalues>
+          <attvalue for="d2" value="110.770458745092"/>
+          <attvalue for="d1" value="1359164.0"/>
+          <attvalue for="d0" value="Influencer"/>
+        </attvalues>
+        <viz:size value="12.112139"/>
+        <viz:position x="-555.83405" y="563.21027"/>
+        <viz:color r="255" g="105" b="0"/>
+      </node>
+      <node id="Gary Brecka" label="Gary Brecka">
+        <attvalues>
+          <attvalue for="d2" value="110.09960674698115"/>
+          <attvalue for="d1" value="1334619.0"/>
+          <attvalue for="d0" value="Intellectual"/>
+        </attvalues>
+        <viz:size value="12.012793"/>
+        <viz:position x="335.55374" y="-208.16974"/>
+        <viz:color r="0" g="255" b="103"/>
+      </node>
+      <node id="Francis Suarez" label="Francis Suarez">
+        <attvalues>
+          <attvalue for="d2" value="109.88646688263722"/>
+          <attvalue for="d1" value="1326883.0"/>
+          <attvalue for="d0" value="Politician"/>
+        </attvalues>
+        <viz:size value="11.98123"/>
+        <viz:position x="686.7147" y="53.744717"/>
+        <viz:color r="0" g="255" b="255"/>
+      </node>
+      <node id="David Blaine" label="David Blaine">
+        <attvalues>
+          <attvalue for="d2" value="107.77479363340038"/>
+          <attvalue for="d1" value="1251848.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="11.668514"/>
+        <viz:position x="-19.30647" y="-478.69012"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Whitney Cummings" label="Whitney Cummings">
+        <attvalues>
+          <attvalue for="d2" value="106.01088650500249"/>
+          <attvalue for="d1" value="1191383.0"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="11.407301"/>
+        <viz:position x="-687.21594" y="337.326"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Bjorn Lomborg" label="Bjorn Lomborg">
+        <attvalues>
+          <attvalue for="d2" value="105.28370741787592"/>
+          <attvalue for="d1" value="1167034.0"/>
+          <attvalue for="d0" value="Intellectual"/>
+        </attvalues>
+        <viz:size value="11.299614"/>
+        <viz:position x="185.73009" y="371.6438"/>
+        <viz:color r="0" g="255" b="103"/>
+      </node>
+      <node id="Avi Loeb" label="Avi Loeb">
+        <attvalues>
+          <attvalue for="d2" value="103.25265525986137"/>
+          <attvalue for="d1" value="1100788.0"/>
+          <attvalue for="d0" value="Intellectual"/>
+        </attvalues>
+        <viz:size value="10.998838"/>
+        <viz:position x="340.772" y="895.11804"/>
+        <viz:color r="0" g="255" b="103"/>
+      </node>
+      <node id="Bryan Callen" label="Bryan Callen">
+        <attvalues>
+          <attvalue for="d2" value="100.03502106715011"/>
+          <attvalue for="d1" value="1001051.0"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="10.522343"/>
+        <viz:position x="236.80846" y="568.0913"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Rick Ross" label="Rick Ross">
+        <attvalues>
+          <attvalue for="d2" value="99.86217680159258"/>
+          <attvalue for="d1" value="995871.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="10.496746"/>
+        <viz:position x="338.53802" y="-999.0234"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Trevor Bauer" label="Trevor Bauer">
+        <attvalues>
+          <attvalue for="d2" value="99.53265259991042"/>
+          <attvalue for="d1" value="986045.0"/>
+          <attvalue for="d0" value="Athlete"/>
+        </attvalues>
+        <viz:size value="10.447948"/>
+        <viz:position x="483.38675" y="266.681"/>
+        <viz:color r="199" g="224" b="0"/>
+      </node>
+      <node id="Aljamain Sterling" label="Aljamain Sterling">
+        <attvalues>
+          <attvalue for="d2" value="97.2113576007343"/>
+          <attvalue for="d1" value="918652.0"/>
+          <attvalue for="d0" value="Athlete"/>
+        </attvalues>
+        <viz:size value="10.104191"/>
+        <viz:position x="303.81616" y="-813.09564"/>
+        <viz:color r="199" g="224" b="0"/>
+      </node>
+      <node id="Pauly Shore" label="Pauly Shore">
+        <attvalues>
+          <attvalue for="d2" value="96.90538831608106"/>
+          <attvalue for="d1" value="910005.0"/>
+          <attvalue for="d0" value="Comedian"/>
+        </attvalues>
+        <viz:size value="10.058882"/>
+        <viz:position x="-430.5858" y="-247.05627"/>
+        <viz:color r="0" g="103" b="94"/>
+      </node>
+      <node id="Buck Sexton" label="Buck Sexton">
+        <attvalues>
+          <attvalue for="d2" value="96.35455552152133"/>
+          <attvalue for="d1" value="894575.0"/>
+          <attvalue for="d0" value="Political Pundit"/>
+        </attvalues>
+        <viz:size value="9.977309"/>
+        <viz:position x="399.1024" y="902.97217"/>
+        <viz:color r="128" g="15" b="37"/>
+      </node>
+      <node id="Gina Carano" label="Gina Carano">
+        <attvalues>
+          <attvalue for="d2" value="94.99708208950976"/>
+          <attvalue for="d1" value="857296.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="9.776281"/>
+        <viz:position x="395.33023" y="834.6375"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Danny Philippou" label="Danny Philippou">
+        <attvalues>
+          <attvalue for="d2" value="88.62774279114649"/>
+          <attvalue for="d1" value="696160.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="8.8330555"/>
+        <viz:position x="-69.50874" y="-437.661"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Michael Philippou" label="Michael Philippou">
+        <attvalues>
+          <attvalue for="d2" value="88.62774279114649"/>
+          <attvalue for="d1" value="696160.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="8.8330555"/>
+        <viz:position x="-73.3039" y="-523.2303"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Anuel AA" label="Anuel AA">
+        <attvalues>
+          <attvalue for="d2" value="84.2428253362501"/>
+          <attvalue for="d1" value="597859.0"/>
+          <attvalue for="d0" value="Celebrity"/>
+        </attvalues>
+        <viz:size value="8.183699"/>
+        <viz:position x="301.56055" y="-869.8391"/>
+        <viz:color r="255" g="132" b="255"/>
+      </node>
+      <node id="Mike Benz" label="Mike Benz">
+        <attvalues>
+          <attvalue for="d2" value="81.9878526523156"/>
+          <attvalue for="d1" value="551123.0"/>
+          <attvalue for="d0" value="Political Pundit"/>
+        </attvalues>
+        <viz:size value="7.8497643"/>
+        <viz:position x="304.99127" y="1039.9631"/>
+        <viz:color r="128" g="15" b="37"/>
+      </node>
+      <node id="Kyle Kulinski" label="Kyle Kulinski">
+        <attvalues>
+          <attvalue for="d2" value="79.94767411581826"/>
+          <attvalue for="d1" value="510996.0"/>
+          <attvalue for="d0" value="Political Pundit"/>
+        </attvalues>
+        <viz:size value="7.547636"/>
+        <viz:position x="-67.56764" y="549.6997"/>
+        <viz:color r="128" g="15" b="37"/>
+      </node>
+      <node id="Rick Doblin" label="Rick Doblin">
+        <attvalues>
+          <attvalue for="d2" value="55.99149530710123"/>
+          <attvalue for="d1" value="175536.0"/>
+          <attvalue for="d0" value="Intellectual"/>
+        </attvalues>
+        <viz:size value="4.0"/>
+        <viz:position x="19.67804" y="913.15845"/>
+        <viz:color r="0" g="255" b="103"/>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Donald Trump" target="Adin Live"/>
+      <edge id="1" source="Donald Trump" target="FLAGRANT"/>
+      <edge id="2" source="Donald Trump" target="FULL SEND PODCAST"/>
+      <edge id="3" source="Donald Trump" target="IMPAULSIVE"/>
+      <edge id="4" source="Donald Trump" target="Lex Fridman"/>
+      <edge id="5" source="Donald Trump" target="PBD Podcast"/>
+      <edge id="6" source="Donald Trump" target="PowerfulJRE"/>
+      <edge id="7" source="Donald Trump" target="Shawn Ryan Show"/>
+      <edge id="8" source="Donald Trump" target="Theo Von"/>
+      <edge id="9" source="Theo Von" target="FULL SEND PODCAST"/>
+      <edge id="10" source="Theo Von" target="PowerfulJRE"/>
+      <edge id="11" source="Andrew Tate" target="Adin Live"/>
+      <edge id="12" source="Andrew Tate" target="FULL SEND PODCAST"/>
+      <edge id="13" source="Andrew Tate" target="PBD Podcast"/>
+      <edge id="14" source="Tucker Carlson" target="FULL SEND PODCAST"/>
+      <edge id="15" source="Tucker Carlson" target="Lex Fridman"/>
+      <edge id="16" source="Tucker Carlson" target="PowerfulJRE"/>
+      <edge id="17" source="Tucker Carlson" target="Shawn Ryan Show"/>
+      <edge id="18" source="Tucker Carlson" target="Theo Von"/>
+      <edge id="19" source="Elon Musk" target="Lex Fridman"/>
+      <edge id="20" source="Elon Musk" target="PowerfulJRE"/>
+      <edge id="21" source="Shane Gillis" target="FLAGRANT"/>
+      <edge id="22" source="Shane Gillis" target="PowerfulJRE"/>
+      <edge id="23" source="Shane Gillis" target="Theo Von"/>
+      <edge id="24" source="JD Vance" target="FULL SEND PODCAST"/>
+      <edge id="25" source="JD Vance" target="PowerfulJRE"/>
+      <edge id="26" source="JD Vance" target="Shawn Ryan Show"/>
+      <edge id="27" source="JD Vance" target="Theo Von"/>
+      <edge id="28" source="Ben Shapiro" target="FULL SEND PODCAST"/>
+      <edge id="29" source="Ben Shapiro" target="Lex Fridman"/>
+      <edge id="30" source="Dana White" target="Adin Live"/>
+      <edge id="31" source="Dana White" target="FLAGRANT"/>
+      <edge id="32" source="Dana White" target="FULL SEND PODCAST"/>
+      <edge id="33" source="Dana White" target="Lex Fridman"/>
+      <edge id="34" source="Dana White" target="Theo Von"/>
+      <edge id="35" source="Kai Cenat" target="Adin Live"/>
+      <edge id="36" source="Kai Cenat" target="FULL SEND PODCAST"/>
+      <edge id="37" source="Jake Paul" target="Adin Live"/>
+      <edge id="38" source="Jake Paul" target="FULL SEND PODCAST"/>
+      <edge id="39" source="Jake Paul" target="IMPAULSIVE"/>
+      <edge id="40" source="Graham Hancock" target="FLAGRANT"/>
+      <edge id="41" source="Graham Hancock" target="Lex Fridman"/>
+      <edge id="42" source="Graham Hancock" target="PBD Podcast"/>
+      <edge id="43" source="Graham Hancock" target="PowerfulJRE"/>
+      <edge id="44" source="iShowSpeed" target="Adin Live"/>
+      <edge id="45" source="iShowSpeed" target="FULL SEND PODCAST"/>
+      <edge id="46" source="iShowSpeed" target="IMPAULSIVE"/>
+      <edge id="47" source="Destiny" target="Adin Live"/>
+      <edge id="48" source="Destiny" target="Lex Fridman"/>
+      <edge id="49" source="Destiny" target="PBD Podcast"/>
+      <edge id="50" source="Bobby Lee" target="IMPAULSIVE"/>
+      <edge id="51" source="Bobby Lee" target="PowerfulJRE"/>
+      <edge id="52" source="Bobby Lee" target="Theo Von"/>
+      <edge id="53" source="Paul Rosolie" target="Lex Fridman"/>
+      <edge id="54" source="Paul Rosolie" target="PowerfulJRE"/>
+      <edge id="55" source="Joey Diaz" target="FLAGRANT"/>
+      <edge id="56" source="Joey Diaz" target="PowerfulJRE"/>
+      <edge id="57" source="Joey Diaz" target="Theo Von"/>
+      <edge id="58" source="Dave Smith" target="FLAGRANT"/>
+      <edge id="59" source="Dave Smith" target="PBD Podcast"/>
+      <edge id="60" source="Dave Smith" target="PowerfulJRE"/>
+      <edge id="61" source="KSI" target="Adin Live"/>
+      <edge id="62" source="KSI" target="IMPAULSIVE"/>
+      <edge id="63" source="KSI" target="Theo Von"/>
+      <edge id="64" source="George Janko" target="IMPAULSIVE"/>
+      <edge id="65" source="George Janko" target="PBD Podcast"/>
+      <edge id="66" source="Druski" target="FLAGRANT"/>
+      <edge id="67" source="Druski" target="Theo Von"/>
+      <edge id="68" source="Tim Dillon" target="FLAGRANT"/>
+      <edge id="69" source="Tim Dillon" target="PBD Podcast"/>
+      <edge id="70" source="Tim Dillon" target="PowerfulJRE"/>
+      <edge id="71" source="Tim Dillon" target="Theo Von"/>
+      <edge id="72" source="Jordan Peterson" target="FULL SEND PODCAST"/>
+      <edge id="73" source="Jordan Peterson" target="Lex Fridman"/>
+      <edge id="74" source="Jordan Peterson" target="PowerfulJRE"/>
+      <edge id="75" source="Jordan Peterson" target="Shawn Ryan Show"/>
+      <edge id="76" source="Jordan Peterson" target="Theo Von"/>
+      <edge id="77" source="David Kipping" target="Lex Fridman"/>
+      <edge id="78" source="David Kipping" target="PBD Podcast"/>
+      <edge id="79" source="RFK Jr." target="FLAGRANT"/>
+      <edge id="80" source="RFK Jr." target="FULL SEND PODCAST"/>
+      <edge id="81" source="RFK Jr." target="Lex Fridman"/>
+      <edge id="82" source="RFK Jr." target="PBD Podcast"/>
+      <edge id="83" source="RFK Jr." target="PowerfulJRE"/>
+      <edge id="84" source="RFK Jr." target="Shawn Ryan Show"/>
+      <edge id="85" source="RFK Jr." target="Theo Von"/>
+      <edge id="86" source="Billy Carson" target="FLAGRANT"/>
+      <edge id="87" source="Billy Carson" target="PBD Podcast"/>
+      <edge id="88" source="Billy Carson" target="PowerfulJRE"/>
+      <edge id="89" source="Billy Carson" target="Shawn Ryan Show"/>
+      <edge id="90" source="Louis C.K." target="PowerfulJRE"/>
+      <edge id="91" source="Louis C.K." target="Theo Von"/>
+      <edge id="92" source="Neil deGrasse Tyson" target="PBD Podcast"/>
+      <edge id="93" source="Neil deGrasse Tyson" target="PowerfulJRE"/>
+      <edge id="94" source="Neil deGrasse Tyson" target="Theo Von"/>
+      <edge id="95" source="Coffeezilla" target="Lex Fridman"/>
+      <edge id="96" source="Coffeezilla" target="PowerfulJRE"/>
+      <edge id="97" source="Candace Owens" target="Adin Live"/>
+      <edge id="98" source="Candace Owens" target="FULL SEND PODCAST"/>
+      <edge id="99" source="Candace Owens" target="PBD Podcast"/>
+      <edge id="100" source="Sean O'Malley" target="Adin Live"/>
+      <edge id="101" source="Sean O'Malley" target="FLAGRANT"/>
+      <edge id="102" source="Sean O'Malley" target="FULL SEND PODCAST"/>
+      <edge id="103" source="Sean O'Malley" target="IMPAULSIVE"/>
+      <edge id="104" source="Sean O'Malley" target="PBD Podcast"/>
+      <edge id="105" source="Dillon Danis" target="Adin Live"/>
+      <edge id="106" source="Dillon Danis" target="FLAGRANT"/>
+      <edge id="107" source="Dillon Danis" target="FULL SEND PODCAST"/>
+      <edge id="108" source="Stavros Halkias" target="PowerfulJRE"/>
+      <edge id="109" source="Stavros Halkias" target="Theo Von"/>
+      <edge id="110" source="Vivek Ramaswamy" target="FLAGRANT"/>
+      <edge id="111" source="Vivek Ramaswamy" target="FULL SEND PODCAST"/>
+      <edge id="112" source="Vivek Ramaswamy" target="Lex Fridman"/>
+      <edge id="113" source="Vivek Ramaswamy" target="PBD Podcast"/>
+      <edge id="114" source="Vivek Ramaswamy" target="Shawn Ryan Show"/>
+      <edge id="115" source="Israel Adesanya" target="FLAGRANT"/>
+      <edge id="116" source="Israel Adesanya" target="IMPAULSIVE"/>
+      <edge id="117" source="Israel Adesanya" target="Theo Von"/>
+      <edge id="118" source="Matt McCusker" target="PowerfulJRE"/>
+      <edge id="119" source="Matt McCusker" target="Theo Von"/>
+      <edge id="120" source="Ryan Montgomery" target="PBD Podcast"/>
+      <edge id="121" source="Ryan Montgomery" target="Shawn Ryan Show"/>
+      <edge id="122" source="Ari Shaffir" target="FLAGRANT"/>
+      <edge id="123" source="Ari Shaffir" target="PowerfulJRE"/>
+      <edge id="124" source="Ari Shaffir" target="Theo Von"/>
+      <edge id="125" source="Sam Altman" target="Lex Fridman"/>
+      <edge id="126" source="Sam Altman" target="PowerfulJRE"/>
+      <edge id="127" source="DJ Akademiks" target="Adin Live"/>
+      <edge id="128" source="DJ Akademiks" target="FLAGRANT"/>
+      <edge id="129" source="DJ Akademiks" target="FULL SEND PODCAST"/>
+      <edge id="130" source="Steven Greer" target="PBD Podcast"/>
+      <edge id="131" source="Steven Greer" target="Shawn Ryan Show"/>
+      <edge id="132" source="That Mexican OT" target="Adin Live"/>
+      <edge id="133" source="That Mexican OT" target="FLAGRANT"/>
+      <edge id="134" source="That Mexican OT" target="PowerfulJRE"/>
+      <edge id="135" source="Andrew Bustamante" target="FLAGRANT"/>
+      <edge id="136" source="Andrew Bustamante" target="Shawn Ryan Show"/>
+      <edge id="137" source="Mark Normand" target="PowerfulJRE"/>
+      <edge id="138" source="Mark Normand" target="Theo Von"/>
+      <edge id="139" source="Yeonmi Park" target="FLAGRANT"/>
+      <edge id="140" source="Yeonmi Park" target="PBD Podcast"/>
+      <edge id="141" source="Yeonmi Park" target="Shawn Ryan Show"/>
+      <edge id="142" source="Duncan Trussell" target="PowerfulJRE"/>
+      <edge id="143" source="Duncan Trussell" target="Theo Von"/>
+      <edge id="144" source="Andrew Schulz" target="PBD Podcast"/>
+      <edge id="145" source="Andrew Schulz" target="PowerfulJRE"/>
+      <edge id="146" source="Ryan Garcia" target="Adin Live"/>
+      <edge id="147" source="Ryan Garcia" target="FULL SEND PODCAST"/>
+      <edge id="148" source="Ryan Garcia" target="IMPAULSIVE"/>
+      <edge id="149" source="Ryan Garcia" target="PBD Podcast"/>
+      <edge id="150" source="Sean Strickland" target="FULL SEND PODCAST"/>
+      <edge id="151" source="Sean Strickland" target="Theo Von"/>
+      <edge id="152" source="Chael Sonnen" target="FLAGRANT"/>
+      <edge id="153" source="Chael Sonnen" target="PBD Podcast"/>
+      <edge id="154" source="Andrew Santino" target="FLAGRANT"/>
+      <edge id="155" source="Andrew Santino" target="IMPAULSIVE"/>
+      <edge id="156" source="Andrew Santino" target="PowerfulJRE"/>
+      <edge id="157" source="Andrew Santino" target="Theo Von"/>
+      <edge id="158" source="Lil Yachty" target="FLAGRANT"/>
+      <edge id="159" source="Lil Yachty" target="FULL SEND PODCAST"/>
+      <edge id="160" source="Jelly Roll" target="FLAGRANT"/>
+      <edge id="161" source="Jelly Roll" target="FULL SEND PODCAST"/>
+      <edge id="162" source="Jelly Roll" target="IMPAULSIVE"/>
+      <edge id="163" source="Jelly Roll" target="PowerfulJRE"/>
+      <edge id="164" source="Jelly Roll" target="Theo Von"/>
+      <edge id="165" source="Andrew Huberman" target="FLAGRANT"/>
+      <edge id="166" source="Andrew Huberman" target="Lex Fridman"/>
+      <edge id="167" source="Andrew Huberman" target="PowerfulJRE"/>
+      <edge id="168" source="Bert Kreischer" target="FLAGRANT"/>
+      <edge id="169" source="Bert Kreischer" target="IMPAULSIVE"/>
+      <edge id="170" source="Bert Kreischer" target="Lex Fridman"/>
+      <edge id="171" source="Bert Kreischer" target="PowerfulJRE"/>
+      <edge id="172" source="Tom Segura" target="PowerfulJRE"/>
+      <edge id="173" source="Tom Segura" target="Theo Von"/>
+      <edge id="174" source="MrBeast" target="IMPAULSIVE"/>
+      <edge id="175" source="MrBeast" target="Lex Fridman"/>
+      <edge id="176" source="Dave Portnoy" target="FLAGRANT"/>
+      <edge id="177" source="Dave Portnoy" target="IMPAULSIVE"/>
+      <edge id="178" source="Dave Portnoy" target="PowerfulJRE"/>
+      <edge id="179" source="Dave Portnoy" target="Theo Von"/>
+      <edge id="180" source="Bassem Youssef" target="Lex Fridman"/>
+      <edge id="181" source="Bassem Youssef" target="PBD Podcast"/>
+      <edge id="182" source="Bassem Youssef" target="Theo Von"/>
+      <edge id="183" source="Post Malone" target="PowerfulJRE"/>
+      <edge id="184" source="Post Malone" target="Theo Von"/>
+      <edge id="185" source="Matt Walsh" target="FULL SEND PODCAST"/>
+      <edge id="186" source="Matt Walsh" target="PowerfulJRE"/>
+      <edge id="187" source="Tulsi Gabbard" target="Lex Fridman"/>
+      <edge id="188" source="Tulsi Gabbard" target="PBD Podcast"/>
+      <edge id="189" source="Tulsi Gabbard" target="PowerfulJRE"/>
+      <edge id="190" source="Tulsi Gabbard" target="Shawn Ryan Show"/>
+      <edge id="191" source="Bernie Sanders" target="Lex Fridman"/>
+      <edge id="192" source="Bernie Sanders" target="Theo Von"/>
+      <edge id="193" source="Trevor Wallace" target="FLAGRANT"/>
+      <edge id="194" source="Trevor Wallace" target="Theo Von"/>
+      <edge id="195" source="Hulk Hogan" target="FULL SEND PODCAST"/>
+      <edge id="196" source="Hulk Hogan" target="IMPAULSIVE"/>
+      <edge id="197" source="Hulk Hogan" target="PBD Podcast"/>
+      <edge id="198" source="Hulk Hogan" target="Theo Von"/>
+      <edge id="199" source="Ice Cube" target="FULL SEND PODCAST"/>
+      <edge id="200" source="Ice Cube" target="IMPAULSIVE"/>
+      <edge id="201" source="Ice Cube" target="PBD Podcast"/>
+      <edge id="202" source="Ice Cube" target="PowerfulJRE"/>
+      <edge id="203" source="Ben van Kerkwyk" target="FLAGRANT"/>
+      <edge id="204" source="Ben van Kerkwyk" target="PowerfulJRE"/>
+      <edge id="205" source="JiDion" target="Adin Live"/>
+      <edge id="206" source="JiDion" target="FLAGRANT"/>
+      <edge id="207" source="Noland Arbaugh" target="Lex Fridman"/>
+      <edge id="208" source="Noland Arbaugh" target="PowerfulJRE"/>
+      <edge id="209" source="Sal Vulcano" target="PowerfulJRE"/>
+      <edge id="210" source="Sal Vulcano" target="Theo Von"/>
+      <edge id="211" source="Patrick Bet-David" target="FLAGRANT"/>
+      <edge id="212" source="Patrick Bet-David" target="FULL SEND PODCAST"/>
+      <edge id="213" source="xQc" target="Adin Live"/>
+      <edge id="214" source="xQc" target="IMPAULSIVE"/>
+      <edge id="215" source="Mark Cuban" target="FLAGRANT"/>
+      <edge id="216" source="Mark Cuban" target="IMPAULSIVE"/>
+      <edge id="217" source="Mark Cuban" target="Lex Fridman"/>
+      <edge id="218" source="Mark Cuban" target="Theo Von"/>
+      <edge id="219" source="Cliffe Knechtle" target="IMPAULSIVE"/>
+      <edge id="220" source="Cliffe Knechtle" target="PBD Podcast"/>
+      <edge id="221" source="Rice Gum" target="Adin Live"/>
+      <edge id="222" source="Rice Gum" target="FULL SEND PODCAST"/>
+      <edge id="223" source="Michael Malice" target="FLAGRANT"/>
+      <edge id="224" source="Michael Malice" target="Lex Fridman"/>
+      <edge id="225" source="Michael Malice" target="PBD Podcast"/>
+      <edge id="226" source="Michael Malice" target="PowerfulJRE"/>
+      <edge id="227" source="Stephen A. Smith" target="FLAGRANT"/>
+      <edge id="228" source="Stephen A. Smith" target="FULL SEND PODCAST"/>
+      <edge id="229" source="Stephen A. Smith" target="PBD Podcast"/>
+      <edge id="230" source="Annie Jacobsen" target="Lex Fridman"/>
+      <edge id="231" source="Annie Jacobsen" target="PowerfulJRE"/>
+      <edge id="232" source="Annie Jacobsen" target="Shawn Ryan Show"/>
+      <edge id="233" source="Kyle Forgeard" target="Adin Live"/>
+      <edge id="234" source="Kyle Forgeard" target="Theo Von"/>
+      <edge id="235" source="Sketch" target="Adin Live"/>
+      <edge id="236" source="Sketch" target="Theo Von"/>
+      <edge id="237" source="Sexxy Red" target="Adin Live"/>
+      <edge id="238" source="Sexxy Red" target="Theo Von"/>
+      <edge id="239" source="Bret Weinstein" target="PBD Podcast"/>
+      <edge id="240" source="Bret Weinstein" target="PowerfulJRE"/>
+      <edge id="241" source="Erik Prince" target="PBD Podcast"/>
+      <edge id="242" source="Erik Prince" target="Shawn Ryan Show"/>
+      <edge id="243" source="Konstantin Kisin" target="PBD Podcast"/>
+      <edge id="244" source="Konstantin Kisin" target="PowerfulJRE"/>
+      <edge id="245" source="Randall Carlson" target="PBD Podcast"/>
+      <edge id="246" source="Randall Carlson" target="PowerfulJRE"/>
+      <edge id="247" source="Randall Carlson" target="Shawn Ryan Show"/>
+      <edge id="248" source="Casey Neistat" target="FLAGRANT"/>
+      <edge id="249" source="Casey Neistat" target="IMPAULSIVE"/>
+      <edge id="250" source="Nick Irving" target="PBD Podcast"/>
+      <edge id="251" source="Nick Irving" target="Shawn Ryan Show"/>
+      <edge id="252" source="Mike Rowe" target="PBD Podcast"/>
+      <edge id="253" source="Mike Rowe" target="Theo Von"/>
+      <edge id="254" source="Jimmy Dore" target="PBD Podcast"/>
+      <edge id="255" source="Jimmy Dore" target="PowerfulJRE"/>
+      <edge id="256" source="Chris Bumstead" target="FULL SEND PODCAST"/>
+      <edge id="257" source="Chris Bumstead" target="PBD Podcast"/>
+      <edge id="258" source="Ralph Barbosa" target="FLAGRANT"/>
+      <edge id="259" source="Ralph Barbosa" target="PowerfulJRE"/>
+      <edge id="260" source="Alex Volkanovski" target="FLAGRANT"/>
+      <edge id="261" source="Alex Volkanovski" target="FULL SEND PODCAST"/>
+      <edge id="262" source="Alex Volkanovski" target="IMPAULSIVE"/>
+      <edge id="263" source="Ric Flair" target="FULL SEND PODCAST"/>
+      <edge id="264" source="Ric Flair" target="Theo Von"/>
+      <edge id="265" source="Eric Hecker" target="PBD Podcast"/>
+      <edge id="266" source="Eric Hecker" target="Shawn Ryan Show"/>
+      <edge id="267" source="Chris Distefano" target="FLAGRANT"/>
+      <edge id="268" source="Chris Distefano" target="PowerfulJRE"/>
+      <edge id="269" source="Luis Elizondo" target="PBD Podcast"/>
+      <edge id="270" source="Luis Elizondo" target="PowerfulJRE"/>
+      <edge id="271" source="Georges St-Pierre" target="FULL SEND PODCAST"/>
+      <edge id="272" source="Georges St-Pierre" target="Theo Von"/>
+      <edge id="273" source="Mike Majlak" target="Adin Live"/>
+      <edge id="274" source="Mike Majlak" target="FULL SEND PODCAST"/>
+      <edge id="275" source="Mike Majlak" target="PBD Podcast"/>
+      <edge id="276" source="Mike Tyson" target="IMPAULSIVE"/>
+      <edge id="277" source="Mike Tyson" target="PBD Podcast"/>
+      <edge id="278" source="Chamath Palihapitiya" target="Lex Fridman"/>
+      <edge id="279" source="Chamath Palihapitiya" target="PowerfulJRE"/>
+      <edge id="280" source="Kid Rock" target="PowerfulJRE"/>
+      <edge id="281" source="Kid Rock" target="Theo Von"/>
+      <edge id="282" source="Kamaru Usman" target="FLAGRANT"/>
+      <edge id="283" source="Kamaru Usman" target="FULL SEND PODCAST"/>
+      <edge id="284" source="Kamaru Usman" target="PBD Podcast"/>
+      <edge id="285" source="Cody Rhodes" target="FLAGRANT"/>
+      <edge id="286" source="Cody Rhodes" target="IMPAULSIVE"/>
+      <edge id="287" source="FaZe Banks" target="Adin Live"/>
+      <edge id="288" source="FaZe Banks" target="IMPAULSIVE"/>
+      <edge id="289" source="Action Bronson" target="FLAGRANT"/>
+      <edge id="290" source="Action Bronson" target="PowerfulJRE"/>
+      <edge id="291" source="Craig Jones" target="FLAGRANT"/>
+      <edge id="292" source="Craig Jones" target="Lex Fridman"/>
+      <edge id="293" source="Jim Gaffigan" target="PowerfulJRE"/>
+      <edge id="294" source="Jim Gaffigan" target="Theo Von"/>
+      <edge id="295" source="Tim Kennedy" target="PowerfulJRE"/>
+      <edge id="296" source="Tim Kennedy" target="Shawn Ryan Show"/>
+      <edge id="297" source="Dr. Phil" target="FULL SEND PODCAST"/>
+      <edge id="298" source="Dr. Phil" target="PowerfulJRE"/>
+      <edge id="299" source="Jynxzi" target="Adin Live"/>
+      <edge id="300" source="Jynxzi" target="FULL SEND PODCAST"/>
+      <edge id="301" source="Dax Shepard" target="FLAGRANT"/>
+      <edge id="302" source="Dax Shepard" target="Theo Von"/>
+      <edge id="303" source="Mike Baker" target="PBD Podcast"/>
+      <edge id="304" source="Mike Baker" target="PowerfulJRE"/>
+      <edge id="305" source="Yung Gravy" target="IMPAULSIVE"/>
+      <edge id="306" source="Yung Gravy" target="Theo Von"/>
+      <edge id="307" source="Myron Gaines" target="Adin Live"/>
+      <edge id="308" source="Myron Gaines" target="PBD Podcast"/>
+      <edge id="309" source="David Pakman" target="Lex Fridman"/>
+      <edge id="310" source="David Pakman" target="PBD Podcast"/>
+      <edge id="311" source="Bradley Martyn" target="Adin Live"/>
+      <edge id="312" source="Bradley Martyn" target="FULL SEND PODCAST"/>
+      <edge id="313" source="Max Tegmark" target="Lex Fridman"/>
+      <edge id="314" source="Max Tegmark" target="PBD Podcast"/>
+      <edge id="315" source="Pete Hegseth" target="PBD Podcast"/>
+      <edge id="316" source="Pete Hegseth" target="Shawn Ryan Show"/>
+      <edge id="317" source="Mike Vecchione" target="PowerfulJRE"/>
+      <edge id="318" source="Mike Vecchione" target="Theo Von"/>
+      <edge id="319" source="Michael Shellenberger" target="PowerfulJRE"/>
+      <edge id="320" source="Michael Shellenberger" target="Shawn Ryan Show"/>
+      <edge id="321" source="Dwayne Johnson" target="PBD Podcast"/>
+      <edge id="322" source="Dwayne Johnson" target="PowerfulJRE"/>
+      <edge id="323" source="Colby Covington" target="FULL SEND PODCAST"/>
+      <edge id="324" source="Colby Covington" target="PBD Podcast"/>
+      <edge id="325" source="Marc Andreessen" target="Lex Fridman"/>
+      <edge id="326" source="Marc Andreessen" target="PowerfulJRE"/>
+      <edge id="327" source="Sebastian Maniscalco" target="FLAGRANT"/>
+      <edge id="328" source="Sebastian Maniscalco" target="PowerfulJRE"/>
+      <edge id="329" source="Nick Kyrgios" target="IMPAULSIVE"/>
+      <edge id="330" source="Nick Kyrgios" target="Theo Von"/>
+      <edge id="331" source="Neal Brennan" target="FLAGRANT"/>
+      <edge id="332" source="Neal Brennan" target="PowerfulJRE"/>
+      <edge id="333" source="Brian Simpson" target="FLAGRANT"/>
+      <edge id="334" source="Brian Simpson" target="PowerfulJRE"/>
+      <edge id="335" source="Sara Walker" target="Lex Fridman"/>
+      <edge id="336" source="Sara Walker" target="PowerfulJRE"/>
+      <edge id="337" source="Cenk Uygur" target="Lex Fridman"/>
+      <edge id="338" source="Cenk Uygur" target="PBD Podcast"/>
+      <edge id="339" source="Machine Gun Kelly" target="Adin Live"/>
+      <edge id="340" source="Machine Gun Kelly" target="IMPAULSIVE"/>
+      <edge id="341" source="Dennis Quaid" target="PBD Podcast"/>
+      <edge id="342" source="Dennis Quaid" target="PowerfulJRE"/>
+      <edge id="343" source="Luke Combs" target="PowerfulJRE"/>
+      <edge id="344" source="Luke Combs" target="Theo Von"/>
+      <edge id="345" source="Liver King" target="FLAGRANT"/>
+      <edge id="346" source="Liver King" target="PBD Podcast"/>
+      <edge id="347" source="Gary Brecka" target="FULL SEND PODCAST"/>
+      <edge id="348" source="Gary Brecka" target="PowerfulJRE"/>
+      <edge id="349" source="Francis Suarez" target="FULL SEND PODCAST"/>
+      <edge id="350" source="Francis Suarez" target="PBD Podcast"/>
+      <edge id="351" source="David Blaine" target="IMPAULSIVE"/>
+      <edge id="352" source="David Blaine" target="PowerfulJRE"/>
+      <edge id="353" source="Whitney Cummings" target="FLAGRANT"/>
+      <edge id="354" source="Whitney Cummings" target="PowerfulJRE"/>
+      <edge id="355" source="Bjorn Lomborg" target="Lex Fridman"/>
+      <edge id="356" source="Bjorn Lomborg" target="PBD Podcast"/>
+      <edge id="357" source="Bjorn Lomborg" target="PowerfulJRE"/>
+      <edge id="358" source="Avi Loeb" target="PBD Podcast"/>
+      <edge id="359" source="Avi Loeb" target="Shawn Ryan Show"/>
+      <edge id="360" source="Bryan Callen" target="PBD Podcast"/>
+      <edge id="361" source="Bryan Callen" target="PowerfulJRE"/>
+      <edge id="362" source="Rick Ross" target="Adin Live"/>
+      <edge id="363" source="Rick Ross" target="IMPAULSIVE"/>
+      <edge id="364" source="Trevor Bauer" target="PBD Podcast"/>
+      <edge id="365" source="Trevor Bauer" target="Theo Von"/>
+      <edge id="366" source="Aljamain Sterling" target="Adin Live"/>
+      <edge id="367" source="Aljamain Sterling" target="FLAGRANT"/>
+      <edge id="368" source="Pauly Shore" target="PowerfulJRE"/>
+      <edge id="369" source="Pauly Shore" target="Theo Von"/>
+      <edge id="370" source="Buck Sexton" target="PBD Podcast"/>
+      <edge id="371" source="Buck Sexton" target="Shawn Ryan Show"/>
+      <edge id="372" source="Gina Carano" target="PBD Podcast"/>
+      <edge id="373" source="Gina Carano" target="Shawn Ryan Show"/>
+      <edge id="374" source="Danny Philippou" target="IMPAULSIVE"/>
+      <edge id="375" source="Danny Philippou" target="PowerfulJRE"/>
+      <edge id="376" source="Michael Philippou" target="IMPAULSIVE"/>
+      <edge id="377" source="Michael Philippou" target="PowerfulJRE"/>
+      <edge id="378" source="Anuel AA" target="Adin Live"/>
+      <edge id="379" source="Anuel AA" target="IMPAULSIVE"/>
+      <edge id="380" source="Mike Benz" target="PBD Podcast"/>
+      <edge id="381" source="Mike Benz" target="Shawn Ryan Show"/>
+      <edge id="382" source="Kyle Kulinski" target="PBD Podcast"/>
+      <edge id="383" source="Kyle Kulinski" target="PowerfulJRE"/>
+      <edge id="384" source="Rick Doblin" target="PowerfulJRE"/>
+      <edge id="385" source="Rick Doblin" target="Shawn Ryan Show"/>
+    </edges>
+  </graph>
+</gexf>

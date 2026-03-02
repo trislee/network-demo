@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sigma.js network</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; padding: 0; font-family: system-ui, sans-serif; }
+    body { display: flex; flex-direction: column; }
+    #controls {
+      flex: 0 0 auto;
+      padding: 0.5rem 1rem;
+      background: #f0f0f0;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    #controls label { display: flex; align-items: center; gap: 0.25rem; }
+    #sigma-container {
+      flex: 1 1 auto;
+      min-height: 0;
+      background: #fff;
+    }
+  </style>
+  <script type="importmap">
+  {
+    "imports": {
+      "graphology": "https://cdn.jsdelivr.net/npm/graphology/+esm",
+      "sigma": "https://cdn.jsdelivr.net/npm/sigma/+esm",
+      "graphology-gexf/browser": "https://cdn.jsdelivr.net/npm/graphology-gexf/+esm"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="controls">
+    <button type="button" id="zoom-in" title="Zoom in">Zoom in</button>
+    <button type="button" id="zoom-out" title="Zoom out">Zoom out</button>
+    <button type="button" id="zoom-reset" title="Reset view">Reset</button>
+    <label>
+      Labels threshold
+      <input type="range" id="labels-threshold" min="0" max="30" value="0" step="2">
+    </label>
+  </div>
+  <div id="sigma-container"></div>
+
+  <script type="module">
+    import Graph from "graphology";
+    import { parse } from "graphology-gexf/browser";
+    import Sigma from "sigma";
+
+    const NODE_SIZE_SCALE = 0.4;
+
+    let renderer = null;
+
+    fetch("../graphs/bipartite_podcasts_layout_threshold=1.gexf")
+      .then((res) => {
+        if (!res.ok) throw new Error(res.status + " " + res.statusText);
+        return res.text();
+      })
+      .then((gexf) => {
+        const graph = parse(Graph, gexf);
+
+        graph.forEachNode((node) => {
+          const size = graph.getNodeAttribute(node, "size");
+          if (size != null) {
+            graph.setNodeAttribute(node, "size", size * NODE_SIZE_SCALE);
+          }
+        });
+
+        const container = document.getElementById("sigma-container");
+        const zoomInBtn = document.getElementById("zoom-in");
+        const zoomOutBtn = document.getElementById("zoom-out");
+        const zoomResetBtn = document.getElementById("zoom-reset");
+        const labelsThresholdRange = document.getElementById("labels-threshold");
+
+        renderer = new Sigma(graph, container, {
+          minCameraRatio: 0.08,
+          maxCameraRatio: 3,
+        });
+        const camera = renderer.getCamera();
+
+        zoomInBtn.addEventListener("click", () => {
+          camera.animatedZoom({ duration: 600 });
+        });
+        zoomOutBtn.addEventListener("click", () => {
+          camera.animatedUnzoom({ duration: 600 });
+        });
+        zoomResetBtn.addEventListener("click", () => {
+          camera.animatedReset({ duration: 600 });
+        });
+
+        labelsThresholdRange.addEventListener("input", () => {
+          if (renderer) renderer.setSetting("labelRenderedSizeThreshold", +labelsThresholdRange.value);
+        });
+
+        labelsThresholdRange.value = String(renderer.getSetting("labelRenderedSizeThreshold"));
+      })
+      .catch((err) => {
+        document.getElementById("sigma-container").innerHTML =
+          "<p style=\"padding: 1rem; color: #c00;\">Failed to load graph: " + err.message + "</p>";
+      });
+  </script>
+</body>
+</html>

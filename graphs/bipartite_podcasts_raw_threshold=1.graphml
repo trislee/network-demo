@@ -1,0 +1,1195 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d3" for="node" attr.name="views" attr.type="int" />
+  <key id="d2" for="node" attr.name="views_root_3" attr.type="double" />
+  <key id="d1" for="node" attr.name="views" attr.type="double" />
+  <key id="d0" for="node" attr.name="category" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="Donald Trump">
+      <data key="d0">Politician</data>
+      <data key="d1">113617973.0</data>
+      <data key="d2">484.3385221950354</data>
+    </node>
+    <node id="Adin Live">
+      <data key="d0">Podcast</data>
+      <data key="d3">147795456</data>
+      <data key="d2">528.7134524196795</data>
+    </node>
+    <node id="FLAGRANT">
+      <data key="d0">Podcast</data>
+      <data key="d3">152751492</data>
+      <data key="d2">534.5583941373168</data>
+    </node>
+    <node id="FULL SEND PODCAST">
+      <data key="d0">Podcast</data>
+      <data key="d3">150233745</data>
+      <data key="d2">531.605131498199</data>
+    </node>
+    <node id="IMPAULSIVE">
+      <data key="d0">Podcast</data>
+      <data key="d3">94551111</data>
+      <data key="d2">455.5704490228543</data>
+    </node>
+    <node id="Lex Fridman">
+      <data key="d0">Podcast</data>
+      <data key="d3">270171623</data>
+      <data key="d2">646.4673226501665</data>
+    </node>
+    <node id="PBD Podcast">
+      <data key="d0">Podcast</data>
+      <data key="d3">88837849</data>
+      <data key="d2">446.20319757516984</data>
+    </node>
+    <node id="PowerfulJRE">
+      <data key="d0">Podcast</data>
+      <data key="d3">349288745</data>
+      <data key="d2">704.2521755260872</data>
+    </node>
+    <node id="Shawn Ryan Show">
+      <data key="d0">Podcast</data>
+      <data key="d3">114693423</data>
+      <data key="d2">485.8618932207384</data>
+    </node>
+    <node id="Theo Von">
+      <data key="d0">Podcast</data>
+      <data key="d3">273721303</data>
+      <data key="d2">649.2862405769024</data>
+    </node>
+    <node id="Andrew Tate">
+      <data key="d0">Influencer</data>
+      <data key="d1">80629048.0</data>
+      <data key="d2">432.013359783455</data>
+    </node>
+    <node id="Tucker Carlson">
+      <data key="d0">Political Pundit</data>
+      <data key="d1">49009849.0</data>
+      <data key="d2">365.95508670807527</data>
+    </node>
+    <node id="Elon Musk">
+      <data key="d0">Politician</data>
+      <data key="d1">38437385.0</data>
+      <data key="d2">337.48251578377324</data>
+    </node>
+    <node id="Shane Gillis">
+      <data key="d0">Comedian</data>
+      <data key="d1">32825625.0</data>
+      <data key="d2">320.1874715288412</data>
+    </node>
+    <node id="JD Vance">
+      <data key="d0">Politician</data>
+      <data key="d1">27415223.0</data>
+      <data key="d2">301.5300462251568</data>
+    </node>
+    <node id="Ben Shapiro">
+      <data key="d0">Political Pundit</data>
+      <data key="d1">25578619.0</data>
+      <data key="d2">294.64044674891994</data>
+    </node>
+    <node id="Dana White">
+      <data key="d0">Athlete</data>
+      <data key="d1">25429574.0</data>
+      <data key="d2">294.0670478147509</data>
+    </node>
+    <node id="Kai Cenat">
+      <data key="d0">Influencer</data>
+      <data key="d1">22535037.0</data>
+      <data key="d2">282.4572707974017</data>
+    </node>
+    <node id="Jake Paul">
+      <data key="d0">Influencer</data>
+      <data key="d1">21263319.0</data>
+      <data key="d2">277.0407695425064</data>
+    </node>
+    <node id="Graham Hancock">
+      <data key="d0">Other</data>
+      <data key="d1">20741522.0</data>
+      <data key="d2">274.7558030547209</data>
+    </node>
+    <node id="iShowSpeed">
+      <data key="d0">Influencer</data>
+      <data key="d1">18974496.0</data>
+      <data key="d2">266.7207168217153</data>
+    </node>
+    <node id="Destiny">
+      <data key="d0">Political Pundit</data>
+      <data key="d1">18594029.0</data>
+      <data key="d2">264.92595059295525</data>
+    </node>
+    <node id="Bobby Lee">
+      <data key="d0">Comedian</data>
+      <data key="d1">17909260.0</data>
+      <data key="d2">261.63301571848314</data>
+    </node>
+    <node id="Paul Rosolie">
+      <data key="d0">Other</data>
+      <data key="d1">16632899.0</data>
+      <data key="d2">255.26385095157264</data>
+    </node>
+    <node id="Joey Diaz">
+      <data key="d0">Comedian</data>
+      <data key="d1">16342789.0</data>
+      <data key="d2">253.7710390476116</data>
+    </node>
+    <node id="Dave Smith">
+      <data key="d0">Political Pundit</data>
+      <data key="d1">16214597.0</data>
+      <data key="d2">253.10577422436938</data>
+    </node>
+    <node id="KSI">
+      <data key="d0">Influencer</data>
+      <data key="d1">15178624.0</data>
+      <data key="d2">247.59629079867028</data>
+    </node>
+    <node id="George Janko">
+      <data key="d0">Influencer</data>
+      <data key="d1">14490583.0</data>
+      <data key="d2">243.79714731212104</data>
+    </node>
+    <node id="Druski">
+      <data key="d0">Comedian</data>
+      <data key="d1">14490252.0</data>
+      <data key="d2">243.79529099227972</data>
+    </node>
+    <node id="Tim Dillon">
+      <data key="d0">Comedian</data>
+      <data key="d1">14123082.0</data>
+      <data key="d2">241.71846457414566</data>
+    </node>
+    <node id="Jordan Peterson">
+      <data key="d0">Influencer</data>
+      <data key="d1">13254684.0</data>
+      <data key="d2">236.65905505727855</data>
+    </node>
+    <node id="David Kipping">
+      <data key="d0">Intellectual</data>
+      <data key="d1">12144033.0</data>
+      <data key="d2">229.85518924782906</data>
+    </node>
+    <node id="RFK Jr.">
+      <data key="d0">Politician</data>
+      <data key="d1">11536660.0</data>
+      <data key="d2">225.95746713097122</data>
+    </node>
+    <node id="Billy Carson">
+      <data key="d0">Other</data>
+      <data key="d1">11344501.0</data>
+      <data key="d2">224.69589203626808</data>
+    </node>
+    <node id="Louis C.K.">
+      <data key="d0">Comedian</data>
+      <data key="d1">10489825.0</data>
+      <data key="d2">218.90520142438004</data>
+    </node>
+    <node id="Neil deGrasse Tyson">
+      <data key="d0">Intellectual</data>
+      <data key="d1">10417917.0</data>
+      <data key="d2">218.40385396867467</data>
+    </node>
+    <node id="Coffeezilla">
+      <data key="d0">Influencer</data>
+      <data key="d1">10221622.0</data>
+      <data key="d2">217.0234212015499</data>
+    </node>
+    <node id="Candace Owens">
+      <data key="d0">Political Pundit</data>
+      <data key="d1">10212667.0</data>
+      <data key="d2">216.9600257654321</data>
+    </node>
+    <node id="Sean O'Malley">
+      <data key="d0">Athlete</data>
+      <data key="d1">10191136.0</data>
+      <data key="d2">216.80744880749162</data>
+    </node>
+    <node id="Dillon Danis">
+      <data key="d0">Athlete</data>
+      <data key="d1">9747277.0</data>
+      <data key="d2">213.61304428514194</data>
+    </node>
+    <node id="Stavros Halkias">
+      <data key="d0">Comedian</data>
+      <data key="d1">9704603.0</data>
+      <data key="d2">213.30085253105509</data>
+    </node>
+    <node id="Vivek Ramaswamy">
+      <data key="d0">Politician</data>
+      <data key="d1">9690987.0</data>
+      <data key="d2">213.20104890322153</data>
+    </node>
+    <node id="Israel Adesanya">
+      <data key="d0">Athlete</data>
+      <data key="d1">9531680.0</data>
+      <data key="d2">212.02634062171356</data>
+    </node>
+    <node id="Matt McCusker">
+      <data key="d0">Comedian</data>
+      <data key="d1">9320597.0</data>
+      <data key="d2">210.44950577661135</data>
+    </node>
+    <node id="Ryan Montgomery">
+      <data key="d0">Intellectual</data>
+      <data key="d1">9315540.0</data>
+      <data key="d2">210.41143826937216</data>
+    </node>
+    <node id="Ari Shaffir">
+      <data key="d0">Comedian</data>
+      <data key="d1">9190550.0</data>
+      <data key="d2">209.46614209726206</data>
+    </node>
+    <node id="Sam Altman">
+      <data key="d0">Other</data>
+      <data key="d1">9142756.0</data>
+      <data key="d2">209.10241235905178</data>
+    </node>
+    <node id="DJ Akademiks">
+      <data key="d0">Influencer</data>
+      <data key="d1">9081621.0</data>
+      <data key="d2">208.63530027406358</data>
+    </node>
+    <node id="Steven Greer">
+      <data key="d0">Other</data>
+      <data key="d1">8995896.0</data>
+      <data key="d2">207.97676022403644</data>
+    </node>
+    <node id="That Mexican OT">
+      <data key="d0">Celebrity</data>
+      <data key="d1">8883520.0</data>
+      <data key="d2">207.10711936544647</data>
+    </node>
+    <node id="Andrew Bustamante">
+      <data key="d0">Other</data>
+      <data key="d1">8699361.0</data>
+      <data key="d2">205.66597610357815</data>
+    </node>
+    <node id="Mark Normand">
+      <data key="d0">Comedian</data>
+      <data key="d1">8171719.0</data>
+      <data key="d2">201.42087335640556</data>
+    </node>
+    <node id="Yeonmi Park">
+      <data key="d0">Political Pundit</data>
+      <data key="d1">7991710.0</data>
+      <data key="d2">199.93089279038486</data>
+    </node>
+    <node id="Duncan Trussell">
+      <data key="d0">Comedian</data>
+      <data key="d1">7927472.0</data>
+      <data key="d2">199.3937642477706</data>
+    </node>
+    <node id="Andrew Schulz">
+      <data key="d0">Comedian</data>
+      <data key="d1">7153020.0</data>
+      <data key="d2">192.67697223936287</data>
+    </node>
+    <node id="Ryan Garcia">
+      <data key="d0">Athlete</data>
+      <data key="d1">6979546.0</data>
+      <data key="d2">191.1066170096767</data>
+    </node>
+    <node id="Sean Strickland">
+      <data key="d0">Athlete</data>
+      <data key="d1">6908833.0</data>
+      <data key="d2">190.45902862539546</data>
+    </node>
+    <node id="Chael Sonnen">
+      <data key="d0">Athlete</data>
+      <data key="d1">6836338.0</data>
+      <data key="d2">189.7905170435883</data>
+    </node>
+    <node id="Andrew Santino">
+      <data key="d0">Comedian</data>
+      <data key="d1">6433654.0</data>
+      <data key="d2">185.98841797847177</data>
+    </node>
+    <node id="Lil Yachty">
+      <data key="d0">Celebrity</data>
+      <data key="d1">6326842.0</data>
+      <data key="d2">184.953404383853</data>
+    </node>
+    <node id="Jelly Roll">
+      <data key="d0">Celebrity</data>
+      <data key="d1">6110778.0</data>
+      <data key="d2">182.8235631116275</data>
+    </node>
+    <node id="Andrew Huberman">
+      <data key="d0">Intellectual</data>
+      <data key="d1">6039974.0</data>
+      <data key="d2">182.11470851144585</data>
+    </node>
+    <node id="Bert Kreischer">
+      <data key="d0">Comedian</data>
+      <data key="d1">5925857.0</data>
+      <data key="d2">180.9604728353868</data>
+    </node>
+    <node id="Tom Segura">
+      <data key="d0">Comedian</data>
+      <data key="d1">5810123.0</data>
+      <data key="d2">179.774645965498</data>
+    </node>
+    <node id="MrBeast">
+      <data key="d0">Influencer</data>
+      <data key="d1">5791800.0</data>
+      <data key="d2">179.58546582715547</data>
+    </node>
+    <node id="Dave Portnoy">
+      <data key="d0">Other</data>
+      <data key="d1">5782520.0</data>
+      <data key="d2">179.4895000362809</data>
+    </node>
+    <node id="Bassem Youssef">
+      <data key="d0">Comedian</data>
+      <data key="d1">5701335.0</data>
+      <data key="d2">178.6455434824511</data>
+    </node>
+    <node id="Post Malone">
+      <data key="d0">Celebrity</data>
+      <data key="d1">5691836.0</data>
+      <data key="d2">178.5462744911766</data>
+    </node>
+    <node id="Matt Walsh">
+      <data key="d0">Political Pundit</data>
+      <data key="d1">5527000.0</data>
+      <data key="d2">176.80579207494165</data>
+    </node>
+    <node id="Tulsi Gabbard">
+      <data key="d0">Politician</data>
+      <data key="d1">5474916.0</data>
+      <data key="d2">176.24865850797266</data>
+    </node>
+    <node id="Bernie Sanders">
+      <data key="d0">Politician</data>
+      <data key="d1">5446930.0</data>
+      <data key="d2">175.94783664176046</data>
+    </node>
+    <node id="Trevor Wallace">
+      <data key="d0">Comedian</data>
+      <data key="d1">5413139.0</data>
+      <data key="d2">175.58324041009075</data>
+    </node>
+    <node id="Hulk Hogan">
+      <data key="d0">Athlete</data>
+      <data key="d1">5286549.0</data>
+      <data key="d2">174.20371832410973</data>
+    </node>
+    <node id="Ice Cube">
+      <data key="d0">Celebrity</data>
+      <data key="d1">5279917.0</data>
+      <data key="d2">174.1308413858901</data>
+    </node>
+    <node id="Ben van Kerkwyk">
+      <data key="d0">Influencer</data>
+      <data key="d1">5258253.0</data>
+      <data key="d2">173.89235646237717</data>
+    </node>
+    <node id="JiDion">
+      <data key="d0">Influencer</data>
+      <data key="d1">5210659.0</data>
+      <data key="d2">173.36611518366485</data>
+    </node>
+    <node id="Noland Arbaugh">
+      <data key="d0">Influencer</data>
+      <data key="d1">5052667.0</data>
+      <data key="d2">171.59589420430086</data>
+    </node>
+    <node id="Sal Vulcano">
+      <data key="d0">Comedian</data>
+      <data key="d1">4934157.0</data>
+      <data key="d2">170.2436759258711</data>
+    </node>
+    <node id="Patrick Bet-David">
+      <data key="d0">Influencer</data>
+      <data key="d1">4882552.0</data>
+      <data key="d2">169.6480839988273</data>
+    </node>
+    <node id="xQc">
+      <data key="d0">Influencer</data>
+      <data key="d1">4748508.0</data>
+      <data key="d2">168.08116826068616</data>
+    </node>
+    <node id="Mark Cuban">
+      <data key="d0">Celebrity</data>
+      <data key="d1">4743945.0</data>
+      <data key="d2">168.02731273623982</data>
+    </node>
+    <node id="Cliffe Knechtle">
+      <data key="d0">Influencer</data>
+      <data key="d1">4717356.0</data>
+      <data key="d2">167.7128029654638</data>
+    </node>
+    <node id="Rice Gum">
+      <data key="d0">Influencer</data>
+      <data key="d1">4709480.0</data>
+      <data key="d2">167.61941436403092</data>
+    </node>
+    <node id="Michael Malice">
+      <data key="d0">Political Pundit</data>
+      <data key="d1">4662408.0</data>
+      <data key="d2">167.0590824451141</data>
+    </node>
+    <node id="Stephen A. Smith">
+      <data key="d0">Celebrity</data>
+      <data key="d1">4622938.0</data>
+      <data key="d2">166.58632839190298</data>
+    </node>
+    <node id="Annie Jacobsen">
+      <data key="d0">Intellectual</data>
+      <data key="d1">4597776.0</data>
+      <data key="d2">166.28354308386835</data>
+    </node>
+    <node id="Kyle Forgeard">
+      <data key="d0">Influencer</data>
+      <data key="d1">4331164.0</data>
+      <data key="d2">163.00523149305138</data>
+    </node>
+    <node id="Sketch">
+      <data key="d0">Influencer</data>
+      <data key="d1">4071060.0</data>
+      <data key="d2">159.67459907930873</data>
+    </node>
+    <node id="Sexxy Red">
+      <data key="d0">Celebrity</data>
+      <data key="d1">3974930.0</data>
+      <data key="d2">158.40777539800425</data>
+    </node>
+    <node id="Bret Weinstein">
+      <data key="d0">Other</data>
+      <data key="d1">3916670.0</data>
+      <data key="d2">157.63004292971908</data>
+    </node>
+    <node id="Erik Prince">
+      <data key="d0">Other</data>
+      <data key="d1">3671297.0</data>
+      <data key="d2">154.26704943554262</data>
+    </node>
+    <node id="Konstantin Kisin">
+      <data key="d0">Political Pundit</data>
+      <data key="d1">3666503.0</data>
+      <data key="d2">154.1998725972873</data>
+    </node>
+    <node id="Randall Carlson">
+      <data key="d0">Influencer</data>
+      <data key="d1">3625510.0</data>
+      <data key="d2">153.6230449997199</data>
+    </node>
+    <node id="Casey Neistat">
+      <data key="d0">Influencer</data>
+      <data key="d1">3610395.0</data>
+      <data key="d2">153.40925928900333</data>
+    </node>
+    <node id="Nick Irving">
+      <data key="d0">Other</data>
+      <data key="d1">3545142.0</data>
+      <data key="d2">152.47941314860566</data>
+    </node>
+    <node id="Mike Rowe">
+      <data key="d0">Celebrity</data>
+      <data key="d1">3517202.0</data>
+      <data key="d2">152.07778221226235</data>
+    </node>
+    <node id="Jimmy Dore">
+      <data key="d0">Political Pundit</data>
+      <data key="d1">3370397.0</data>
+      <data key="d2">149.93177638236503</data>
+    </node>
+    <node id="Chris Bumstead">
+      <data key="d0">Athlete</data>
+      <data key="d1">3228550.0</data>
+      <data key="d2">147.79820928845098</data>
+    </node>
+    <node id="Ralph Barbosa">
+      <data key="d0">Comedian</data>
+      <data key="d1">3226178.0</data>
+      <data key="d2">147.76200487849206</data>
+    </node>
+    <node id="Alex Volkanovski">
+      <data key="d0">Athlete</data>
+      <data key="d1">2888113.0</data>
+      <data key="d2">142.4092044980255</data>
+    </node>
+    <node id="Ric Flair">
+      <data key="d0">Athlete</data>
+      <data key="d1">2871977.0</data>
+      <data key="d2">142.1434937761657</data>
+    </node>
+    <node id="Eric Hecker">
+      <data key="d0">Other</data>
+      <data key="d1">2867814.0</data>
+      <data key="d2">142.0747804229031</data>
+    </node>
+    <node id="Chris Distefano">
+      <data key="d0">Comedian</data>
+      <data key="d1">2828202.0</data>
+      <data key="d2">141.41760405865472</data>
+    </node>
+    <node id="Luis Elizondo">
+      <data key="d0">Other</data>
+      <data key="d1">2773677.0</data>
+      <data key="d2">140.5029022167017</data>
+    </node>
+    <node id="Georges St-Pierre">
+      <data key="d0">Athlete</data>
+      <data key="d1">2745950.0</data>
+      <data key="d2">140.0331554126763</data>
+    </node>
+    <node id="Mike Majlak">
+      <data key="d0">Influencer</data>
+      <data key="d1">2742582.0</data>
+      <data key="d2">139.97588019851707</data>
+    </node>
+    <node id="Mike Tyson">
+      <data key="d0">Athlete</data>
+      <data key="d1">2741939.0</data>
+      <data key="d2">139.96494020039935</data>
+    </node>
+    <node id="Chamath Palihapitiya">
+      <data key="d0">Other</data>
+      <data key="d1">2730243.0</data>
+      <data key="d2">139.76564533307976</data>
+    </node>
+    <node id="Kid Rock">
+      <data key="d0">Celebrity</data>
+      <data key="d1">2602768.0</data>
+      <data key="d2">137.55566671655095</data>
+    </node>
+    <node id="Kamaru Usman">
+      <data key="d0">Athlete</data>
+      <data key="d1">2555020.0</data>
+      <data key="d2">136.7093131500081</data>
+    </node>
+    <node id="Cody Rhodes">
+      <data key="d0">Athlete</data>
+      <data key="d1">2533224.0</data>
+      <data key="d2">136.31946237858017</data>
+    </node>
+    <node id="FaZe Banks">
+      <data key="d0">Influencer</data>
+      <data key="d1">2425288.0</data>
+      <data key="d2">134.3551874881784</data>
+    </node>
+    <node id="Action Bronson">
+      <data key="d0">Celebrity</data>
+      <data key="d1">2417475.0</data>
+      <data key="d2">134.2107584123548</data>
+    </node>
+    <node id="Craig Jones">
+      <data key="d0">Athlete</data>
+      <data key="d1">2384815.0</data>
+      <data key="d2">133.6036218495333</data>
+    </node>
+    <node id="Jim Gaffigan">
+      <data key="d0">Comedian</data>
+      <data key="d1">2311585.0</data>
+      <data key="d2">132.22186822346615</data>
+    </node>
+    <node id="Tim Kennedy">
+      <data key="d0">Athlete</data>
+      <data key="d1">2245706.0</data>
+      <data key="d2">130.95365763624798</data>
+    </node>
+    <node id="Dr. Phil">
+      <data key="d0">Celebrity</data>
+      <data key="d1">2112837.0</data>
+      <data key="d2">128.318319864331</data>
+    </node>
+    <node id="Jynxzi">
+      <data key="d0">Influencer</data>
+      <data key="d1">2081412.0</data>
+      <data key="d2">127.67896436682358</data>
+    </node>
+    <node id="Dax Shepard">
+      <data key="d0">Celebrity</data>
+      <data key="d1">2018166.0</data>
+      <data key="d2">126.37241793885197</data>
+    </node>
+    <node id="Mike Baker">
+      <data key="d0">Other</data>
+      <data key="d1">1984068.0</data>
+      <data key="d2">125.65666165643478</data>
+    </node>
+    <node id="Yung Gravy">
+      <data key="d0">Celebrity</data>
+      <data key="d1">1928278.0</data>
+      <data key="d2">124.4676668562309</data>
+    </node>
+    <node id="Myron Gaines">
+      <data key="d0">Influencer</data>
+      <data key="d1">1886794.0</data>
+      <data key="d2">123.56861021815124</data>
+    </node>
+    <node id="David Pakman">
+      <data key="d0">Political Pundit</data>
+      <data key="d1">1842765.0</data>
+      <data key="d2">122.59986303626916</data>
+    </node>
+    <node id="Bradley Martyn">
+      <data key="d0">Influencer</data>
+      <data key="d1">1819385.0</data>
+      <data key="d2">122.07916120143483</data>
+    </node>
+    <node id="Max Tegmark">
+      <data key="d0">Intellectual</data>
+      <data key="d1">1786096.0</data>
+      <data key="d2">121.330019096634</data>
+    </node>
+    <node id="Pete Hegseth">
+      <data key="d0">Politician</data>
+      <data key="d1">1726402.0</data>
+      <data key="d2">119.96299785077322</data>
+    </node>
+    <node id="Mike Vecchione">
+      <data key="d0">Comedian</data>
+      <data key="d1">1703662.0</data>
+      <data key="d2">119.43395450612995</data>
+    </node>
+    <node id="Michael Shellenberger">
+      <data key="d0">Political Pundit</data>
+      <data key="d1">1701037.0</data>
+      <data key="d2">119.37258175158443</data>
+    </node>
+    <node id="Dwayne Johnson">
+      <data key="d0">Celebrity</data>
+      <data key="d1">1667206.0</data>
+      <data key="d2">118.57589777789055</data>
+    </node>
+    <node id="Colby Covington">
+      <data key="d0">Athlete</data>
+      <data key="d1">1637553.0</data>
+      <data key="d2">117.86868951544491</data>
+    </node>
+    <node id="Marc Andreessen">
+      <data key="d0">Other</data>
+      <data key="d1">1590909.0</data>
+      <data key="d2">116.73876994144375</data>
+    </node>
+    <node id="Sebastian Maniscalco">
+      <data key="d0">Comedian</data>
+      <data key="d1">1573721.0</data>
+      <data key="d2">116.31683596424358</data>
+    </node>
+    <node id="Nick Kyrgios">
+      <data key="d0">Athlete</data>
+      <data key="d1">1503389.0</data>
+      <data key="d2">114.55756911273143</data>
+    </node>
+    <node id="Neal Brennan">
+      <data key="d0">Comedian</data>
+      <data key="d1">1464645.0</data>
+      <data key="d2">113.56490042548013</data>
+    </node>
+    <node id="Brian Simpson">
+      <data key="d0">Comedian</data>
+      <data key="d1">1418936.0</data>
+      <data key="d2">112.37100605989237</data>
+    </node>
+    <node id="Sara Walker">
+      <data key="d0">Intellectual</data>
+      <data key="d1">1409328.0</data>
+      <data key="d2">112.11679992081642</data>
+    </node>
+    <node id="Cenk Uygur">
+      <data key="d0">Political Pundit</data>
+      <data key="d1">1408907.0</data>
+      <data key="d2">112.10563481858642</data>
+    </node>
+    <node id="Machine Gun Kelly">
+      <data key="d0">Celebrity</data>
+      <data key="d1">1404987.0</data>
+      <data key="d2">112.00156779267952</data>
+    </node>
+    <node id="Dennis Quaid">
+      <data key="d0">Celebrity</data>
+      <data key="d1">1401997.0</data>
+      <data key="d2">111.92205993276166</data>
+    </node>
+    <node id="Luke Combs">
+      <data key="d0">Celebrity</data>
+      <data key="d1">1399103.0</data>
+      <data key="d2">111.84499710412535</data>
+    </node>
+    <node id="Liver King">
+      <data key="d0">Influencer</data>
+      <data key="d1">1359164.0</data>
+      <data key="d2">110.770458745092</data>
+    </node>
+    <node id="Gary Brecka">
+      <data key="d0">Intellectual</data>
+      <data key="d1">1334619.0</data>
+      <data key="d2">110.09960674698115</data>
+    </node>
+    <node id="Francis Suarez">
+      <data key="d0">Politician</data>
+      <data key="d1">1326883.0</data>
+      <data key="d2">109.88646688263722</data>
+    </node>
+    <node id="David Blaine">
+      <data key="d0">Celebrity</data>
+      <data key="d1">1251848.0</data>
+      <data key="d2">107.77479363340038</data>
+    </node>
+    <node id="Whitney Cummings">
+      <data key="d0">Comedian</data>
+      <data key="d1">1191383.0</data>
+      <data key="d2">106.01088650500249</data>
+    </node>
+    <node id="Bjorn Lomborg">
+      <data key="d0">Intellectual</data>
+      <data key="d1">1167034.0</data>
+      <data key="d2">105.28370741787592</data>
+    </node>
+    <node id="Avi Loeb">
+      <data key="d0">Intellectual</data>
+      <data key="d1">1100788.0</data>
+      <data key="d2">103.25265525986137</data>
+    </node>
+    <node id="Bryan Callen">
+      <data key="d0">Comedian</data>
+      <data key="d1">1001051.0</data>
+      <data key="d2">100.03502106715011</data>
+    </node>
+    <node id="Rick Ross">
+      <data key="d0">Celebrity</data>
+      <data key="d1">995871.0</data>
+      <data key="d2">99.86217680159258</data>
+    </node>
+    <node id="Trevor Bauer">
+      <data key="d0">Athlete</data>
+      <data key="d1">986045.0</data>
+      <data key="d2">99.53265259991042</data>
+    </node>
+    <node id="Aljamain Sterling">
+      <data key="d0">Athlete</data>
+      <data key="d1">918652.0</data>
+      <data key="d2">97.2113576007343</data>
+    </node>
+    <node id="Pauly Shore">
+      <data key="d0">Comedian</data>
+      <data key="d1">910005.0</data>
+      <data key="d2">96.90538831608106</data>
+    </node>
+    <node id="Buck Sexton">
+      <data key="d0">Political Pundit</data>
+      <data key="d1">894575.0</data>
+      <data key="d2">96.35455552152133</data>
+    </node>
+    <node id="Gina Carano">
+      <data key="d0">Celebrity</data>
+      <data key="d1">857296.0</data>
+      <data key="d2">94.99708208950976</data>
+    </node>
+    <node id="Danny Philippou">
+      <data key="d0">Celebrity</data>
+      <data key="d1">696160.0</data>
+      <data key="d2">88.62774279114649</data>
+    </node>
+    <node id="Michael Philippou">
+      <data key="d0">Celebrity</data>
+      <data key="d1">696160.0</data>
+      <data key="d2">88.62774279114649</data>
+    </node>
+    <node id="Anuel AA">
+      <data key="d0">Celebrity</data>
+      <data key="d1">597859.0</data>
+      <data key="d2">84.2428253362501</data>
+    </node>
+    <node id="Mike Benz">
+      <data key="d0">Political Pundit</data>
+      <data key="d1">551123.0</data>
+      <data key="d2">81.9878526523156</data>
+    </node>
+    <node id="Kyle Kulinski">
+      <data key="d0">Political Pundit</data>
+      <data key="d1">510996.0</data>
+      <data key="d2">79.94767411581826</data>
+    </node>
+    <node id="Rick Doblin">
+      <data key="d0">Intellectual</data>
+      <data key="d1">175536.0</data>
+      <data key="d2">55.99149530710123</data>
+    </node>
+    <edge source="Donald Trump" target="Adin Live" />
+    <edge source="Donald Trump" target="FLAGRANT" />
+    <edge source="Donald Trump" target="FULL SEND PODCAST" />
+    <edge source="Donald Trump" target="IMPAULSIVE" />
+    <edge source="Donald Trump" target="Lex Fridman" />
+    <edge source="Donald Trump" target="PBD Podcast" />
+    <edge source="Donald Trump" target="PowerfulJRE" />
+    <edge source="Donald Trump" target="Shawn Ryan Show" />
+    <edge source="Donald Trump" target="Theo Von" />
+    <edge source="Theo Von" target="FULL SEND PODCAST" />
+    <edge source="Theo Von" target="PowerfulJRE" />
+    <edge source="Andrew Tate" target="Adin Live" />
+    <edge source="Andrew Tate" target="FULL SEND PODCAST" />
+    <edge source="Andrew Tate" target="PBD Podcast" />
+    <edge source="Tucker Carlson" target="FULL SEND PODCAST" />
+    <edge source="Tucker Carlson" target="Lex Fridman" />
+    <edge source="Tucker Carlson" target="PowerfulJRE" />
+    <edge source="Tucker Carlson" target="Shawn Ryan Show" />
+    <edge source="Tucker Carlson" target="Theo Von" />
+    <edge source="Elon Musk" target="Lex Fridman" />
+    <edge source="Elon Musk" target="PowerfulJRE" />
+    <edge source="Shane Gillis" target="FLAGRANT" />
+    <edge source="Shane Gillis" target="PowerfulJRE" />
+    <edge source="Shane Gillis" target="Theo Von" />
+    <edge source="JD Vance" target="FULL SEND PODCAST" />
+    <edge source="JD Vance" target="PowerfulJRE" />
+    <edge source="JD Vance" target="Shawn Ryan Show" />
+    <edge source="JD Vance" target="Theo Von" />
+    <edge source="Ben Shapiro" target="FULL SEND PODCAST" />
+    <edge source="Ben Shapiro" target="Lex Fridman" />
+    <edge source="Dana White" target="Adin Live" />
+    <edge source="Dana White" target="FLAGRANT" />
+    <edge source="Dana White" target="FULL SEND PODCAST" />
+    <edge source="Dana White" target="Lex Fridman" />
+    <edge source="Dana White" target="Theo Von" />
+    <edge source="Kai Cenat" target="Adin Live" />
+    <edge source="Kai Cenat" target="FULL SEND PODCAST" />
+    <edge source="Jake Paul" target="Adin Live" />
+    <edge source="Jake Paul" target="FULL SEND PODCAST" />
+    <edge source="Jake Paul" target="IMPAULSIVE" />
+    <edge source="Graham Hancock" target="FLAGRANT" />
+    <edge source="Graham Hancock" target="Lex Fridman" />
+    <edge source="Graham Hancock" target="PBD Podcast" />
+    <edge source="Graham Hancock" target="PowerfulJRE" />
+    <edge source="iShowSpeed" target="Adin Live" />
+    <edge source="iShowSpeed" target="FULL SEND PODCAST" />
+    <edge source="iShowSpeed" target="IMPAULSIVE" />
+    <edge source="Destiny" target="Adin Live" />
+    <edge source="Destiny" target="Lex Fridman" />
+    <edge source="Destiny" target="PBD Podcast" />
+    <edge source="Bobby Lee" target="IMPAULSIVE" />
+    <edge source="Bobby Lee" target="PowerfulJRE" />
+    <edge source="Bobby Lee" target="Theo Von" />
+    <edge source="Paul Rosolie" target="Lex Fridman" />
+    <edge source="Paul Rosolie" target="PowerfulJRE" />
+    <edge source="Joey Diaz" target="FLAGRANT" />
+    <edge source="Joey Diaz" target="PowerfulJRE" />
+    <edge source="Joey Diaz" target="Theo Von" />
+    <edge source="Dave Smith" target="FLAGRANT" />
+    <edge source="Dave Smith" target="PBD Podcast" />
+    <edge source="Dave Smith" target="PowerfulJRE" />
+    <edge source="KSI" target="Adin Live" />
+    <edge source="KSI" target="IMPAULSIVE" />
+    <edge source="KSI" target="Theo Von" />
+    <edge source="George Janko" target="IMPAULSIVE" />
+    <edge source="George Janko" target="PBD Podcast" />
+    <edge source="Druski" target="FLAGRANT" />
+    <edge source="Druski" target="Theo Von" />
+    <edge source="Tim Dillon" target="FLAGRANT" />
+    <edge source="Tim Dillon" target="PBD Podcast" />
+    <edge source="Tim Dillon" target="PowerfulJRE" />
+    <edge source="Tim Dillon" target="Theo Von" />
+    <edge source="Jordan Peterson" target="FULL SEND PODCAST" />
+    <edge source="Jordan Peterson" target="Lex Fridman" />
+    <edge source="Jordan Peterson" target="PowerfulJRE" />
+    <edge source="Jordan Peterson" target="Shawn Ryan Show" />
+    <edge source="Jordan Peterson" target="Theo Von" />
+    <edge source="David Kipping" target="Lex Fridman" />
+    <edge source="David Kipping" target="PBD Podcast" />
+    <edge source="RFK Jr." target="FLAGRANT" />
+    <edge source="RFK Jr." target="FULL SEND PODCAST" />
+    <edge source="RFK Jr." target="Lex Fridman" />
+    <edge source="RFK Jr." target="PBD Podcast" />
+    <edge source="RFK Jr." target="PowerfulJRE" />
+    <edge source="RFK Jr." target="Shawn Ryan Show" />
+    <edge source="RFK Jr." target="Theo Von" />
+    <edge source="Billy Carson" target="FLAGRANT" />
+    <edge source="Billy Carson" target="PBD Podcast" />
+    <edge source="Billy Carson" target="PowerfulJRE" />
+    <edge source="Billy Carson" target="Shawn Ryan Show" />
+    <edge source="Louis C.K." target="PowerfulJRE" />
+    <edge source="Louis C.K." target="Theo Von" />
+    <edge source="Neil deGrasse Tyson" target="PBD Podcast" />
+    <edge source="Neil deGrasse Tyson" target="PowerfulJRE" />
+    <edge source="Neil deGrasse Tyson" target="Theo Von" />
+    <edge source="Coffeezilla" target="Lex Fridman" />
+    <edge source="Coffeezilla" target="PowerfulJRE" />
+    <edge source="Candace Owens" target="Adin Live" />
+    <edge source="Candace Owens" target="FULL SEND PODCAST" />
+    <edge source="Candace Owens" target="PBD Podcast" />
+    <edge source="Sean O'Malley" target="Adin Live" />
+    <edge source="Sean O'Malley" target="FLAGRANT" />
+    <edge source="Sean O'Malley" target="FULL SEND PODCAST" />
+    <edge source="Sean O'Malley" target="IMPAULSIVE" />
+    <edge source="Sean O'Malley" target="PBD Podcast" />
+    <edge source="Dillon Danis" target="Adin Live" />
+    <edge source="Dillon Danis" target="FLAGRANT" />
+    <edge source="Dillon Danis" target="FULL SEND PODCAST" />
+    <edge source="Stavros Halkias" target="PowerfulJRE" />
+    <edge source="Stavros Halkias" target="Theo Von" />
+    <edge source="Vivek Ramaswamy" target="FLAGRANT" />
+    <edge source="Vivek Ramaswamy" target="FULL SEND PODCAST" />
+    <edge source="Vivek Ramaswamy" target="Lex Fridman" />
+    <edge source="Vivek Ramaswamy" target="PBD Podcast" />
+    <edge source="Vivek Ramaswamy" target="Shawn Ryan Show" />
+    <edge source="Israel Adesanya" target="FLAGRANT" />
+    <edge source="Israel Adesanya" target="IMPAULSIVE" />
+    <edge source="Israel Adesanya" target="Theo Von" />
+    <edge source="Matt McCusker" target="PowerfulJRE" />
+    <edge source="Matt McCusker" target="Theo Von" />
+    <edge source="Ryan Montgomery" target="PBD Podcast" />
+    <edge source="Ryan Montgomery" target="Shawn Ryan Show" />
+    <edge source="Ari Shaffir" target="FLAGRANT" />
+    <edge source="Ari Shaffir" target="PowerfulJRE" />
+    <edge source="Ari Shaffir" target="Theo Von" />
+    <edge source="Sam Altman" target="Lex Fridman" />
+    <edge source="Sam Altman" target="PowerfulJRE" />
+    <edge source="DJ Akademiks" target="Adin Live" />
+    <edge source="DJ Akademiks" target="FLAGRANT" />
+    <edge source="DJ Akademiks" target="FULL SEND PODCAST" />
+    <edge source="Steven Greer" target="PBD Podcast" />
+    <edge source="Steven Greer" target="Shawn Ryan Show" />
+    <edge source="That Mexican OT" target="Adin Live" />
+    <edge source="That Mexican OT" target="FLAGRANT" />
+    <edge source="That Mexican OT" target="PowerfulJRE" />
+    <edge source="Andrew Bustamante" target="FLAGRANT" />
+    <edge source="Andrew Bustamante" target="Shawn Ryan Show" />
+    <edge source="Mark Normand" target="PowerfulJRE" />
+    <edge source="Mark Normand" target="Theo Von" />
+    <edge source="Yeonmi Park" target="FLAGRANT" />
+    <edge source="Yeonmi Park" target="PBD Podcast" />
+    <edge source="Yeonmi Park" target="Shawn Ryan Show" />
+    <edge source="Duncan Trussell" target="PowerfulJRE" />
+    <edge source="Duncan Trussell" target="Theo Von" />
+    <edge source="Andrew Schulz" target="PBD Podcast" />
+    <edge source="Andrew Schulz" target="PowerfulJRE" />
+    <edge source="Ryan Garcia" target="Adin Live" />
+    <edge source="Ryan Garcia" target="FULL SEND PODCAST" />
+    <edge source="Ryan Garcia" target="IMPAULSIVE" />
+    <edge source="Ryan Garcia" target="PBD Podcast" />
+    <edge source="Sean Strickland" target="FULL SEND PODCAST" />
+    <edge source="Sean Strickland" target="Theo Von" />
+    <edge source="Chael Sonnen" target="FLAGRANT" />
+    <edge source="Chael Sonnen" target="PBD Podcast" />
+    <edge source="Andrew Santino" target="FLAGRANT" />
+    <edge source="Andrew Santino" target="IMPAULSIVE" />
+    <edge source="Andrew Santino" target="PowerfulJRE" />
+    <edge source="Andrew Santino" target="Theo Von" />
+    <edge source="Lil Yachty" target="FLAGRANT" />
+    <edge source="Lil Yachty" target="FULL SEND PODCAST" />
+    <edge source="Jelly Roll" target="FLAGRANT" />
+    <edge source="Jelly Roll" target="FULL SEND PODCAST" />
+    <edge source="Jelly Roll" target="IMPAULSIVE" />
+    <edge source="Jelly Roll" target="PowerfulJRE" />
+    <edge source="Jelly Roll" target="Theo Von" />
+    <edge source="Andrew Huberman" target="FLAGRANT" />
+    <edge source="Andrew Huberman" target="Lex Fridman" />
+    <edge source="Andrew Huberman" target="PowerfulJRE" />
+    <edge source="Bert Kreischer" target="FLAGRANT" />
+    <edge source="Bert Kreischer" target="IMPAULSIVE" />
+    <edge source="Bert Kreischer" target="Lex Fridman" />
+    <edge source="Bert Kreischer" target="PowerfulJRE" />
+    <edge source="Tom Segura" target="PowerfulJRE" />
+    <edge source="Tom Segura" target="Theo Von" />
+    <edge source="MrBeast" target="IMPAULSIVE" />
+    <edge source="MrBeast" target="Lex Fridman" />
+    <edge source="Dave Portnoy" target="FLAGRANT" />
+    <edge source="Dave Portnoy" target="IMPAULSIVE" />
+    <edge source="Dave Portnoy" target="PowerfulJRE" />
+    <edge source="Dave Portnoy" target="Theo Von" />
+    <edge source="Bassem Youssef" target="Lex Fridman" />
+    <edge source="Bassem Youssef" target="PBD Podcast" />
+    <edge source="Bassem Youssef" target="Theo Von" />
+    <edge source="Post Malone" target="PowerfulJRE" />
+    <edge source="Post Malone" target="Theo Von" />
+    <edge source="Matt Walsh" target="FULL SEND PODCAST" />
+    <edge source="Matt Walsh" target="PowerfulJRE" />
+    <edge source="Tulsi Gabbard" target="Lex Fridman" />
+    <edge source="Tulsi Gabbard" target="PBD Podcast" />
+    <edge source="Tulsi Gabbard" target="PowerfulJRE" />
+    <edge source="Tulsi Gabbard" target="Shawn Ryan Show" />
+    <edge source="Bernie Sanders" target="Lex Fridman" />
+    <edge source="Bernie Sanders" target="Theo Von" />
+    <edge source="Trevor Wallace" target="FLAGRANT" />
+    <edge source="Trevor Wallace" target="Theo Von" />
+    <edge source="Hulk Hogan" target="FULL SEND PODCAST" />
+    <edge source="Hulk Hogan" target="IMPAULSIVE" />
+    <edge source="Hulk Hogan" target="PBD Podcast" />
+    <edge source="Hulk Hogan" target="Theo Von" />
+    <edge source="Ice Cube" target="FULL SEND PODCAST" />
+    <edge source="Ice Cube" target="IMPAULSIVE" />
+    <edge source="Ice Cube" target="PBD Podcast" />
+    <edge source="Ice Cube" target="PowerfulJRE" />
+    <edge source="Ben van Kerkwyk" target="FLAGRANT" />
+    <edge source="Ben van Kerkwyk" target="PowerfulJRE" />
+    <edge source="JiDion" target="Adin Live" />
+    <edge source="JiDion" target="FLAGRANT" />
+    <edge source="Noland Arbaugh" target="Lex Fridman" />
+    <edge source="Noland Arbaugh" target="PowerfulJRE" />
+    <edge source="Sal Vulcano" target="PowerfulJRE" />
+    <edge source="Sal Vulcano" target="Theo Von" />
+    <edge source="Patrick Bet-David" target="FLAGRANT" />
+    <edge source="Patrick Bet-David" target="FULL SEND PODCAST" />
+    <edge source="xQc" target="Adin Live" />
+    <edge source="xQc" target="IMPAULSIVE" />
+    <edge source="Mark Cuban" target="FLAGRANT" />
+    <edge source="Mark Cuban" target="IMPAULSIVE" />
+    <edge source="Mark Cuban" target="Lex Fridman" />
+    <edge source="Mark Cuban" target="Theo Von" />
+    <edge source="Cliffe Knechtle" target="IMPAULSIVE" />
+    <edge source="Cliffe Knechtle" target="PBD Podcast" />
+    <edge source="Rice Gum" target="Adin Live" />
+    <edge source="Rice Gum" target="FULL SEND PODCAST" />
+    <edge source="Michael Malice" target="FLAGRANT" />
+    <edge source="Michael Malice" target="Lex Fridman" />
+    <edge source="Michael Malice" target="PBD Podcast" />
+    <edge source="Michael Malice" target="PowerfulJRE" />
+    <edge source="Stephen A. Smith" target="FLAGRANT" />
+    <edge source="Stephen A. Smith" target="FULL SEND PODCAST" />
+    <edge source="Stephen A. Smith" target="PBD Podcast" />
+    <edge source="Annie Jacobsen" target="Lex Fridman" />
+    <edge source="Annie Jacobsen" target="PowerfulJRE" />
+    <edge source="Annie Jacobsen" target="Shawn Ryan Show" />
+    <edge source="Kyle Forgeard" target="Adin Live" />
+    <edge source="Kyle Forgeard" target="Theo Von" />
+    <edge source="Sketch" target="Adin Live" />
+    <edge source="Sketch" target="Theo Von" />
+    <edge source="Sexxy Red" target="Adin Live" />
+    <edge source="Sexxy Red" target="Theo Von" />
+    <edge source="Bret Weinstein" target="PBD Podcast" />
+    <edge source="Bret Weinstein" target="PowerfulJRE" />
+    <edge source="Erik Prince" target="PBD Podcast" />
+    <edge source="Erik Prince" target="Shawn Ryan Show" />
+    <edge source="Konstantin Kisin" target="PBD Podcast" />
+    <edge source="Konstantin Kisin" target="PowerfulJRE" />
+    <edge source="Randall Carlson" target="PBD Podcast" />
+    <edge source="Randall Carlson" target="PowerfulJRE" />
+    <edge source="Randall Carlson" target="Shawn Ryan Show" />
+    <edge source="Casey Neistat" target="FLAGRANT" />
+    <edge source="Casey Neistat" target="IMPAULSIVE" />
+    <edge source="Nick Irving" target="PBD Podcast" />
+    <edge source="Nick Irving" target="Shawn Ryan Show" />
+    <edge source="Mike Rowe" target="PBD Podcast" />
+    <edge source="Mike Rowe" target="Theo Von" />
+    <edge source="Jimmy Dore" target="PBD Podcast" />
+    <edge source="Jimmy Dore" target="PowerfulJRE" />
+    <edge source="Chris Bumstead" target="FULL SEND PODCAST" />
+    <edge source="Chris Bumstead" target="PBD Podcast" />
+    <edge source="Ralph Barbosa" target="FLAGRANT" />
+    <edge source="Ralph Barbosa" target="PowerfulJRE" />
+    <edge source="Alex Volkanovski" target="FLAGRANT" />
+    <edge source="Alex Volkanovski" target="FULL SEND PODCAST" />
+    <edge source="Alex Volkanovski" target="IMPAULSIVE" />
+    <edge source="Ric Flair" target="FULL SEND PODCAST" />
+    <edge source="Ric Flair" target="Theo Von" />
+    <edge source="Eric Hecker" target="PBD Podcast" />
+    <edge source="Eric Hecker" target="Shawn Ryan Show" />
+    <edge source="Chris Distefano" target="FLAGRANT" />
+    <edge source="Chris Distefano" target="PowerfulJRE" />
+    <edge source="Luis Elizondo" target="PBD Podcast" />
+    <edge source="Luis Elizondo" target="PowerfulJRE" />
+    <edge source="Georges St-Pierre" target="FULL SEND PODCAST" />
+    <edge source="Georges St-Pierre" target="Theo Von" />
+    <edge source="Mike Majlak" target="Adin Live" />
+    <edge source="Mike Majlak" target="FULL SEND PODCAST" />
+    <edge source="Mike Majlak" target="PBD Podcast" />
+    <edge source="Mike Tyson" target="IMPAULSIVE" />
+    <edge source="Mike Tyson" target="PBD Podcast" />
+    <edge source="Chamath Palihapitiya" target="Lex Fridman" />
+    <edge source="Chamath Palihapitiya" target="PowerfulJRE" />
+    <edge source="Kid Rock" target="PowerfulJRE" />
+    <edge source="Kid Rock" target="Theo Von" />
+    <edge source="Kamaru Usman" target="FLAGRANT" />
+    <edge source="Kamaru Usman" target="FULL SEND PODCAST" />
+    <edge source="Kamaru Usman" target="PBD Podcast" />
+    <edge source="Cody Rhodes" target="FLAGRANT" />
+    <edge source="Cody Rhodes" target="IMPAULSIVE" />
+    <edge source="FaZe Banks" target="Adin Live" />
+    <edge source="FaZe Banks" target="IMPAULSIVE" />
+    <edge source="Action Bronson" target="FLAGRANT" />
+    <edge source="Action Bronson" target="PowerfulJRE" />
+    <edge source="Craig Jones" target="FLAGRANT" />
+    <edge source="Craig Jones" target="Lex Fridman" />
+    <edge source="Jim Gaffigan" target="PowerfulJRE" />
+    <edge source="Jim Gaffigan" target="Theo Von" />
+    <edge source="Tim Kennedy" target="PowerfulJRE" />
+    <edge source="Tim Kennedy" target="Shawn Ryan Show" />
+    <edge source="Dr. Phil" target="FULL SEND PODCAST" />
+    <edge source="Dr. Phil" target="PowerfulJRE" />
+    <edge source="Jynxzi" target="Adin Live" />
+    <edge source="Jynxzi" target="FULL SEND PODCAST" />
+    <edge source="Dax Shepard" target="FLAGRANT" />
+    <edge source="Dax Shepard" target="Theo Von" />
+    <edge source="Mike Baker" target="PBD Podcast" />
+    <edge source="Mike Baker" target="PowerfulJRE" />
+    <edge source="Yung Gravy" target="IMPAULSIVE" />
+    <edge source="Yung Gravy" target="Theo Von" />
+    <edge source="Myron Gaines" target="Adin Live" />
+    <edge source="Myron Gaines" target="PBD Podcast" />
+    <edge source="David Pakman" target="Lex Fridman" />
+    <edge source="David Pakman" target="PBD Podcast" />
+    <edge source="Bradley Martyn" target="Adin Live" />
+    <edge source="Bradley Martyn" target="FULL SEND PODCAST" />
+    <edge source="Max Tegmark" target="Lex Fridman" />
+    <edge source="Max Tegmark" target="PBD Podcast" />
+    <edge source="Pete Hegseth" target="PBD Podcast" />
+    <edge source="Pete Hegseth" target="Shawn Ryan Show" />
+    <edge source="Mike Vecchione" target="PowerfulJRE" />
+    <edge source="Mike Vecchione" target="Theo Von" />
+    <edge source="Michael Shellenberger" target="PowerfulJRE" />
+    <edge source="Michael Shellenberger" target="Shawn Ryan Show" />
+    <edge source="Dwayne Johnson" target="PBD Podcast" />
+    <edge source="Dwayne Johnson" target="PowerfulJRE" />
+    <edge source="Colby Covington" target="FULL SEND PODCAST" />
+    <edge source="Colby Covington" target="PBD Podcast" />
+    <edge source="Marc Andreessen" target="Lex Fridman" />
+    <edge source="Marc Andreessen" target="PowerfulJRE" />
+    <edge source="Sebastian Maniscalco" target="FLAGRANT" />
+    <edge source="Sebastian Maniscalco" target="PowerfulJRE" />
+    <edge source="Nick Kyrgios" target="IMPAULSIVE" />
+    <edge source="Nick Kyrgios" target="Theo Von" />
+    <edge source="Neal Brennan" target="FLAGRANT" />
+    <edge source="Neal Brennan" target="PowerfulJRE" />
+    <edge source="Brian Simpson" target="FLAGRANT" />
+    <edge source="Brian Simpson" target="PowerfulJRE" />
+    <edge source="Sara Walker" target="Lex Fridman" />
+    <edge source="Sara Walker" target="PowerfulJRE" />
+    <edge source="Cenk Uygur" target="Lex Fridman" />
+    <edge source="Cenk Uygur" target="PBD Podcast" />
+    <edge source="Machine Gun Kelly" target="Adin Live" />
+    <edge source="Machine Gun Kelly" target="IMPAULSIVE" />
+    <edge source="Dennis Quaid" target="PBD Podcast" />
+    <edge source="Dennis Quaid" target="PowerfulJRE" />
+    <edge source="Luke Combs" target="PowerfulJRE" />
+    <edge source="Luke Combs" target="Theo Von" />
+    <edge source="Liver King" target="FLAGRANT" />
+    <edge source="Liver King" target="PBD Podcast" />
+    <edge source="Gary Brecka" target="FULL SEND PODCAST" />
+    <edge source="Gary Brecka" target="PowerfulJRE" />
+    <edge source="Francis Suarez" target="FULL SEND PODCAST" />
+    <edge source="Francis Suarez" target="PBD Podcast" />
+    <edge source="David Blaine" target="IMPAULSIVE" />
+    <edge source="David Blaine" target="PowerfulJRE" />
+    <edge source="Whitney Cummings" target="FLAGRANT" />
+    <edge source="Whitney Cummings" target="PowerfulJRE" />
+    <edge source="Bjorn Lomborg" target="Lex Fridman" />
+    <edge source="Bjorn Lomborg" target="PBD Podcast" />
+    <edge source="Bjorn Lomborg" target="PowerfulJRE" />
+    <edge source="Avi Loeb" target="PBD Podcast" />
+    <edge source="Avi Loeb" target="Shawn Ryan Show" />
+    <edge source="Bryan Callen" target="PBD Podcast" />
+    <edge source="Bryan Callen" target="PowerfulJRE" />
+    <edge source="Rick Ross" target="Adin Live" />
+    <edge source="Rick Ross" target="IMPAULSIVE" />
+    <edge source="Trevor Bauer" target="PBD Podcast" />
+    <edge source="Trevor Bauer" target="Theo Von" />
+    <edge source="Aljamain Sterling" target="Adin Live" />
+    <edge source="Aljamain Sterling" target="FLAGRANT" />
+    <edge source="Pauly Shore" target="PowerfulJRE" />
+    <edge source="Pauly Shore" target="Theo Von" />
+    <edge source="Buck Sexton" target="PBD Podcast" />
+    <edge source="Buck Sexton" target="Shawn Ryan Show" />
+    <edge source="Gina Carano" target="PBD Podcast" />
+    <edge source="Gina Carano" target="Shawn Ryan Show" />
+    <edge source="Danny Philippou" target="IMPAULSIVE" />
+    <edge source="Danny Philippou" target="PowerfulJRE" />
+    <edge source="Michael Philippou" target="IMPAULSIVE" />
+    <edge source="Michael Philippou" target="PowerfulJRE" />
+    <edge source="Anuel AA" target="Adin Live" />
+    <edge source="Anuel AA" target="IMPAULSIVE" />
+    <edge source="Mike Benz" target="PBD Podcast" />
+    <edge source="Mike Benz" target="Shawn Ryan Show" />
+    <edge source="Kyle Kulinski" target="PBD Podcast" />
+    <edge source="Kyle Kulinski" target="PowerfulJRE" />
+    <edge source="Rick Doblin" target="PowerfulJRE" />
+    <edge source="Rick Doblin" target="Shawn Ryan Show" />
+  </graph>
+</graphml>

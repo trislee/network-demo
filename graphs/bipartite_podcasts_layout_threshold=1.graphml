@@ -1,0 +1,3095 @@
+<?xml version="1.0" encoding="UTF-8"?><graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+    <key attr.name="label" attr.type="string" for="node" id="label"/>
+    <key attr.name="Edge Label" attr.type="string" for="edge" id="edgelabel"/>
+    <key attr.name="weight" attr.type="double" for="edge" id="weight"/>
+    <key attr.name="r" attr.type="int" for="node" id="r"/>
+    <key attr.name="g" attr.type="int" for="node" id="g"/>
+    <key attr.name="b" attr.type="int" for="node" id="b"/>
+    <key attr.name="x" attr.type="float" for="node" id="x"/>
+    <key attr.name="y" attr.type="float" for="node" id="y"/>
+    <key attr.name="size" attr.type="float" for="node" id="size"/>
+    <key attr.name="views" attr.type="int" for="node" id="d3"/>
+    <key attr.name="views_root_3" attr.type="double" for="node" id="d2"/>
+    <key attr.name="views" attr.type="double" for="node" id="d1"/>
+    <key attr.name="category" attr.type="string" for="node" id="d0"/>
+    <graph edgedefault="directed">
+        <node id="Donald Trump">
+            <data key="label">Donald Trump</data>
+            <data key="d2">484.3385221950354</data>
+            <data key="d1">1.13617973E8</data>
+            <data key="d0">Politician</data>
+            <data key="size">48.433846</data>
+            <data key="r">211</data>
+            <data key="g">179</data>
+            <data key="b">176</data>
+            <data key="x">82.94516</data>
+            <data key="y">-136.65341</data>
+        </node>
+        <node id="Adin Live">
+            <data key="label">Adin Live</data>
+            <data key="d3">147795456</data>
+            <data key="d2">528.7134524196795</data>
+            <data key="d0">Podcast</data>
+            <data key="size">52.871346</data>
+            <data key="r">192</data>
+            <data key="g">192</data>
+            <data key="b">192</data>
+            <data key="x">340.3942</data>
+            <data key="y">-575.3096</data>
+        </node>
+        <node id="FLAGRANT">
+            <data key="label">FLAGRANT</data>
+            <data key="d3">152751492</data>
+            <data key="d2">534.5583941373168</data>
+            <data key="d0">Podcast</data>
+            <data key="size">53.45584</data>
+            <data key="r">192</data>
+            <data key="g">192</data>
+            <data key="b">192</data>
+            <data key="x">-464.1808</data>
+            <data key="y">86.94192</data>
+        </node>
+        <node id="FULL SEND PODCAST">
+            <data key="label">FULL SEND PODCAST</data>
+            <data key="d3">150233745</data>
+            <data key="d2">531.605131498199</data>
+            <data key="d0">Podcast</data>
+            <data key="size">53.160515</data>
+            <data key="r">192</data>
+            <data key="g">192</data>
+            <data key="b">192</data>
+            <data key="x">335.56348</data>
+            <data key="y">-247.13185</data>
+        </node>
+        <node id="IMPAULSIVE">
+            <data key="label">IMPAULSIVE</data>
+            <data key="d3">94551111</data>
+            <data key="d2">455.5704490228543</data>
+            <data key="d0">Podcast</data>
+            <data key="size">45.557045</data>
+            <data key="r">192</data>
+            <data key="g">192</data>
+            <data key="b">192</data>
+            <data key="x">51.68372</data>
+            <data key="y">-449.20828</data>
+        </node>
+        <node id="Lex Fridman">
+            <data key="label">Lex Fridman</data>
+            <data key="d3">270171623</data>
+            <data key="d2">646.4673226501665</data>
+            <data key="d0">Podcast</data>
+            <data key="size">64.64673</data>
+            <data key="r">192</data>
+            <data key="g">192</data>
+            <data key="b">192</data>
+            <data key="x">143.23663</data>
+            <data key="y">105.69404</data>
+        </node>
+        <node id="PBD Podcast">
+            <data key="label">PBD Podcast</data>
+            <data key="d3">88837849</data>
+            <data key="d2">446.20319757516984</data>
+            <data key="d0">Podcast</data>
+            <data key="size">44.620316</data>
+            <data key="r">192</data>
+            <data key="g">192</data>
+            <data key="b">192</data>
+            <data key="x">320.5505</data>
+            <data key="y">338.02118</data>
+        </node>
+        <node id="PowerfulJRE">
+            <data key="label">PowerfulJRE</data>
+            <data key="d3">349288745</data>
+            <data key="d2">704.2521755260872</data>
+            <data key="d0">Podcast</data>
+            <data key="size">70.42522</data>
+            <data key="r">192</data>
+            <data key="g">192</data>
+            <data key="b">192</data>
+            <data key="x">-167.04836</data>
+            <data key="y">121.97165</data>
+        </node>
+        <node id="Shawn Ryan Show">
+            <data key="label">Shawn Ryan Show</data>
+            <data key="d3">114693423</data>
+            <data key="d2">485.8618932207384</data>
+            <data key="d0">Podcast</data>
+            <data key="size">48.58619</data>
+            <data key="r">192</data>
+            <data key="g">192</data>
+            <data key="b">192</data>
+            <data key="x">151.01956</data>
+            <data key="y">621.17126</data>
+        </node>
+        <node id="Theo Von">
+            <data key="label">Theo Von</data>
+            <data key="d3">273721303</data>
+            <data key="d2">649.2862405769024</data>
+            <data key="d0">Podcast</data>
+            <data key="size">64.92862</data>
+            <data key="r">192</data>
+            <data key="g">192</data>
+            <data key="b">192</data>
+            <data key="x">-282.58368</data>
+            <data key="y">-325.5719</data>
+        </node>
+        <node id="Andrew Tate">
+            <data key="label">Andrew Tate</data>
+            <data key="d2">432.013359783455</data>
+            <data key="d1">8.0629048E7</data>
+            <data key="d0">Influencer</data>
+            <data key="size">43.201332</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">538.6711</data>
+            <data key="y">-212.69759</data>
+        </node>
+        <node id="Tucker Carlson">
+            <data key="label">Tucker Carlson</data>
+            <data key="d2">365.95508670807527</data>
+            <data key="d1">4.9009849E7</data>
+            <data key="d0">Political Pundit</data>
+            <data key="size">36.595505</data>
+            <data key="r">255</data>
+            <data key="g">136</data>
+            <data key="b">5</data>
+            <data key="x">170.2975</data>
+            <data key="y">-44.335884</data>
+        </node>
+        <node id="Elon Musk">
+            <data key="label">Elon Musk</data>
+            <data key="d2">337.48251578377324</data>
+            <data key="d1">3.8437385E7</data>
+            <data key="d0">Politician</data>
+            <data key="size">33.748253</data>
+            <data key="r">211</data>
+            <data key="g">179</data>
+            <data key="b">176</data>
+            <data key="x">-22.875849</data>
+            <data key="y">63.488327</data>
+        </node>
+        <node id="Shane Gillis">
+            <data key="label">Shane Gillis</data>
+            <data key="d2">320.1874715288412</data>
+            <data key="d1">3.2825625E7</data>
+            <data key="d0">Comedian</data>
+            <data key="size">32.018745</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-430.02588</data>
+            <data key="y">-100.003815</data>
+        </node>
+        <node id="JD Vance">
+            <data key="label">JD Vance</data>
+            <data key="d2">301.5300462251568</data>
+            <data key="d1">2.7415223E7</data>
+            <data key="d0">Politician</data>
+            <data key="size">30.153004</data>
+            <data key="r">211</data>
+            <data key="g">179</data>
+            <data key="b">176</data>
+            <data key="x">-34.66208</data>
+            <data key="y">-96.39435</data>
+        </node>
+        <node id="Ben Shapiro">
+            <data key="label">Ben Shapiro</data>
+            <data key="d2">294.64044674891994</data>
+            <data key="d1">2.5578619E7</data>
+            <data key="d0">Political Pundit</data>
+            <data key="size">29.464045</data>
+            <data key="r">255</data>
+            <data key="g">136</data>
+            <data key="b">5</data>
+            <data key="x">387.64642</data>
+            <data key="y">-95.22638</data>
+        </node>
+        <node id="Dana White">
+            <data key="label">Dana White</data>
+            <data key="d2">294.0670478147509</data>
+            <data key="d1">2.5429574E7</data>
+            <data key="d0">Athlete</data>
+            <data key="size">29.406704</data>
+            <data key="r">76</data>
+            <data key="g">70</data>
+            <data key="b">62</data>
+            <data key="x">35.277706</data>
+            <data key="y">-245.91489</data>
+        </node>
+        <node id="Kai Cenat">
+            <data key="label">Kai Cenat</data>
+            <data key="d2">282.4572707974017</data>
+            <data key="d1">2.2535037E7</data>
+            <data key="d0">Influencer</data>
+            <data key="size">28.245726</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">481.78006</data>
+            <data key="y">-563.93854</data>
+        </node>
+        <node id="Jake Paul">
+            <data key="label">Jake Paul</data>
+            <data key="d2">277.0407695425064</data>
+            <data key="d1">2.1263319E7</data>
+            <data key="d0">Influencer</data>
+            <data key="size">27.704077</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">204.3465</data>
+            <data key="y">-502.24258</data>
+        </node>
+        <node id="Graham Hancock">
+            <data key="label">Graham Hancock</data>
+            <data key="d2">274.7558030547209</data>
+            <data key="d1">2.0741522E7</data>
+            <data key="d0">Other</data>
+            <data key="size">27.47558</data>
+            <data key="r">255</data>
+            <data key="g">85</data>
+            <data key="b">132</data>
+            <data key="x">-52.623734</data>
+            <data key="y">283.99466</data>
+        </node>
+        <node id="iShowSpeed">
+            <data key="label">iShowSpeed</data>
+            <data key="d2">266.7207168217153</data>
+            <data key="d1">1.8974496E7</data>
+            <data key="d0">Influencer</data>
+            <data key="size">26.672071</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">272.357</data>
+            <data key="y">-462.00122</data>
+        </node>
+        <node id="Destiny">
+            <data key="label">Destiny</data>
+            <data key="d2">264.92595059295525</data>
+            <data key="d1">1.8594029E7</data>
+            <data key="d0">Political Pundit</data>
+            <data key="size">26.492594</data>
+            <data key="r">255</data>
+            <data key="g">136</data>
+            <data key="b">5</data>
+            <data key="x">384.04562</data>
+            <data key="y">71.58404</data>
+        </node>
+        <node id="Bobby Lee">
+            <data key="label">Bobby Lee</data>
+            <data key="d2">261.63301571848314</data>
+            <data key="d1">1.790926E7</data>
+            <data key="d0">Comedian</data>
+            <data key="size">26.163301</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-112.56568</data>
+            <data key="y">-363.03052</data>
+        </node>
+        <node id="Paul Rosolie">
+            <data key="label">Paul Rosolie</data>
+            <data key="d2">255.26385095157264</data>
+            <data key="d1">1.6632899E7</data>
+            <data key="d0">Other</data>
+            <data key="size">25.526384</data>
+            <data key="r">255</data>
+            <data key="g">85</data>
+            <data key="b">132</data>
+            <data key="x">31.144459</data>
+            <data key="y">171.46237</data>
+        </node>
+        <node id="Joey Diaz">
+            <data key="label">Joey Diaz</data>
+            <data key="d2">253.7710390476116</data>
+            <data key="d1">1.6342789E7</data>
+            <data key="d0">Comedian</data>
+            <data key="size">25.377102</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-572.7497</data>
+            <data key="y">-22.596264</data>
+        </node>
+        <node id="Dave Smith">
+            <data key="label">Dave Smith</data>
+            <data key="d2">253.10577422436938</data>
+            <data key="d1">1.6214597E7</data>
+            <data key="d0">Political Pundit</data>
+            <data key="size">25.310575</data>
+            <data key="r">255</data>
+            <data key="g">136</data>
+            <data key="b">5</data>
+            <data key="x">-254.3489</data>
+            <data key="y">323.30487</data>
+        </node>
+        <node id="KSI">
+            <data key="label">KSI</data>
+            <data key="d2">247.59629079867028</data>
+            <data key="d1">1.5178624E7</data>
+            <data key="d0">Influencer</data>
+            <data key="size">24.759628</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">30.522026</data>
+            <data key="y">-587.686</data>
+        </node>
+        <node id="George Janko">
+            <data key="label">George Janko</data>
+            <data key="d2">243.79714731212104</data>
+            <data key="d1">1.4490583E7</data>
+            <data key="d0">Influencer</data>
+            <data key="size">24.379713</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">481.29022</data>
+            <data key="y">204.6714</data>
+        </node>
+        <node id="Druski">
+            <data key="label">Druski</data>
+            <data key="d2">243.79529099227972</data>
+            <data key="d1">1.4490252E7</data>
+            <data key="d0">Comedian</data>
+            <data key="size">24.37953</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-555.4275</data>
+            <data key="y">-240.16634</data>
+        </node>
+        <node id="Tim Dillon">
+            <data key="label">Tim Dillon</data>
+            <data key="d2">241.71846457414566</data>
+            <data key="d1">1.4123082E7</data>
+            <data key="d0">Comedian</data>
+            <data key="size">24.171846</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-329.40497</data>
+            <data key="y">14.929292</data>
+        </node>
+        <node id="Jordan Peterson">
+            <data key="label">Jordan Peterson</data>
+            <data key="d2">236.65905505727855</data>
+            <data key="d1">1.3254684E7</data>
+            <data key="d0">Influencer</data>
+            <data key="size">23.665905</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">59.86273</data>
+            <data key="y">-24.443905</data>
+        </node>
+        <node id="David Kipping">
+            <data key="label">David Kipping</data>
+            <data key="d2">229.85518924782906</data>
+            <data key="d1">1.2144033E7</data>
+            <data key="d0">Intellectual</data>
+            <data key="size">22.985518</data>
+            <data key="r">0</data>
+            <data key="g">189</data>
+            <data key="b">148</data>
+            <data key="x">274.5811</data>
+            <data key="y">183.74228</data>
+        </node>
+        <node id="RFK Jr.">
+            <data key="label">RFK Jr.</data>
+            <data key="d2">225.95746713097122</data>
+            <data key="d1">1.153666E7</data>
+            <data key="d0">Politician</data>
+            <data key="size">22.595745</data>
+            <data key="r">211</data>
+            <data key="g">179</data>
+            <data key="b">176</data>
+            <data key="x">46.687817</data>
+            <data key="y">245.10844</data>
+        </node>
+        <node id="Billy Carson">
+            <data key="label">Billy Carson</data>
+            <data key="d2">224.69589203626808</data>
+            <data key="d1">1.1344501E7</data>
+            <data key="d0">Other</data>
+            <data key="size">22.46959</data>
+            <data key="r">255</data>
+            <data key="g">85</data>
+            <data key="b">132</data>
+            <data key="x">-101.97473</data>
+            <data key="y">461.1023</data>
+        </node>
+        <node id="Louis C.K.">
+            <data key="label">Louis C.K.</data>
+            <data key="d2">218.90520142438004</data>
+            <data key="d1">1.0489825E7</data>
+            <data key="d0">Comedian</data>
+            <data key="size">21.89052</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-370.76495</data>
+            <data key="y">-160.46358</data>
+        </node>
+        <node id="Neil deGrasse Tyson">
+            <data key="label">Neil deGrasse Tyson</data>
+            <data key="d2">218.40385396867467</data>
+            <data key="d1">1.0417917E7</data>
+            <data key="d0">Intellectual</data>
+            <data key="size">21.840384</data>
+            <data key="r">0</data>
+            <data key="g">189</data>
+            <data key="b">148</data>
+            <data key="x">-123.60807</data>
+            <data key="y">-64.50847</data>
+        </node>
+        <node id="Coffeezilla">
+            <data key="label">Coffeezilla</data>
+            <data key="d2">217.0234212015499</data>
+            <data key="d1">1.0221622E7</data>
+            <data key="d0">Influencer</data>
+            <data key="size">21.702341</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">0.0016550329</data>
+            <data key="y">0.01090979</data>
+        </node>
+        <node id="Candace Owens">
+            <data key="label">Candace Owens</data>
+            <data key="d2">216.9600257654321</data>
+            <data key="d1">1.0212667E7</data>
+            <data key="d0">Political Pundit</data>
+            <data key="size">21.696003</data>
+            <data key="r">255</data>
+            <data key="g">136</data>
+            <data key="b">5</data>
+            <data key="x">496.35364</data>
+            <data key="y">-342.0606</data>
+        </node>
+        <node id="Sean O'Malley">
+            <data key="label">Sean O'Malley</data>
+            <data key="d2">216.80744880749162</data>
+            <data key="d1">1.0191136E7</data>
+            <data key="d0">Athlete</data>
+            <data key="size">21.680744</data>
+            <data key="r">76</data>
+            <data key="g">70</data>
+            <data key="b">62</data>
+            <data key="x">210.621</data>
+            <data key="y">-361.64438</data>
+        </node>
+        <node id="Dillon Danis">
+            <data key="label">Dillon Danis</data>
+            <data key="d2">213.61304428514194</data>
+            <data key="d1">9747277.0</data>
+            <data key="d0">Athlete</data>
+            <data key="size">21.361305</data>
+            <data key="r">76</data>
+            <data key="g">70</data>
+            <data key="b">62</data>
+            <data key="x">350.13037</data>
+            <data key="y">-432.70462</data>
+        </node>
+        <node id="Stavros Halkias">
+            <data key="label">Stavros Halkias</data>
+            <data key="d2">213.30085253105509</data>
+            <data key="d1">9704603.0</data>
+            <data key="d0">Comedian</data>
+            <data key="size">21.330084</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-469.0972</data>
+            <data key="y">-299.66934</data>
+        </node>
+        <node id="Vivek Ramaswamy">
+            <data key="label">Vivek Ramaswamy</data>
+            <data key="d2">213.20104890322153</data>
+            <data key="d1">9690987.0</data>
+            <data key="d0">Politician</data>
+            <data key="size">21.320103</data>
+            <data key="r">211</data>
+            <data key="g">179</data>
+            <data key="b">176</data>
+            <data key="x">118.79833</data>
+            <data key="y">381.22684</data>
+        </node>
+        <node id="Israel Adesanya">
+            <data key="label">Israel Adesanya</data>
+            <data key="d2">212.02634062171356</data>
+            <data key="d1">9531680.0</data>
+            <data key="d0">Athlete</data>
+            <data key="size">21.202633</data>
+            <data key="r">76</data>
+            <data key="g">70</data>
+            <data key="b">62</data>
+            <data key="x">-358.19394</data>
+            <data key="y">-469.83676</data>
+        </node>
+        <node id="Matt McCusker">
+            <data key="label">Matt McCusker</data>
+            <data key="d2">210.44950577661135</data>
+            <data key="d1">9320597.0</data>
+            <data key="d0">Comedian</data>
+            <data key="size">21.044949</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-261.1334</data>
+            <data key="y">-90.528175</data>
+        </node>
+        <node id="Ryan Montgomery">
+            <data key="label">Ryan Montgomery</data>
+            <data key="d2">210.41143826937216</data>
+            <data key="d1">9315540.0</data>
+            <data key="d0">Intellectual</data>
+            <data key="size">21.041143</data>
+            <data key="r">0</data>
+            <data key="g">189</data>
+            <data key="b">148</data>
+            <data key="x">325.49176</data>
+            <data key="y">653.4921</data>
+        </node>
+        <node id="Ari Shaffir">
+            <data key="label">Ari Shaffir</data>
+            <data key="d2">209.46614209726206</data>
+            <data key="d1">9190550.0</data>
+            <data key="d0">Comedian</data>
+            <data key="size">20.946613</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-492.2773</data>
+            <data key="y">-54.255558</data>
+        </node>
+        <node id="Sam Altman">
+            <data key="label">Sam Altman</data>
+            <data key="d2">209.10241235905178</data>
+            <data key="d1">9142756.0</data>
+            <data key="d0">Other</data>
+            <data key="size">20.91024</data>
+            <data key="r">255</data>
+            <data key="g">85</data>
+            <data key="b">132</data>
+            <data key="x">-22.393078</data>
+            <data key="y">202.01588</data>
+        </node>
+        <node id="DJ Akademiks">
+            <data key="label">DJ Akademiks</data>
+            <data key="d2">208.63530027406358</data>
+            <data key="d1">9081621.0</data>
+            <data key="d0">Influencer</data>
+            <data key="size">20.86353</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">296.60947</data>
+            <data key="y">-387.43585</data>
+        </node>
+        <node id="Steven Greer">
+            <data key="label">Steven Greer</data>
+            <data key="d2">207.97676022403644</data>
+            <data key="d1">8995896.0</data>
+            <data key="d0">Other</data>
+            <data key="size">20.797674</data>
+            <data key="r">255</data>
+            <data key="g">85</data>
+            <data key="b">132</data>
+            <data key="x">346.62164</data>
+            <data key="y">531.0518</data>
+        </node>
+        <node id="That Mexican OT">
+            <data key="label">That Mexican OT</data>
+            <data key="d2">207.10711936544647</data>
+            <data key="d1">8883520.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">20.710712</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">-270.62396</data>
+            <data key="y">-25.696323</data>
+        </node>
+        <node id="Andrew Bustamante">
+            <data key="label">Andrew Bustamante</data>
+            <data key="d2">205.66597610357815</data>
+            <data key="d1">8699361.0</data>
+            <data key="d0">Other</data>
+            <data key="size">20.566597</data>
+            <data key="r">255</data>
+            <data key="g">85</data>
+            <data key="b">132</data>
+            <data key="x">-154.946</data>
+            <data key="y">602.8601</data>
+        </node>
+        <node id="Mark Normand">
+            <data key="label">Mark Normand</data>
+            <data key="d2">201.42087335640556</data>
+            <data key="d1">8171719.0</data>
+            <data key="d0">Comedian</data>
+            <data key="size">20.142088</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-425.82513</data>
+            <data key="y">-201.69814</data>
+        </node>
+        <node id="Yeonmi Park">
+            <data key="label">Yeonmi Park</data>
+            <data key="d2">199.93089279038486</data>
+            <data key="d1">7991710.0</data>
+            <data key="d0">Political Pundit</data>
+            <data key="size">19.993088</data>
+            <data key="r">255</data>
+            <data key="g">136</data>
+            <data key="b">5</data>
+            <data key="x">51.710907</data>
+            <data key="y">542.926</data>
+        </node>
+        <node id="Duncan Trussell">
+            <data key="label">Duncan Trussell</data>
+            <data key="d2">199.3937642477706</data>
+            <data key="d1">7927472.0</data>
+            <data key="d0">Comedian</data>
+            <data key="size">19.939377</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-416.7304</data>
+            <data key="y">-261.95767</data>
+        </node>
+        <node id="Andrew Schulz">
+            <data key="label">Andrew Schulz</data>
+            <data key="d2">192.67697223936287</data>
+            <data key="d1">7153020.0</data>
+            <data key="d0">Comedian</data>
+            <data key="size">19.267696</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">203.94159</data>
+            <data key="y">415.98376</data>
+        </node>
+        <node id="Ryan Garcia">
+            <data key="label">Ryan Garcia</data>
+            <data key="d2">191.1066170096767</data>
+            <data key="d1">6979546.0</data>
+            <data key="d0">Athlete</data>
+            <data key="size">19.11066</data>
+            <data key="r">76</data>
+            <data key="g">70</data>
+            <data key="b">62</data>
+            <data key="x">404.82678</data>
+            <data key="y">-383.2039</data>
+        </node>
+        <node id="Sean Strickland">
+            <data key="label">Sean Strickland</data>
+            <data key="d2">190.45902862539546</data>
+            <data key="d1">6908833.0</data>
+            <data key="d0">Athlete</data>
+            <data key="size">19.045902</data>
+            <data key="r">76</data>
+            <data key="g">70</data>
+            <data key="b">62</data>
+            <data key="x">-112.99788</data>
+            <data key="y">-445.0964</data>
+        </node>
+        <node id="Chael Sonnen">
+            <data key="label">Chael Sonnen</data>
+            <data key="d2">189.7905170435883</data>
+            <data key="d1">6836338.0</data>
+            <data key="d0">Athlete</data>
+            <data key="size">18.979052</data>
+            <data key="r">76</data>
+            <data key="g">70</data>
+            <data key="b">62</data>
+            <data key="x">-286.9605</data>
+            <data key="y">422.84906</data>
+        </node>
+        <node id="Andrew Santino">
+            <data key="label">Andrew Santino</data>
+            <data key="d2">185.98841797847177</data>
+            <data key="d1">6433654.0</data>
+            <data key="d0">Comedian</data>
+            <data key="size">18.59884</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-341.15848</data>
+            <data key="y">-93.354065</data>
+        </node>
+        <node id="Lil Yachty">
+            <data key="label">Lil Yachty</data>
+            <data key="d2">184.953404383853</data>
+            <data key="d1">6326842.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">18.49534</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">194.6566</data>
+            <data key="y">-211.11322</data>
+        </node>
+        <node id="Jelly Roll">
+            <data key="label">Jelly Roll</data>
+            <data key="d2">182.8235631116275</data>
+            <data key="d1">6110778.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">18.282356</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">-71.88343</data>
+            <data key="y">-240.86551</data>
+        </node>
+        <node id="Andrew Huberman">
+            <data key="label">Andrew Huberman</data>
+            <data key="d2">182.11470851144585</data>
+            <data key="d1">6039974.0</data>
+            <data key="d0">Intellectual</data>
+            <data key="size">18.211472</data>
+            <data key="r">0</data>
+            <data key="g">189</data>
+            <data key="b">148</data>
+            <data key="x">-308.20364</data>
+            <data key="y">244.67278</data>
+        </node>
+        <node id="Bert Kreischer">
+            <data key="label">Bert Kreischer</data>
+            <data key="d2">180.9604728353868</data>
+            <data key="d1">5925857.0</data>
+            <data key="d0">Comedian</data>
+            <data key="size">18.096046</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-56.094387</data>
+            <data key="y">-23.808035</data>
+        </node>
+        <node id="Tom Segura">
+            <data key="label">Tom Segura</data>
+            <data key="d2">179.774645965498</data>
+            <data key="d1">5810123.0</data>
+            <data key="d0">Comedian</data>
+            <data key="size">17.977463</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-320.44257</data>
+            <data key="y">-189.8041</data>
+        </node>
+        <node id="MrBeast">
+            <data key="label">MrBeast</data>
+            <data key="d2">179.58546582715547</data>
+            <data key="d1">5791800.0</data>
+            <data key="d0">Influencer</data>
+            <data key="size">17.958546</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">75.143394</data>
+            <data key="y">-321.2067</data>
+        </node>
+        <node id="Dave Portnoy">
+            <data key="label">Dave Portnoy</data>
+            <data key="d2">179.4895000362809</data>
+            <data key="d1">5782520.0</data>
+            <data key="d0">Other</data>
+            <data key="size">17.948948</data>
+            <data key="r">255</data>
+            <data key="g">85</data>
+            <data key="b">132</data>
+            <data key="x">-184.99498</data>
+            <data key="y">-153.20128</data>
+        </node>
+        <node id="Bassem Youssef">
+            <data key="label">Bassem Youssef</data>
+            <data key="d2">178.6455434824511</data>
+            <data key="d1">5701335.0</data>
+            <data key="d0">Comedian</data>
+            <data key="size">17.864553</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">278.61862</data>
+            <data key="y">107.941696</data>
+        </node>
+        <node id="Post Malone">
+            <data key="label">Post Malone</data>
+            <data key="d2">178.5462744911766</data>
+            <data key="d1">5691836.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">17.854626</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">-299.34036</data>
+            <data key="y">-139.66898</data>
+        </node>
+        <node id="Matt Walsh">
+            <data key="label">Matt Walsh</data>
+            <data key="d2">176.80579207494165</data>
+            <data key="d1">5527000.0</data>
+            <data key="d0">Political Pundit</data>
+            <data key="size">17.68058</data>
+            <data key="r">255</data>
+            <data key="g">136</data>
+            <data key="b">5</data>
+            <data key="x">306.1471</data>
+            <data key="y">-121.118614</data>
+        </node>
+        <node id="Tulsi Gabbard">
+            <data key="label">Tulsi Gabbard</data>
+            <data key="d2">176.24865850797266</data>
+            <data key="d1">5474916.0</data>
+            <data key="d0">Politician</data>
+            <data key="size">17.624866</data>
+            <data key="r">211</data>
+            <data key="g">179</data>
+            <data key="b">176</data>
+            <data key="x">120.20708</data>
+            <data key="y">459.44012</data>
+        </node>
+        <node id="Bernie Sanders">
+            <data key="label">Bernie Sanders</data>
+            <data key="d2">175.94783664176046</data>
+            <data key="d1">5446930.0</data>
+            <data key="d0">Politician</data>
+            <data key="size">17.594784</data>
+            <data key="r">211</data>
+            <data key="g">179</data>
+            <data key="b">176</data>
+            <data key="x">-139.73946</data>
+            <data key="y">-273.43518</data>
+        </node>
+        <node id="Trevor Wallace">
+            <data key="label">Trevor Wallace</data>
+            <data key="d2">175.58324041009075</data>
+            <data key="d1">5413139.0</data>
+            <data key="d0">Comedian</data>
+            <data key="size">17.558323</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-501.95078</data>
+            <data key="y">-189.70021</data>
+        </node>
+        <node id="Hulk Hogan">
+            <data key="label">Hulk Hogan</data>
+            <data key="d2">174.20371832410973</data>
+            <data key="d1">5286549.0</data>
+            <data key="d0">Athlete</data>
+            <data key="size">17.420372</data>
+            <data key="r">76</data>
+            <data key="g">70</data>
+            <data key="b">62</data>
+            <data key="x">147.56956</data>
+            <data key="y">-277.89328</data>
+        </node>
+        <node id="Ice Cube">
+            <data key="label">Ice Cube</data>
+            <data key="d2">174.1308413858901</data>
+            <data key="d1">5279917.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">17.413082</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">250.26344</data>
+            <data key="y">-91.84319</data>
+        </node>
+        <node id="Ben van Kerkwyk">
+            <data key="label">Ben van Kerkwyk</data>
+            <data key="d2">173.89235646237717</data>
+            <data key="d1">5258253.0</data>
+            <data key="d0">Influencer</data>
+            <data key="size">17.389236</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">-470.29227</data>
+            <data key="y">259.42117</data>
+        </node>
+        <node id="JiDion">
+            <data key="label">JiDion</data>
+            <data key="d2">173.36611518366485</data>
+            <data key="d1">5210659.0</data>
+            <data key="d0">Influencer</data>
+            <data key="size">17.33661</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">160.7974</data>
+            <data key="y">-593.0729</data>
+        </node>
+        <node id="Noland Arbaugh">
+            <data key="label">Noland Arbaugh</data>
+            <data key="d2">171.59589420430086</data>
+            <data key="d1">5052667.0</data>
+            <data key="d0">Influencer</data>
+            <data key="size">17.159588</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">39.164062</data>
+            <data key="y">37.91087</data>
+        </node>
+        <node id="Sal Vulcano">
+            <data key="label">Sal Vulcano</data>
+            <data key="d2">170.2436759258711</data>
+            <data key="d1">4934157.0</data>
+            <data key="d0">Comedian</data>
+            <data key="size">17.024368</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-243.17741</data>
+            <data key="y">-144.30052</data>
+        </node>
+        <node id="Patrick Bet-David">
+            <data key="label">Patrick Bet-David</data>
+            <data key="d2">169.6480839988273</data>
+            <data key="d1">4882552.0</data>
+            <data key="d0">Influencer</data>
+            <data key="size">16.964808</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">-396.52823</data>
+            <data key="y">-28.606853</data>
+        </node>
+        <node id="xQc">
+            <data key="label">xQc</data>
+            <data key="d2">168.08116826068616</data>
+            <data key="d1">4748508.0</data>
+            <data key="d0">Influencer</data>
+            <data key="size">16.808117</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">246.70921</data>
+            <data key="y">-644.413</data>
+        </node>
+        <node id="Mark Cuban">
+            <data key="label">Mark Cuban</data>
+            <data key="d2">168.02731273623982</data>
+            <data key="d1">4743945.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">16.80273</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">-140.17188</data>
+            <data key="y">-211.25165</data>
+        </node>
+        <node id="Cliffe Knechtle">
+            <data key="label">Cliffe Knechtle</data>
+            <data key="d2">167.7128029654638</data>
+            <data key="d1">4717356.0</data>
+            <data key="d0">Influencer</data>
+            <data key="size">16.77128</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">465.1541</data>
+            <data key="y">114.573586</data>
+        </node>
+        <node id="Rice Gum">
+            <data key="label">Rice Gum</data>
+            <data key="d2">167.61941436403092</data>
+            <data key="d1">4709480.0</data>
+            <data key="d0">Influencer</data>
+            <data key="size">16.761942</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">470.5844</data>
+            <data key="y">-464.41034</data>
+        </node>
+        <node id="Michael Malice">
+            <data key="label">Michael Malice</data>
+            <data key="d2">167.0590824451141</data>
+            <data key="d1">4662408.0</data>
+            <data key="d0">Political Pundit</data>
+            <data key="size">16.705908</data>
+            <data key="r">255</data>
+            <data key="g">136</data>
+            <data key="b">5</data>
+            <data key="x">-129.09608</data>
+            <data key="y">318.08502</data>
+        </node>
+        <node id="Stephen A. Smith">
+            <data key="label">Stephen A. Smith</data>
+            <data key="d2">166.58632839190298</data>
+            <data key="d1">4622938.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">16.658632</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">319.92227</data>
+            <data key="y">27.127186</data>
+        </node>
+        <node id="Annie Jacobsen">
+            <data key="label">Annie Jacobsen</data>
+            <data key="d2">166.28354308386835</data>
+            <data key="d1">4597776.0</data>
+            <data key="d0">Intellectual</data>
+            <data key="size">16.628353</data>
+            <data key="r">0</data>
+            <data key="g">189</data>
+            <data key="b">148</data>
+            <data key="x">4.7209387</data>
+            <data key="y">452.29236</data>
+        </node>
+        <node id="Kyle Forgeard">
+            <data key="label">Kyle Forgeard</data>
+            <data key="d2">163.00523149305138</data>
+            <data key="d1">4331164.0</data>
+            <data key="d0">Influencer</data>
+            <data key="size">16.300522</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">132.00009</data>
+            <data key="y">-680.77435</data>
+        </node>
+        <node id="Sketch">
+            <data key="label">Sketch</data>
+            <data key="d2">159.67459907930873</data>
+            <data key="d1">4071060.0</data>
+            <data key="d0">Influencer</data>
+            <data key="size">15.96746</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">57.438793</data>
+            <data key="y">-677.9504</data>
+        </node>
+        <node id="Sexxy Red">
+            <data key="label">Sexxy Red</data>
+            <data key="d2">158.40777539800425</data>
+            <data key="d1">3974930.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">15.840777</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">-47.943947</data>
+            <data key="y">-646.7082</data>
+        </node>
+        <node id="Bret Weinstein">
+            <data key="label">Bret Weinstein</data>
+            <data key="d2">157.63004292971908</data>
+            <data key="d1">3916670.0</data>
+            <data key="d0">Other</data>
+            <data key="size">15.763004</data>
+            <data key="r">255</data>
+            <data key="g">85</data>
+            <data key="b">132</data>
+            <data key="x">26.009436</data>
+            <data key="y">379.83243</data>
+        </node>
+        <node id="Erik Prince">
+            <data key="label">Erik Prince</data>
+            <data key="d2">154.26704943554262</data>
+            <data key="d1">3671297.0</data>
+            <data key="d0">Other</data>
+            <data key="size">15.426704</data>
+            <data key="r">255</data>
+            <data key="g">85</data>
+            <data key="b">132</data>
+            <data key="x">268.5124</data>
+            <data key="y">690.8616</data>
+        </node>
+        <node id="Konstantin Kisin">
+            <data key="label">Konstantin Kisin</data>
+            <data key="d2">154.1998725972873</data>
+            <data key="d1">3666503.0</data>
+            <data key="d0">Political Pundit</data>
+            <data key="size">15.419987</data>
+            <data key="r">255</data>
+            <data key="g">136</data>
+            <data key="b">5</data>
+            <data key="x">184.09659</data>
+            <data key="y">279.1066</data>
+        </node>
+        <node id="Randall Carlson">
+            <data key="label">Randall Carlson</data>
+            <data key="d2">153.6230449997199</data>
+            <data key="d1">3625510.0</data>
+            <data key="d0">Influencer</data>
+            <data key="size">15.362304</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">177.89207</data>
+            <data key="y">505.11542</data>
+        </node>
+        <node id="Casey Neistat">
+            <data key="label">Casey Neistat</data>
+            <data key="d2">153.40925928900333</data>
+            <data key="d1">3610395.0</data>
+            <data key="d0">Influencer</data>
+            <data key="size">15.340926</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">-512.736</data>
+            <data key="y">-120.68022</data>
+        </node>
+        <node id="Nick Irving">
+            <data key="label">Nick Irving</data>
+            <data key="d2">152.47941314860566</data>
+            <data key="d1">3545142.0</data>
+            <data key="d0">Other</data>
+            <data key="size">15.247941</data>
+            <data key="r">255</data>
+            <data key="g">85</data>
+            <data key="b">132</data>
+            <data key="x">260.57275</data>
+            <data key="y">636.9324</data>
+        </node>
+        <node id="Mike Rowe">
+            <data key="label">Mike Rowe</data>
+            <data key="d2">152.07778221226235</data>
+            <data key="d1">3517202.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">15.207778</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">-89.85681</data>
+            <data key="y">-160.26308</data>
+        </node>
+        <node id="Jimmy Dore">
+            <data key="label">Jimmy Dore</data>
+            <data key="d2">149.93177638236503</data>
+            <data key="d1">3370397.0</data>
+            <data key="d0">Political Pundit</data>
+            <data key="size">14.993177</data>
+            <data key="r">255</data>
+            <data key="g">136</data>
+            <data key="b">5</data>
+            <data key="x">64.76515</data>
+            <data key="y">334.15805</data>
+        </node>
+        <node id="Chris Bumstead">
+            <data key="label">Chris Bumstead</data>
+            <data key="d2">147.79820928845098</data>
+            <data key="d1">3228550.0</data>
+            <data key="d0">Athlete</data>
+            <data key="size">14.77982</data>
+            <data key="r">76</data>
+            <data key="g">70</data>
+            <data key="b">62</data>
+            <data key="x">525.9464</data>
+            <data key="y">68.36146</data>
+        </node>
+        <node id="Ralph Barbosa">
+            <data key="label">Ralph Barbosa</data>
+            <data key="d2">147.76200487849206</data>
+            <data key="d1">3226178.0</data>
+            <data key="d0">Comedian</data>
+            <data key="size">14.7762</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-508.54266</data>
+            <data key="y">217.3527</data>
+        </node>
+        <node id="Alex Volkanovski">
+            <data key="label">Alex Volkanovski</data>
+            <data key="d2">142.4092044980255</data>
+            <data key="d1">2888113.0</data>
+            <data key="d0">Athlete</data>
+            <data key="size">14.24092</data>
+            <data key="r">76</data>
+            <data key="g">70</data>
+            <data key="b">62</data>
+            <data key="x">127.40869</data>
+            <data key="y">-348.77576</data>
+        </node>
+        <node id="Ric Flair">
+            <data key="label">Ric Flair</data>
+            <data key="d2">142.1434937761657</data>
+            <data key="d1">2871977.0</data>
+            <data key="d0">Athlete</data>
+            <data key="size">14.214349</data>
+            <data key="r">76</data>
+            <data key="g">70</data>
+            <data key="b">62</data>
+            <data key="x">-202.18774</data>
+            <data key="y">-472.19894</data>
+        </node>
+        <node id="Eric Hecker">
+            <data key="label">Eric Hecker</data>
+            <data key="d2">142.0747804229031</data>
+            <data key="d1">2867814.0</data>
+            <data key="d0">Other</data>
+            <data key="size">14.207478</data>
+            <data key="r">255</data>
+            <data key="g">85</data>
+            <data key="b">132</data>
+            <data key="x">338.23813</data>
+            <data key="y">591.6158</data>
+        </node>
+        <node id="Chris Distefano">
+            <data key="label">Chris Distefano</data>
+            <data key="d2">141.41760405865472</data>
+            <data key="d1">2828202.0</data>
+            <data key="d0">Comedian</data>
+            <data key="size">14.141761</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-556.4633</data>
+            <data key="y">187.65695</data>
+        </node>
+        <node id="Luis Elizondo">
+            <data key="label">Luis Elizondo</data>
+            <data key="d2">140.5029022167017</data>
+            <data key="d1">2773677.0</data>
+            <data key="d0">Other</data>
+            <data key="size">14.050289</data>
+            <data key="r">255</data>
+            <data key="g">85</data>
+            <data key="b">132</data>
+            <data key="x">189.42575</data>
+            <data key="y">327.38583</data>
+        </node>
+        <node id="Georges St-Pierre">
+            <data key="label">Georges St-Pierre</data>
+            <data key="d2">140.0331554126763</data>
+            <data key="d1">2745950.0</data>
+            <data key="d0">Athlete</data>
+            <data key="size">14.003315</data>
+            <data key="r">76</data>
+            <data key="g">70</data>
+            <data key="b">62</data>
+            <data key="x">-165.0298</data>
+            <data key="y">-426.915</data>
+        </node>
+        <node id="Mike Majlak">
+            <data key="label">Mike Majlak</data>
+            <data key="d2">139.97588019851707</data>
+            <data key="d1">2742582.0</data>
+            <data key="d0">Influencer</data>
+            <data key="size">13.997587</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">472.2575</data>
+            <data key="y">-277.09268</data>
+        </node>
+        <node id="Mike Tyson">
+            <data key="label">Mike Tyson</data>
+            <data key="d2">139.96494020039935</data>
+            <data key="d1">2741939.0</data>
+            <data key="d0">Athlete</data>
+            <data key="size">13.996494</data>
+            <data key="r">76</data>
+            <data key="g">70</data>
+            <data key="b">62</data>
+            <data key="x">416.8722</data>
+            <data key="y">155.19223</data>
+        </node>
+        <node id="Chamath Palihapitiya">
+            <data key="label">Chamath Palihapitiya</data>
+            <data key="d2">139.76564533307976</data>
+            <data key="d1">2730243.0</data>
+            <data key="d0">Other</data>
+            <data key="size">13.976563</data>
+            <data key="r">255</data>
+            <data key="g">85</data>
+            <data key="b">132</data>
+            <data key="x">32.197693</data>
+            <data key="y">83.34711</data>
+        </node>
+        <node id="Kid Rock">
+            <data key="label">Kid Rock</data>
+            <data key="d2">137.55566671655095</data>
+            <data key="d1">2602768.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">13.755567</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">-203.06885</data>
+            <data key="y">-90.14448</data>
+        </node>
+        <node id="Kamaru Usman">
+            <data key="label">Kamaru Usman</data>
+            <data key="d2">136.7093131500081</data>
+            <data key="d1">2555020.0</data>
+            <data key="d0">Athlete</data>
+            <data key="size">13.670931</data>
+            <data key="r">76</data>
+            <data key="g">70</data>
+            <data key="b">62</data>
+            <data key="x">318.76572</data>
+            <data key="y">-31.981169</data>
+        </node>
+        <node id="Cody Rhodes">
+            <data key="label">Cody Rhodes</data>
+            <data key="d2">136.31946237858017</data>
+            <data key="d1">2533224.0</data>
+            <data key="d0">Athlete</data>
+            <data key="size">13.631946</data>
+            <data key="r">76</data>
+            <data key="g">70</data>
+            <data key="b">62</data>
+            <data key="x">-565.54047</data>
+            <data key="y">-93.07781</data>
+        </node>
+        <node id="FaZe Banks">
+            <data key="label">FaZe Banks</data>
+            <data key="d2">134.3551874881784</data>
+            <data key="d1">2425288.0</data>
+            <data key="d0">Influencer</data>
+            <data key="size">13.435518</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">194.0786</data>
+            <data key="y">-643.5641</data>
+        </node>
+        <node id="Action Bronson">
+            <data key="label">Action Bronson</data>
+            <data key="d2">134.2107584123548</data>
+            <data key="d1">2417475.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">13.421076</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">-400.5161</data>
+            <data key="y">233.73772</data>
+        </node>
+        <node id="Craig Jones">
+            <data key="label">Craig Jones</data>
+            <data key="d2">133.6036218495333</data>
+            <data key="d1">2384815.0</data>
+            <data key="d0">Athlete</data>
+            <data key="size">13.360362</data>
+            <data key="r">76</data>
+            <data key="g">70</data>
+            <data key="b">62</data>
+            <data key="x">-403.09918</data>
+            <data key="y">287.20096</data>
+        </node>
+        <node id="Jim Gaffigan">
+            <data key="label">Jim Gaffigan</data>
+            <data key="d2">132.22186822346615</data>
+            <data key="d1">2311585.0</data>
+            <data key="d0">Comedian</data>
+            <data key="size">13.222187</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-370.27274</data>
+            <data key="y">-217.01143</data>
+        </node>
+        <node id="Tim Kennedy">
+            <data key="label">Tim Kennedy</data>
+            <data key="d2">130.95365763624798</data>
+            <data key="d1">2245706.0</data>
+            <data key="d0">Athlete</data>
+            <data key="size">13.095366</data>
+            <data key="r">76</data>
+            <data key="g">70</data>
+            <data key="b">62</data>
+            <data key="x">26.619846</data>
+            <data key="y">647.4484</data>
+        </node>
+        <node id="Dr. Phil">
+            <data key="label">Dr. Phil</data>
+            <data key="d2">128.318319864331</data>
+            <data key="d1">2112837.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">12.831832</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">199.9091</data>
+            <data key="y">-146.26857</data>
+        </node>
+        <node id="Jynxzi">
+            <data key="label">Jynxzi</data>
+            <data key="d2">127.67896436682358</data>
+            <data key="d1">2081412.0</data>
+            <data key="d0">Influencer</data>
+            <data key="size">12.767897</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">440.20364</data>
+            <data key="y">-510.61487</data>
+        </node>
+        <node id="Dax Shepard">
+            <data key="label">Dax Shepard</data>
+            <data key="d2">126.37241793885197</data>
+            <data key="d1">2018166.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">12.637241</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">-566.00354</data>
+            <data key="y">-158.42062</data>
+        </node>
+        <node id="Mike Baker">
+            <data key="label">Mike Baker</data>
+            <data key="d2">125.65666165643478</data>
+            <data key="d1">1984068.0</data>
+            <data key="d0">Other</data>
+            <data key="size">12.565666</data>
+            <data key="r">255</data>
+            <data key="g">85</data>
+            <data key="b">132</data>
+            <data key="x">13.5819845</data>
+            <data key="y">320.8414</data>
+        </node>
+        <node id="Yung Gravy">
+            <data key="label">Yung Gravy</data>
+            <data key="d2">124.4676668562309</data>
+            <data key="d1">1928278.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">12.446767</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">-168.64777</data>
+            <data key="y">-522.1545</data>
+        </node>
+        <node id="Myron Gaines">
+            <data key="label">Myron Gaines</data>
+            <data key="d2">123.56861021815124</data>
+            <data key="d1">1886794.0</data>
+            <data key="d0">Influencer</data>
+            <data key="size">12.356861</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">574.544</data>
+            <data key="y">-92.58768</data>
+        </node>
+        <node id="David Pakman">
+            <data key="label">David Pakman</data>
+            <data key="d2">122.59986303626916</data>
+            <data key="d1">1842765.0</data>
+            <data key="d0">Political Pundit</data>
+            <data key="size">12.259986</data>
+            <data key="r">255</data>
+            <data key="g">136</data>
+            <data key="b">5</data>
+            <data key="x">377.34973</data>
+            <data key="y">221.0016</data>
+        </node>
+        <node id="Bradley Martyn">
+            <data key="label">Bradley Martyn</data>
+            <data key="d2">122.07916120143483</data>
+            <data key="d1">1819385.0</data>
+            <data key="d0">Influencer</data>
+            <data key="size">12.207916</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">411.35352</data>
+            <data key="y">-470.67175</data>
+        </node>
+        <node id="Max Tegmark">
+            <data key="label">Max Tegmark</data>
+            <data key="d2">121.330019096634</data>
+            <data key="d1">1786096.0</data>
+            <data key="d0">Intellectual</data>
+            <data key="size">12.133001</data>
+            <data key="r">0</data>
+            <data key="g">189</data>
+            <data key="b">148</data>
+            <data key="x">239.15001</data>
+            <data key="y">226.67928</data>
+        </node>
+        <node id="Pete Hegseth">
+            <data key="label">Pete Hegseth</data>
+            <data key="d2">119.96299785077322</data>
+            <data key="d1">1726402.0</data>
+            <data key="d0">Politician</data>
+            <data key="size">11.9963</data>
+            <data key="r">211</data>
+            <data key="g">179</data>
+            <data key="b">176</data>
+            <data key="x">240.02995</data>
+            <data key="y">545.4967</data>
+        </node>
+        <node id="Mike Vecchione">
+            <data key="label">Mike Vecchione</data>
+            <data key="d2">119.43395450612995</data>
+            <data key="d1">1703662.0</data>
+            <data key="d0">Comedian</data>
+            <data key="size">11.943396</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-423.49792</data>
+            <data key="y">-333.87775</data>
+        </node>
+        <node id="Michael Shellenberger">
+            <data key="label">Michael Shellenberger</data>
+            <data key="d2">119.37258175158443</data>
+            <data key="d1">1701037.0</data>
+            <data key="d0">Political Pundit</data>
+            <data key="size">11.937258</data>
+            <data key="r">255</data>
+            <data key="g">136</data>
+            <data key="b">5</data>
+            <data key="x">-19.299393</data>
+            <data key="y">587.2113</data>
+        </node>
+        <node id="Dwayne Johnson">
+            <data key="label">Dwayne Johnson</data>
+            <data key="d2">118.57589777789055</data>
+            <data key="d1">1667206.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">11.85759</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">140.7366</data>
+            <data key="y">316.90524</data>
+        </node>
+        <node id="Colby Covington">
+            <data key="label">Colby Covington</data>
+            <data key="d2">117.86868951544491</data>
+            <data key="d1">1637553.0</data>
+            <data key="d0">Athlete</data>
+            <data key="size">11.786869</data>
+            <data key="r">76</data>
+            <data key="g">70</data>
+            <data key="b">62</data>
+            <data key="x">470.70804</data>
+            <data key="y">-35.73907</data>
+        </node>
+        <node id="Marc Andreessen">
+            <data key="label">Marc Andreessen</data>
+            <data key="d2">116.73876994144375</data>
+            <data key="d1">1590909.0</data>
+            <data key="d0">Other</data>
+            <data key="size">11.673877</data>
+            <data key="r">255</data>
+            <data key="g">85</data>
+            <data key="b">132</data>
+            <data key="x">20.056925</data>
+            <data key="y">118.722595</data>
+        </node>
+        <node id="Sebastian Maniscalco">
+            <data key="label">Sebastian Maniscalco</data>
+            <data key="d2">116.31683596424358</data>
+            <data key="d1">1573721.0</data>
+            <data key="d0">Comedian</data>
+            <data key="size">11.631683</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-353.42004</data>
+            <data key="y">148.08562</data>
+        </node>
+        <node id="Nick Kyrgios">
+            <data key="label">Nick Kyrgios</data>
+            <data key="d2">114.55756911273143</data>
+            <data key="d1">1503389.0</data>
+            <data key="d0">Athlete</data>
+            <data key="size">11.455757</data>
+            <data key="r">76</data>
+            <data key="g">70</data>
+            <data key="b">62</data>
+            <data key="x">-112.25515</data>
+            <data key="y">-509.84113</data>
+        </node>
+        <node id="Neal Brennan">
+            <data key="label">Neal Brennan</data>
+            <data key="d2">113.56490042548013</data>
+            <data key="d1">1464645.0</data>
+            <data key="d0">Comedian</data>
+            <data key="size">11.35649</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-396.6251</data>
+            <data key="y">189.4475</data>
+        </node>
+        <node id="Brian Simpson">
+            <data key="label">Brian Simpson</data>
+            <data key="d2">112.37100605989237</data>
+            <data key="d1">1418936.0</data>
+            <data key="d0">Comedian</data>
+            <data key="size">11.237101</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-355.90588</data>
+            <data key="y">194.2882</data>
+        </node>
+        <node id="Sara Walker">
+            <data key="label">Sara Walker</data>
+            <data key="d2">112.11679992081642</data>
+            <data key="d1">1409328.0</data>
+            <data key="d0">Intellectual</data>
+            <data key="size">11.211679</data>
+            <data key="r">0</data>
+            <data key="g">189</data>
+            <data key="b">148</data>
+            <data key="x">-10.645492</data>
+            <data key="y">135.76376</data>
+        </node>
+        <node id="Cenk Uygur">
+            <data key="label">Cenk Uygur</data>
+            <data key="d2">112.10563481858642</data>
+            <data key="d1">1408907.0</data>
+            <data key="d0">Political Pundit</data>
+            <data key="size">11.210564</data>
+            <data key="r">255</data>
+            <data key="g">136</data>
+            <data key="b">5</data>
+            <data key="x">321.5328</data>
+            <data key="y">210.9616</data>
+        </node>
+        <node id="Machine Gun Kelly">
+            <data key="label">Machine Gun Kelly</data>
+            <data key="d2">112.00156779267952</data>
+            <data key="d1">1404987.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">11.200157</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">296.79544</data>
+            <data key="y">-682.4594</data>
+        </node>
+        <node id="Dennis Quaid">
+            <data key="label">Dennis Quaid</data>
+            <data key="d2">111.92205993276166</data>
+            <data key="d1">1401997.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">11.192205</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">101.15259</data>
+            <data key="y">297.76065</data>
+        </node>
+        <node id="Luke Combs">
+            <data key="label">Luke Combs</data>
+            <data key="d2">111.84499710412535</data>
+            <data key="d1">1399103.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">11.1845</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">-229.53209</data>
+            <data key="y">-192.65666</data>
+        </node>
+        <node id="Liver King">
+            <data key="label">Liver King</data>
+            <data key="d2">110.770458745092</data>
+            <data key="d1">1359164.0</data>
+            <data key="d0">Influencer</data>
+            <data key="size">11.077045</data>
+            <data key="r">115</data>
+            <data key="g">192</data>
+            <data key="b">0</data>
+            <data key="x">-356.77686</data>
+            <data key="y">364.71356</data>
+        </node>
+        <node id="Gary Brecka">
+            <data key="label">Gary Brecka</data>
+            <data key="d2">110.09960674698115</data>
+            <data key="d1">1334619.0</data>
+            <data key="d0">Intellectual</data>
+            <data key="size">11.00996</data>
+            <data key="r">0</data>
+            <data key="g">189</data>
+            <data key="b">148</data>
+            <data key="x">245.15193</data>
+            <data key="y">-156.1774</data>
+        </node>
+        <node id="Francis Suarez">
+            <data key="label">Francis Suarez</data>
+            <data key="d2">109.88646688263722</data>
+            <data key="d1">1326883.0</data>
+            <data key="d0">Politician</data>
+            <data key="size">10.9886465</data>
+            <data key="r">211</data>
+            <data key="g">179</data>
+            <data key="b">176</data>
+            <data key="x">482.2809</data>
+            <data key="y">20.685974</data>
+        </node>
+        <node id="David Blaine">
+            <data key="label">David Blaine</data>
+            <data key="d2">107.77479363340038</data>
+            <data key="d1">1251848.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">10.777479</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">5.524948</data>
+            <data key="y">-338.85208</data>
+        </node>
+        <node id="Whitney Cummings">
+            <data key="label">Whitney Cummings</data>
+            <data key="d2">106.01088650500249</data>
+            <data key="d1">1191383.0</data>
+            <data key="d0">Comedian</data>
+            <data key="size">10.601089</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-445.49527</data>
+            <data key="y">212.18031</data>
+        </node>
+        <node id="Bjorn Lomborg">
+            <data key="label">Bjorn Lomborg</data>
+            <data key="d2">105.28370741787592</data>
+            <data key="d1">1167034.0</data>
+            <data key="d0">Intellectual</data>
+            <data key="size">10.528371</data>
+            <data key="r">0</data>
+            <data key="g">189</data>
+            <data key="b">148</data>
+            <data key="x">143.98029</data>
+            <data key="y">235.35416</data>
+        </node>
+        <node id="Avi Loeb">
+            <data key="label">Avi Loeb</data>
+            <data key="d2">103.25265525986137</data>
+            <data key="d1">1100788.0</data>
+            <data key="d0">Intellectual</data>
+            <data key="size">10.325266</data>
+            <data key="r">0</data>
+            <data key="g">189</data>
+            <data key="b">148</data>
+            <data key="x">248.67567</data>
+            <data key="y">588.8414</data>
+        </node>
+        <node id="Bryan Callen">
+            <data key="label">Bryan Callen</data>
+            <data key="d2">100.03502106715011</data>
+            <data key="d1">1001051.0</data>
+            <data key="d0">Comedian</data>
+            <data key="size">10.003502</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">178.47206</data>
+            <data key="y">368.00958</data>
+        </node>
+        <node id="Rick Ross">
+            <data key="label">Rick Ross</data>
+            <data key="d2">99.86217680159258</data>
+            <data key="d1">995871.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">9.9862175</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">247.16713</data>
+            <data key="y">-690.2183</data>
+        </node>
+        <node id="Trevor Bauer">
+            <data key="label">Trevor Bauer</data>
+            <data key="d2">99.53265259991042</data>
+            <data key="d1">986045.0</data>
+            <data key="d0">Athlete</data>
+            <data key="size">9.953265</data>
+            <data key="r">76</data>
+            <data key="g">70</data>
+            <data key="b">62</data>
+            <data key="x">344.97934</data>
+            <data key="y">164.47577</data>
+        </node>
+        <node id="Aljamain Sterling">
+            <data key="label">Aljamain Sterling</data>
+            <data key="d2">97.2113576007343</data>
+            <data key="d1">918652.0</data>
+            <data key="d0">Athlete</data>
+            <data key="size">9.721136</data>
+            <data key="r">76</data>
+            <data key="g">70</data>
+            <data key="b">62</data>
+            <data key="x">223.72044</data>
+            <data key="y">-564.6666</data>
+        </node>
+        <node id="Pauly Shore">
+            <data key="label">Pauly Shore</data>
+            <data key="d2">96.90538831608106</data>
+            <data key="d1">910005.0</data>
+            <data key="d0">Comedian</data>
+            <data key="size">9.690539</data>
+            <data key="r">223</data>
+            <data key="g">137</data>
+            <data key="b">255</data>
+            <data key="x">-272.20026</data>
+            <data key="y">-182.43637</data>
+        </node>
+        <node id="Buck Sexton">
+            <data key="label">Buck Sexton</data>
+            <data key="d2">96.35455552152133</data>
+            <data key="d1">894575.0</data>
+            <data key="d0">Political Pundit</data>
+            <data key="size">9.635456</data>
+            <data key="r">255</data>
+            <data key="g">136</data>
+            <data key="b">5</data>
+            <data key="x">288.0645</data>
+            <data key="y">594.145</data>
+        </node>
+        <node id="Gina Carano">
+            <data key="label">Gina Carano</data>
+            <data key="d2">94.99708208950976</data>
+            <data key="d1">857296.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">9.499708</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">285.51727</data>
+            <data key="y">548.0006</data>
+        </node>
+        <node id="Danny Philippou">
+            <data key="label">Danny Philippou</data>
+            <data key="d2">88.62774279114649</data>
+            <data key="d1">696160.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">8.862774</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">-28.37522</data>
+            <data key="y">-311.1463</data>
+        </node>
+        <node id="Michael Philippou">
+            <data key="label">Michael Philippou</data>
+            <data key="d2">88.62774279114649</data>
+            <data key="d1">696160.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">8.862774</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">-30.937979</data>
+            <data key="y">-368.9288</data>
+        </node>
+        <node id="Anuel AA">
+            <data key="label">Anuel AA</data>
+            <data key="d2">84.2428253362501</data>
+            <data key="d1">597859.0</data>
+            <data key="d0">Celebrity</data>
+            <data key="size">8.424282</data>
+            <data key="r">0</data>
+            <data key="g">196</data>
+            <data key="b">255</data>
+            <data key="x">222.1973</data>
+            <data key="y">-602.9839</data>
+        </node>
+        <node id="Mike Benz">
+            <data key="label">Mike Benz</data>
+            <data key="d2">81.9878526523156</data>
+            <data key="d1">551123.0</data>
+            <data key="d0">Political Pundit</data>
+            <data key="size">8.198786</data>
+            <data key="r">255</data>
+            <data key="g">136</data>
+            <data key="b">5</data>
+            <data key="x">224.51396</data>
+            <data key="y">686.6511</data>
+        </node>
+        <node id="Kyle Kulinski">
+            <data key="label">Kyle Kulinski</data>
+            <data key="d2">79.94767411581826</data>
+            <data key="d1">510996.0</data>
+            <data key="d0">Political Pundit</data>
+            <data key="size">7.994767</data>
+            <data key="r">255</data>
+            <data key="g">136</data>
+            <data key="b">5</data>
+            <data key="x">-27.064445</data>
+            <data key="y">355.59024</data>
+        </node>
+        <node id="Rick Doblin">
+            <data key="label">Rick Doblin</data>
+            <data key="d2">55.99149530710123</data>
+            <data key="d1">175536.0</data>
+            <data key="d0">Intellectual</data>
+            <data key="size">5.5991497</data>
+            <data key="r">0</data>
+            <data key="g">189</data>
+            <data key="b">148</data>
+            <data key="x">31.850077</data>
+            <data key="y">601.02356</data>
+        </node>
+        <edge id="0" source="Donald Trump" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="1" source="Donald Trump" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="2" source="Donald Trump" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="3" source="Donald Trump" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="4" source="Donald Trump" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="5" source="Donald Trump" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="6" source="Donald Trump" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="7" source="Donald Trump" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="8" source="Donald Trump" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="9" source="Theo Von" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="10" source="Theo Von" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="11" source="Andrew Tate" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="12" source="Andrew Tate" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="13" source="Andrew Tate" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="14" source="Tucker Carlson" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="15" source="Tucker Carlson" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="16" source="Tucker Carlson" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="17" source="Tucker Carlson" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="18" source="Tucker Carlson" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="19" source="Elon Musk" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="20" source="Elon Musk" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="21" source="Shane Gillis" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="22" source="Shane Gillis" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="23" source="Shane Gillis" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="24" source="JD Vance" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="25" source="JD Vance" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="26" source="JD Vance" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="27" source="JD Vance" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="28" source="Ben Shapiro" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="29" source="Ben Shapiro" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="30" source="Dana White" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="31" source="Dana White" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="32" source="Dana White" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="33" source="Dana White" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="34" source="Dana White" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="35" source="Kai Cenat" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="36" source="Kai Cenat" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="37" source="Jake Paul" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="38" source="Jake Paul" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="39" source="Jake Paul" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="40" source="Graham Hancock" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="41" source="Graham Hancock" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="42" source="Graham Hancock" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="43" source="Graham Hancock" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="44" source="iShowSpeed" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="45" source="iShowSpeed" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="46" source="iShowSpeed" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="47" source="Destiny" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="48" source="Destiny" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="49" source="Destiny" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="50" source="Bobby Lee" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="51" source="Bobby Lee" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="52" source="Bobby Lee" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="53" source="Paul Rosolie" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="54" source="Paul Rosolie" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="55" source="Joey Diaz" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="56" source="Joey Diaz" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="57" source="Joey Diaz" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="58" source="Dave Smith" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="59" source="Dave Smith" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="60" source="Dave Smith" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="61" source="KSI" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="62" source="KSI" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="63" source="KSI" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="64" source="George Janko" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="65" source="George Janko" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="66" source="Druski" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="67" source="Druski" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="68" source="Tim Dillon" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="69" source="Tim Dillon" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="70" source="Tim Dillon" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="71" source="Tim Dillon" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="72" source="Jordan Peterson" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="73" source="Jordan Peterson" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="74" source="Jordan Peterson" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="75" source="Jordan Peterson" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="76" source="Jordan Peterson" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="77" source="David Kipping" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="78" source="David Kipping" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="79" source="RFK Jr." target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="80" source="RFK Jr." target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="81" source="RFK Jr." target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="82" source="RFK Jr." target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="83" source="RFK Jr." target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="84" source="RFK Jr." target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="85" source="RFK Jr." target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="86" source="Billy Carson" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="87" source="Billy Carson" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="88" source="Billy Carson" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="89" source="Billy Carson" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="90" source="Louis C.K." target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="91" source="Louis C.K." target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="92" source="Neil deGrasse Tyson" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="93" source="Neil deGrasse Tyson" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="94" source="Neil deGrasse Tyson" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="95" source="Coffeezilla" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="96" source="Coffeezilla" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="97" source="Candace Owens" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="98" source="Candace Owens" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="99" source="Candace Owens" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="100" source="Sean O'Malley" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="101" source="Sean O'Malley" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="102" source="Sean O'Malley" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="103" source="Sean O'Malley" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="104" source="Sean O'Malley" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="105" source="Dillon Danis" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="106" source="Dillon Danis" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="107" source="Dillon Danis" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="108" source="Stavros Halkias" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="109" source="Stavros Halkias" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="110" source="Vivek Ramaswamy" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="111" source="Vivek Ramaswamy" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="112" source="Vivek Ramaswamy" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="113" source="Vivek Ramaswamy" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="114" source="Vivek Ramaswamy" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="115" source="Israel Adesanya" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="116" source="Israel Adesanya" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="117" source="Israel Adesanya" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="118" source="Matt McCusker" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="119" source="Matt McCusker" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="120" source="Ryan Montgomery" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="121" source="Ryan Montgomery" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="122" source="Ari Shaffir" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="123" source="Ari Shaffir" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="124" source="Ari Shaffir" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="125" source="Sam Altman" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="126" source="Sam Altman" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="127" source="DJ Akademiks" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="128" source="DJ Akademiks" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="129" source="DJ Akademiks" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="130" source="Steven Greer" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="131" source="Steven Greer" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="132" source="That Mexican OT" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="133" source="That Mexican OT" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="134" source="That Mexican OT" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="135" source="Andrew Bustamante" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="136" source="Andrew Bustamante" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="137" source="Mark Normand" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="138" source="Mark Normand" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="139" source="Yeonmi Park" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="140" source="Yeonmi Park" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="141" source="Yeonmi Park" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="142" source="Duncan Trussell" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="143" source="Duncan Trussell" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="144" source="Andrew Schulz" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="145" source="Andrew Schulz" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="146" source="Ryan Garcia" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="147" source="Ryan Garcia" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="148" source="Ryan Garcia" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="149" source="Ryan Garcia" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="150" source="Sean Strickland" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="151" source="Sean Strickland" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="152" source="Chael Sonnen" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="153" source="Chael Sonnen" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="154" source="Andrew Santino" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="155" source="Andrew Santino" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="156" source="Andrew Santino" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="157" source="Andrew Santino" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="158" source="Lil Yachty" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="159" source="Lil Yachty" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="160" source="Jelly Roll" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="161" source="Jelly Roll" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="162" source="Jelly Roll" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="163" source="Jelly Roll" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="164" source="Jelly Roll" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="165" source="Andrew Huberman" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="166" source="Andrew Huberman" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="167" source="Andrew Huberman" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="168" source="Bert Kreischer" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="169" source="Bert Kreischer" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="170" source="Bert Kreischer" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="171" source="Bert Kreischer" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="172" source="Tom Segura" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="173" source="Tom Segura" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="174" source="MrBeast" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="175" source="MrBeast" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="176" source="Dave Portnoy" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="177" source="Dave Portnoy" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="178" source="Dave Portnoy" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="179" source="Dave Portnoy" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="180" source="Bassem Youssef" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="181" source="Bassem Youssef" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="182" source="Bassem Youssef" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="183" source="Post Malone" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="184" source="Post Malone" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="185" source="Matt Walsh" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="186" source="Matt Walsh" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="187" source="Tulsi Gabbard" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="188" source="Tulsi Gabbard" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="189" source="Tulsi Gabbard" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="190" source="Tulsi Gabbard" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="191" source="Bernie Sanders" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="192" source="Bernie Sanders" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="193" source="Trevor Wallace" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="194" source="Trevor Wallace" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="195" source="Hulk Hogan" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="196" source="Hulk Hogan" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="197" source="Hulk Hogan" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="198" source="Hulk Hogan" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="199" source="Ice Cube" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="200" source="Ice Cube" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="201" source="Ice Cube" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="202" source="Ice Cube" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="203" source="Ben van Kerkwyk" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="204" source="Ben van Kerkwyk" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="205" source="JiDion" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="206" source="JiDion" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="207" source="Noland Arbaugh" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="208" source="Noland Arbaugh" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="209" source="Sal Vulcano" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="210" source="Sal Vulcano" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="211" source="Patrick Bet-David" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="212" source="Patrick Bet-David" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="213" source="xQc" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="214" source="xQc" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="215" source="Mark Cuban" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="216" source="Mark Cuban" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="217" source="Mark Cuban" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="218" source="Mark Cuban" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="219" source="Cliffe Knechtle" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="220" source="Cliffe Knechtle" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="221" source="Rice Gum" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="222" source="Rice Gum" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="223" source="Michael Malice" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="224" source="Michael Malice" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="225" source="Michael Malice" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="226" source="Michael Malice" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="227" source="Stephen A. Smith" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="228" source="Stephen A. Smith" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="229" source="Stephen A. Smith" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="230" source="Annie Jacobsen" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="231" source="Annie Jacobsen" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="232" source="Annie Jacobsen" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="233" source="Kyle Forgeard" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="234" source="Kyle Forgeard" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="235" source="Sketch" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="236" source="Sketch" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="237" source="Sexxy Red" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="238" source="Sexxy Red" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="239" source="Bret Weinstein" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="240" source="Bret Weinstein" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="241" source="Erik Prince" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="242" source="Erik Prince" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="243" source="Konstantin Kisin" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="244" source="Konstantin Kisin" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="245" source="Randall Carlson" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="246" source="Randall Carlson" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="247" source="Randall Carlson" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="248" source="Casey Neistat" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="249" source="Casey Neistat" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="250" source="Nick Irving" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="251" source="Nick Irving" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="252" source="Mike Rowe" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="253" source="Mike Rowe" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="254" source="Jimmy Dore" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="255" source="Jimmy Dore" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="256" source="Chris Bumstead" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="257" source="Chris Bumstead" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="258" source="Ralph Barbosa" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="259" source="Ralph Barbosa" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="260" source="Alex Volkanovski" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="261" source="Alex Volkanovski" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="262" source="Alex Volkanovski" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="263" source="Ric Flair" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="264" source="Ric Flair" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="265" source="Eric Hecker" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="266" source="Eric Hecker" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="267" source="Chris Distefano" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="268" source="Chris Distefano" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="269" source="Luis Elizondo" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="270" source="Luis Elizondo" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="271" source="Georges St-Pierre" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="272" source="Georges St-Pierre" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="273" source="Mike Majlak" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="274" source="Mike Majlak" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="275" source="Mike Majlak" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="276" source="Mike Tyson" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="277" source="Mike Tyson" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="278" source="Chamath Palihapitiya" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="279" source="Chamath Palihapitiya" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="280" source="Kid Rock" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="281" source="Kid Rock" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="282" source="Kamaru Usman" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="283" source="Kamaru Usman" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="284" source="Kamaru Usman" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="285" source="Cody Rhodes" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="286" source="Cody Rhodes" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="287" source="FaZe Banks" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="288" source="FaZe Banks" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="289" source="Action Bronson" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="290" source="Action Bronson" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="291" source="Craig Jones" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="292" source="Craig Jones" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="293" source="Jim Gaffigan" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="294" source="Jim Gaffigan" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="295" source="Tim Kennedy" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="296" source="Tim Kennedy" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="297" source="Dr. Phil" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="298" source="Dr. Phil" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="299" source="Jynxzi" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="300" source="Jynxzi" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="301" source="Dax Shepard" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="302" source="Dax Shepard" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="303" source="Mike Baker" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="304" source="Mike Baker" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="305" source="Yung Gravy" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="306" source="Yung Gravy" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="307" source="Myron Gaines" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="308" source="Myron Gaines" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="309" source="David Pakman" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="310" source="David Pakman" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="311" source="Bradley Martyn" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="312" source="Bradley Martyn" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="313" source="Max Tegmark" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="314" source="Max Tegmark" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="315" source="Pete Hegseth" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="316" source="Pete Hegseth" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="317" source="Mike Vecchione" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="318" source="Mike Vecchione" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="319" source="Michael Shellenberger" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="320" source="Michael Shellenberger" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="321" source="Dwayne Johnson" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="322" source="Dwayne Johnson" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="323" source="Colby Covington" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="324" source="Colby Covington" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="325" source="Marc Andreessen" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="326" source="Marc Andreessen" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="327" source="Sebastian Maniscalco" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="328" source="Sebastian Maniscalco" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="329" source="Nick Kyrgios" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="330" source="Nick Kyrgios" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="331" source="Neal Brennan" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="332" source="Neal Brennan" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="333" source="Brian Simpson" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="334" source="Brian Simpson" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="335" source="Sara Walker" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="336" source="Sara Walker" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="337" source="Cenk Uygur" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="338" source="Cenk Uygur" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="339" source="Machine Gun Kelly" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="340" source="Machine Gun Kelly" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="341" source="Dennis Quaid" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="342" source="Dennis Quaid" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="343" source="Luke Combs" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="344" source="Luke Combs" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="345" source="Liver King" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="346" source="Liver King" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="347" source="Gary Brecka" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="348" source="Gary Brecka" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="349" source="Francis Suarez" target="FULL SEND PODCAST">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="350" source="Francis Suarez" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="351" source="David Blaine" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="352" source="David Blaine" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="353" source="Whitney Cummings" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="354" source="Whitney Cummings" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="355" source="Bjorn Lomborg" target="Lex Fridman">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="356" source="Bjorn Lomborg" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="357" source="Bjorn Lomborg" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="358" source="Avi Loeb" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="359" source="Avi Loeb" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="360" source="Bryan Callen" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="361" source="Bryan Callen" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="362" source="Rick Ross" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="363" source="Rick Ross" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="364" source="Trevor Bauer" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="365" source="Trevor Bauer" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="366" source="Aljamain Sterling" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="367" source="Aljamain Sterling" target="FLAGRANT">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="368" source="Pauly Shore" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="369" source="Pauly Shore" target="Theo Von">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="370" source="Buck Sexton" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="371" source="Buck Sexton" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="372" source="Gina Carano" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="373" source="Gina Carano" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="374" source="Danny Philippou" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="375" source="Danny Philippou" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="376" source="Michael Philippou" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="377" source="Michael Philippou" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="378" source="Anuel AA" target="Adin Live">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="379" source="Anuel AA" target="IMPAULSIVE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="380" source="Mike Benz" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="381" source="Mike Benz" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="382" source="Kyle Kulinski" target="PBD Podcast">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="383" source="Kyle Kulinski" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="384" source="Rick Doblin" target="PowerfulJRE">
+            <data key="weight">1.0</data>
+        </edge>
+        <edge id="385" source="Rick Doblin" target="Shawn Ryan Show">
+            <data key="weight">1.0</data>
+        </edge>
+    </graph>
+</graphml>

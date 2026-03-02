@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<div class="svg-container">
+  <svg id="svg">
+    <g class="full-network-graph" :data-dummy="update()"></g>
+  </svg>
+  <div id="tooltip"></div>
+</div>
+<style>
+  html, body { margin: 0; height: 100%; overflow-y: scroll; }
+  .svg-container {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+  }
+  #svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  div#tooltip {
+    position: fixed;
+    text-align: left;
+    font: 12px sans-serif;
+    background: white;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  div#tooltip.visible {
+    visibility: visible;
+  }
+</style>
+
+<body>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script>
+
+    console.log('in script')
+
+    const update = () => null,
+      width = 1200,
+      height = 500,
+      linkedByIndex = {},
+      options = {
+        linkStrokeWidth: (l) => 2 * l.weight,
+        linkStroke: "#999",
+        nodeStrokeOpacity: 1,
+        linkStrokeOpacity: 1,
+        linkStrokeLinecap: "butt",
+        nodeFill: "#000",
+        nodeStrokeWidth: 1,
+        nodeStroke: "#fff",
+      }
+
+    const invalidation = null;
+
+    const nodeId = (d) => d.key;
+    const linkSource = (d) => d.source;
+    const linkTarget = (d) => d.target;
+
+    d3.json("dataset.json").then(function (data) {
+
+      function intern(value) {
+        return value !== null && typeof value === "object"
+          ? value.valueOf()
+          : value;
+      }
+
+      // dataset.json: nodes have key, label, size, cluster; edges are [[srcKey, tgtKey], ...]
+      const clusterColorById = (data.clusters || []).reduce((acc, c) => {
+        acc[c.key] = c.color;
+        return acc;
+      }, {});
+
+      const networkData = {
+        nodes: data.nodes,
+        links: (data.edges || []).map((e) => ({ source: e[0], target: e[1], weight: 1 })),
+      };
+      const textScaling = 0.7;
+
+      function isConnected(a, b) {
+        return (
+          linkedByIndex[`${a.id},${b.id}`] ||
+          linkedByIndex[`${b.id},${a.id}`] ||
+          a.id === b.id
+        );
+      }
+
+      function fade(trueOpacity, falseOpacity, nodeColor, linkColor) {
+        return function (event, d) {
+          node.attr("stroke", function (o) {
+            const thisColor = isConnected(d, o)
+              ? nodeColor
+              : options.nodeStroke;
+            return thisColor;
+          });
+
+          link
+            .attr("stroke", (o) =>
+              o.source === d || o.target === d
+                ? linkColor
+                : options.linkStroke
+            )
+            .attr("stroke-opacity", (o) =>
+              o.source === d || o.target === d ? trueOpacity : falseOpacity
+            );
+        };
+      }
+
+      const formatViews = (n) => {
+        if (n == null || Number.isNaN(n)) return "—";
+        return new Intl.NumberFormat("en", { notation: "compact", maximumFractionDigits: 0 }).format(n);
+      };
+
+      function createTooltip() {
+        return function (event, d) {
+          var matrix = this.getScreenCTM().translate(
+            +this.getAttribute("cx"),
+            +this.getAttribute("cy")
+          );
+          const label = d.label != null ? d.label : "Node " + d.id;
+          const cluster = d.cluster != null ? d.cluster : "—";
+          const viewsStr = formatViews(d.views);
+          tooltipDiv
+            .html(
+              `<div style="text-align: center; background: #ECEFF1;border-bottom: 1px solid #ddd; padding: 6px; font: 13px sans-serif"; margin-bottom: 4px>${label}</div><div style="padding: 10px">` +
+              `Cluster: <b>${cluster}</b>` +
+              `<br/>Views: <b>${viewsStr}</b></div>`
+            )
+            .style("left", matrix.e + 15 + "px")
+            .style("top", matrix.f - 30 + "px")
+            .classed("visible", true);
+        };
+      }
+
+      const nodeRadius = (n) => (n.size != null ? +n.size : 5);
+
+      const N = d3.map(networkData.nodes, nodeId).map(intern);
+      const LS = d3.map(networkData.links, linkSource).map(intern);
+      const LT = d3.map(networkData.links, linkTarget).map(intern);
+      const nodeTitle = (_, i) => N[i];
+      const T = d3.map(networkData.nodes, nodeTitle);
+      const W =
+        typeof options.linkStrokeWidth !== "function"
+          ? null
+          : d3.map(networkData.links, options.linkStrokeWidth);
+      const L =
+        typeof options.linkStroke !== "function"
+          ? null
+          : d3.map(networkData.links, options.linkStroke);
+      const R =
+        typeof nodeRadius !== "function"
+          ? null
+          : d3.map(networkData.nodes, nodeRadius);
+
+      // Replace the input nodes and links with mutable objects; use fixed x,y from dataset.
+      const nodes = d3.map(networkData.nodes, (_, i) => {
+        const raw = networkData.nodes[i];
+        const x = raw.x != null ? +raw.x : 0;
+        const y = raw.y != null ? +raw.y : 0;
+        return {
+          id: N[i],
+          radius: R[i],
+          label: raw.label,
+          cluster: raw.cluster,
+          views: raw.views != null ? +raw.views : null,
+          x,
+          y,
+          fx: x,
+          fy: y,
+        };
+      });
+      const links = d3.map(networkData.links, (_, i) => ({
+        source: LS[i],
+        target: LT[i],
+        weight: networkData.links[i].weight,
+      }));
+
+      links.forEach((d) => {
+        linkedByIndex[`${d.source},${d.target}`] = 1;
+      });
+
+      // Construct the forces.
+      const forceNode = d3.forceManyBody();
+      const forceLink = d3
+        .forceLink(links)
+        .id((d) => d.id)
+        .strength(0.1);
+      const forceCollide = d3
+        .forceCollide()
+        .radius((d) => d.radius + 1)
+        .iterations(3);
+
+      d3.select("#svg")
+        .attr("viewBox", "-1000 -1000 2000 2000")
+        .attr("preserveAspectRatio", "xMidYMid meet")
+      parent = d3.select(".full-network-graph")
+
+      const tooltipDiv = d3.select("#tooltip").attr("class", "tooltip");
+
+      const link = parent
+        .append("g")
+        .attr(
+          "stroke",
+          typeof options.linkStroke !== "function"
+            ? options.linkStroke
+            : null
+        )
+        .attr("stroke-opacity", options.linkStrokeOpacity)
+        .attr(
+          "stroke-width",
+          typeof options.linkStrokeWidth !== "function"
+            ? options.linkStrokeWidth
+            : null
+        )
+        .attr("stroke-linecap", options.linkStrokeLinecap)
+        .attr("class", "links")
+        .attr("marker-end", "url(#arrow)")
+        .selectAll("line")
+        .data(links)
+        .join("line");
+
+      const node = parent
+        .append("g")
+        .attr("stroke", options.nodeStroke)
+        .attr("stroke-opacity", options.nodeStrokeOpacity)
+        .attr("stroke-width", options.nodeStrokeWidth)
+        .attr("class", "nodes")
+        .selectAll("circle")
+        .data(nodes)
+        .join("circle")
+        .attr("fill", (d) => (d && clusterColorById[d.cluster]) || options.nodeFill)
+        .attr("r", (d) => d.radius)
+        .on("mouseover.tooltip", createTooltip())
+        .on(
+          "mouseover.fade",
+          fade(1, options.linkStrokeOpacity, "#f00", "#f00")
+        )
+        .on("mouseout.tooltip", function () {
+          tooltipDiv.classed("visible", false);
+        })
+        .on(
+          "mouseout.fade",
+          fade(
+            options.linkStrokeOpacity,
+            options.linkStrokeOpacity,
+            options.nodeStroke,
+            options.linkStroke
+          )
+        );
+
+      const label = parent
+        .append("g")
+        .attr("class", "labels")
+        .style("pointer-events", "none")
+        .selectAll("text")
+        .data(nodes)
+        .join("text")
+        .text((d) => d.label || "")
+        .attr("text-anchor", "middle")
+        .attr("dominant-baseline", "middle")
+        .attr("fill", "black")
+        .attr("font-family", "sans-serif")
+        .attr("font-size", (d) => `${Math.max(6, d.radius * textScaling)}px`);
+
+      const simulation = d3
+        .forceSimulation(nodes)
+        .force("link", forceLink)
+        .force("charge", forceNode)
+        .force("center", d3.forceCenter().strength(100))
+        .force("center", forceCollide)
+        .on("tick", ticked);
+
+      if (W) link.attr("stroke-width", ({ index: i }) => W[i]);
+      if (L) link.attr("stroke", ({ index: i }) => L[i]);
+      if (T) node.attr("id", ({ index: i }) => "channel_" + T[i]);
+      if (invalidation != null) invalidation.then(() => simulation.stop());
+
+      // // Fix position of node corresponding to selected channel to origin and set color
+      // d3.select("#channel_" + networkData.nodes[0].id).attr(
+      //   "fill",
+      //   "#00f"
+      // );
+
+      // nodes[0]["fx"] = 0;
+      // nodes[0]["fy"] = 0;
+
+      let zoom = d3
+        .zoom()
+        .on("zoom", (e) =>
+          d3.select("#svg g").attr("transform", e.transform)
+        );
+
+      d3.select("#svg").call(zoom);
+
+      function ticked() {
+        link
+          .attr("x1", (d) => d.source.x)
+          .attr("y1", (d) => d.source.y)
+          .attr("x2", (d) => d.target.x)
+          .attr("y2", (d) => d.target.y);
+        node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
+        label.attr("x", (d) => d.x).attr("y", (d) => d.y);
+      }
+    });
+
+  </script>
+</body>
