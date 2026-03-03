@@ -33,6 +33,11 @@
     import Sigma from "sigma";
 
     const NODE_SIZE_SCALE = 0.4;
+    const MOBILE_BREAKPOINT = 1280;
+    const MOBILE_SCALE = 0.5;
+    const LABEL_THRESHOLD = 25;
+
+    const mobileFactor = typeof window !== "undefined" && window.innerWidth < MOBILE_BREAKPOINT ? MOBILE_SCALE : 1;
 
     let renderer = null;
 
@@ -47,17 +52,16 @@
         graph.forEachNode((node) => {
           const size = graph.getNodeAttribute(node, "size");
           if (size != null) {
-            graph.setNodeAttribute(node, "size", size * NODE_SIZE_SCALE);
+            graph.setNodeAttribute(node, "size", size * NODE_SIZE_SCALE * mobileFactor);
           }
         });
 
         const container = document.getElementById("sigma-container");
 
-        const LABEL_THRESHOLD = 25;
         renderer = new Sigma(graph, container, {
           minCameraRatio: 0.08,
           maxCameraRatio: 3,
-          labelRenderedSizeThreshold: LABEL_THRESHOLD,
+          labelRenderedSizeThreshold: LABEL_THRESHOLD * mobileFactor,
         });
       })
       .catch((err) => {

@@ -191,8 +191,11 @@
         .radius((d) => d.radius + 1)
         .iterations(3);
 
+      // Tight viewBox so the graph fills the iframe (data is in [-800,800]).
+      const isMobile = typeof window !== "undefined" && window.innerWidth < 1280;
+      const vb = isMobile ? 800 : 850; // 850 = slight margin on desktop; 800 = tight on mobile
       d3.select("#svg")
-        .attr("viewBox", "-1000 -1000 2000 2000")
+        .attr("viewBox", `${-vb} ${-vb} ${2 * vb} ${2 * vb}`)
         .attr("preserveAspectRatio", "xMidYMid meet")
       parent = d3.select(".full-network-graph")
 

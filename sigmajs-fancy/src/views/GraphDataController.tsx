@@ -8,13 +8,10 @@ const GraphDataController: FC<PropsWithChildren<{ filters: FiltersState }>> = ({
   const graph = sigma.getGraph();
 
   useEffect(() => {
-    const { clusters, tags } = filters;
+    const { clusters } = filters;
     graph.forEachNode((node, attrs) => {
       const cluster = attrs.cluster as string;
-      const tag = attrs.tag as string | undefined;
-      const hiddenByCluster = !clusters[cluster];
-      const hiddenByTag = tag != null && Object.keys(tags).length > 0 && !tags[tag];
-      graph.setNodeAttribute(node, "hidden", hiddenByCluster || hiddenByTag);
+      graph.setNodeAttribute(node, "hidden", !clusters[cluster]);
     });
   }, [graph, filters]);
 

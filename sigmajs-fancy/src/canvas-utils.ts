@@ -38,10 +38,8 @@ export function drawHover(context: CanvasRenderingContext2D, data: PlainObject, 
   const subLabelSize = size - 2;
 
   const label = data.label;
-  const subLabel = "";
   const clusterLabel = data.clusterLabel;
 
-  // Then we draw the label background
   context.beginPath();
   context.fillStyle = "#fff";
   context.shadowOffsetX = 0;
@@ -52,20 +50,16 @@ export function drawHover(context: CanvasRenderingContext2D, data: PlainObject, 
   context.font = `${weight} ${size}px ${font}`;
   const labelWidth = context.measureText(label).width;
   context.font = `${weight} ${subLabelSize}px ${font}`;
-  const subLabelWidth = subLabel ? context.measureText(subLabel).width : 0;
-  context.font = `${weight} ${subLabelSize}px ${font}`;
   const clusterLabelWidth = clusterLabel ? context.measureText(clusterLabel).width : 0;
-
-  const textWidth = Math.max(labelWidth, subLabelWidth, clusterLabelWidth);
+  const textWidth = Math.max(labelWidth, clusterLabelWidth);
 
   const x = Math.round(data.x);
   const y = Math.round(data.y);
   const w = Math.round(textWidth + size / 2 + data.size + 3);
   const hLabel = Math.round(size / 2 + 4);
-  const hSubLabel = subLabel ? Math.round(subLabelSize / 2 + 9) : 0;
   const hClusterLabel = Math.round(subLabelSize / 2 + 9);
 
-  drawRoundRect(context, x, y - hSubLabel - 12, w, hClusterLabel + hLabel + hSubLabel + 12, 5);
+  drawRoundRect(context, x, y - 12, w, hClusterLabel + hLabel + 12, 5);
   context.closePath();
   context.fill();
 
@@ -73,16 +67,9 @@ export function drawHover(context: CanvasRenderingContext2D, data: PlainObject, 
   context.shadowOffsetY = 0;
   context.shadowBlur = 0;
 
-  // And finally we draw the labels
   context.fillStyle = TEXT_COLOR;
   context.font = `${weight} ${size}px ${font}`;
   context.fillText(label, data.x + data.size + 3, data.y + size / 3);
-
-  if (subLabel) {
-    context.fillStyle = TEXT_COLOR;
-    context.font = `${weight} ${subLabelSize}px ${font}`;
-    context.fillText(subLabel, data.x + data.size + 3, data.y - (2 * size) / 3 - 2);
-  }
 
   context.fillStyle = data.color;
   context.font = `${weight} ${subLabelSize}px ${font}`;

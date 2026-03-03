@@ -20,9 +20,9 @@ const GraphEventsController: FC<PropsWithChildren<{ setHoveredNode: (node: strin
   useEffect(() => {
     registerEvents({
       clickNode({ node }) {
-        if (!graph.getNodeAttribute(node, "hidden")) {
-          window.open(graph.getNodeAttribute(node, "URL"), "_blank");
-        }
+        if (graph.getNodeAttribute(node, "hidden")) return;
+        const url = graph.getNodeAttribute(node, "URL");
+        if (url) window.open(url, "_blank");
       },
       enterNode({ node }) {
         setHoveredNode(node);

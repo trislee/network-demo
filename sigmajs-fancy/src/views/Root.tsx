@@ -17,15 +17,17 @@ import GraphSettingsController from "./GraphSettingsController";
 import GraphTitle from "./GraphTitle";
 import SearchField from "./SearchField";
 
+const MOBILE_BREAKPOINT = 1280;
+const MOBILE_SCALE = 0.6;
+const BASE_LABEL_THRESHOLD = 15;
+
 const Root: FC = () => {
   const graph = useMemo(() => new Graph(), []);
   const [showContents, setShowContents] = useState(false);
   const [dataReady, setDataReady] = useState(false);
   const [dataset, setDataset] = useState<Dataset | null>(null);
-  const [filtersState, setFiltersState] = useState<FiltersState>({
-    clusters: {},
-    tags: {},
-  });
+  const [mobileScale, setMobileScale] = useState(1);
+  const [filtersState, setFiltersState] = useState<FiltersState>({ clusters: {} });
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
   const sigmaSettings: Partial<Settings> = useMemo(
     () => ({
@@ -34,29 +36,31 @@ const Root: FC = () => {
       defaultEdgeType: "line",
       labelDensity: 0.07,
       labelGridCellSize: 60,
-      labelRenderedSizeThreshold: 15,
+      labelRenderedSizeThreshold: BASE_LABEL_THRESHOLD * mobileScale,
       labelFont: "Lato, sans-serif",
       zIndex: true,
     }),
-    [],
+    [mobileScale],
   );
 
   // Load dataset once on mount and populate the graph (dataset never changes).
   useEffect(() => {
     const MIN_NODE_SIZE = 3;
-    const MAX_NODE_SIZE = 30;
 
     fetch(`./dataset.json`)
       .then((res) => res.json())
       .then((dataset: Dataset) => {
+        const scale = window.innerWidth < MOBILE_BREAKPOINT ? MOBILE_SCALE : 1;
+        setMobileScale(scale);
+
         const clusters = keyBy(dataset.clusters, "key");
-        const tags = dataset.tags ? keyBy(dataset.tags, "key") : {};
 
         dataset.nodes.forEach((node) => {
           if (!graph.hasNode(node.key)) {
             graph.addNode(node.key, {
               ...node,
               ...omit(clusters[node.cluster], "key"),
+              size: (node.size ?? MIN_NODE_SIZE) * scale,
             });
           }
         });
@@ -66,29 +70,21 @@ const Root: FC = () => {
           }
         });
 
-        const hasScore = dataset.nodes.some((n) => (n as { score?: number }).score != null);
-        if (hasScore) {
-          const scores = graph.nodes().map((node) => graph.getNodeAttribute(node, "score") as number);
-          const minS = Math.min(...scores);
-          const maxS = Math.max(...scores);
-          const range = maxS - minS || 1;
-          graph.forEachNode((node) =>
-            graph.setNodeAttribute(
-              node,
-              "size",
-              ((graph.getNodeAttribute(node, "score") as number) - minS) / range * (MAX_NODE_SIZE - MIN_NODE_SIZE) + MIN_NODE_SIZE,
-            ),
-          );
-        }
-
         setFiltersState({
           clusters: mapValues(keyBy(dataset.clusters, "key"), constant(true)),
-          tags: dataset.tags ? mapValues(tags, constant(true)) : {},
         });
         setDataset(dataset);
         requestAnimationFrame(() => setDataReady(true));
       });
   }, [graph]);
+
+  // Sync document title and meta description from dataset
+  useEffect(() => {
+    if (!dataset?.title) return;
+    document.title = dataset.title;
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) meta.setAttribute("content", dataset.title);
+  }, [dataset?.title]);
 
   if (!dataset) return null;
 
