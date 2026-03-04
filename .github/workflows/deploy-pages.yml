@@ -43,7 +43,7 @@ jobs:
         run: |
           mkdir -p site
           cp index.html site/
-          cp -r d3 graphs holoviews sigmajs choices site/
+          cp -r d3 d3*force graphs holoviews sigmajs choices site/
           mkdir -p site/sigmajs-fancy
           cp -r sigmajs-fancy/build/* site/sigmajs-fancy/
 

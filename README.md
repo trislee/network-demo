@@ -11,22 +11,17 @@ If you want to run this repo yourself, the easiest way is to use the linked Goog
 ## Scripts
 
 ### 00__generate_graph.py
-[![Colab][colab-badge]](https://colab.research.google.com/github/trislee/network-demo/blob/main/notebooks/00__generate_graph.ipynb)
+<a href="https://colab.research.google.com/github/trislee/network-demo/blob/main/notebooks/00__generate_graph.ipynb" target="_blank" rel="noopener noreferrer"><img src="https://colab.research.google.com/assets/colab-badge.svg" height="20" alt="Colab"></a>
 
 Downloads the data from a Bloomberg GitHub repo, processes it into network format (using [NetworkX](https://networkx.org/en/) Python package) and writes graph as GraphML file.
 
 ### 01__generate_visualization_holoviews.py
-[![Colab][colab-badge]](https://colab.research.google.com/github/trislee/network-demo/blob/main/notebooks/01__generate_visualization_holoviews.ipynb)
+<a href="https://colab.research.google.com/github/trislee/network-demo/blob/main/notebooks/01__generate_visualization_holoviews.ipynb" target="_blank" rel="noopener noreferrer"><img src="https://colab.research.google.com/assets/colab-badge.svg" height="20" alt="Colab"></a>
 
 After laying out the network out using [Gephi](https://gephi.org/), generate an interactive visualization of the network using the [HoloViews](https://holoviews.org/user_guide/Network_Graphs.html) Python package.
 
 ### 02__generate_visualization_d3_sigma.py
-[![Colab][colab-badge]](https://colab.research.google.com/github/trislee/network-demo/blob/main/notebooks/02__generate_visualization_d3_sigma.ipynb)
-<a href="https://observablehq.com/d/8450f35de65ff39e"><img src="https://a11ybadges.com/badge?logo=observable" height="20" alt="Observable"></a>
+<a href="https://colab.research.google.com/github/trislee/network-demo/blob/main/notebooks/02__generate_visualization_d3_sigma.ipynb" target="_blank" rel="noopener noreferrer"><img src="https://colab.research.google.com/assets/colab-badge.svg" height="20" alt="Colab"></a>
+<a href="https://observablehq.com/d/8450f35de65ff39e" target="_blank" rel="noopener noreferrer"><img src="https://a11ybadges.com/badge?logo=observable" height="20" alt="Observable"></a>
 
 After laying out the network out using [Gephi](https://gephi.org/), generate the JSON-formatted network data used in interactive visualizations of the network using the JavaScript libraries [d3](https://d3-graph-gallery.com/network.html) and [sigma.js](https://www.sigmajs.org/)
-
-
-
-
-[colab-badge]: https://colab.research.google.com/assets/colab-badge.svg
