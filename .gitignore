@@ -1,0 +1,4 @@
+d3/*.ojs
+
+notebooks/*
+!notebooks/*.ipynb

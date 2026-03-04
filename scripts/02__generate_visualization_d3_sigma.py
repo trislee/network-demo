@@ -28,12 +28,8 @@ if __name__ == "__main__":
     ).reset_index(drop=True)
     _edges_df = nx.to_pandas_edgelist(G=G)
 
-    nodes_df = _nodes_df[["x", "y", "label", "size", "category", "views"]]
-    edges_df = _edges_df[["source", "target"]]
-
-    nodes_df["cluster"] = nodes_df["category"]
-    nodes_df["cluster"].fillna("Other", inplace=True)
-    nodes_df.drop("category", axis="columns", inplace=True)
+    nodes_df = _nodes_df[["x", "y", "label", "size", "category", "views"]].copy()
+    edges_df = _edges_df[["source", "target"]].copy()
 
     label_to_index = {
         t[0]: i
@@ -44,6 +40,8 @@ if __name__ == "__main__":
 
     nodes_df["key"] = nodes_df["label"].map(label_to_index)
     nodes_df["size"] /= NODE_SCALING
+    # sigma-fancy and d3 both expect node.cluster (cluster colors/tooltips); keep category for clarity
+    nodes_df["cluster"] = nodes_df["category"]
     nodes = nodes_df.to_dict(orient="records")
 
     edges = [
@@ -53,15 +51,14 @@ if __name__ == "__main__":
 
     with open(COLORS_PATH, encoding="utf-8") as f:
         category_colors = json.load(f)
-    default_color = "#888888"
 
-    clusters = [k for k, _ in Counter(nodes_df["cluster"]).most_common()]
+    clusters = [k for k, _ in Counter(nodes_df["category"]).most_common()]
 
     data = {
         "nodes": nodes,
         "edges": edges,
         "clusters": [
-            {"key": c, "clusterLabel": c, "color": category_colors.get(c, default_color)}
+            {"key": c, "clusterLabel": c, "color": category_colors[c]}
             for c in clusters
         ],
         "bbox": BOUNDING_BOX,
