@@ -2,23 +2,11 @@
 
 This repo contains scripts for creating several visualizations of the same network, generated using different visualization libraries: HoloViews, sigma.js, and d3.
 
+You can view all of these visualizations on this repo's GitHub Pages site.
+
 It uses data from a 2025 [Bloomberg investigation](https://www.bloomberg.com/graphics/2025-youtube-podcast-men-for-trump/) that analyzed the YouTube/podcaster ecosystem around Donald Trump during the 2024 presidential election.
 
 If you want to run this repo yourself, the easiest way is to use the linked Google Colab notebooks. To run it locally, you can use the Python scripts in the `scripts/` directory.
-
-## Sharing the visualization and code
-
-To share both the interactive viz and the source in one place:
-
-1. **Push this repo to GitHub** (if you haven’t already).
-2. **Turn on GitHub Pages**: repo **Settings → Pages → Source**: choose “Deploy from a branch”, pick your default branch (e.g. `main`), folder “/ (root)” (or “/docs” if you put the site in `docs/`). Save.
-3. After a minute or two, the site is at `https://<your-username>.github.io/<repo-name>/`.
-4. **Link people to**:
-   - **Live D3 viz:** `https://<your-username>.github.io/<repo-name>/d3/`
-     (The `d3/` folder has `index.html` and `dataset.json`; the page loads the data from `dataset.json` in the same folder.)
-   - **Code:** the same repo — e.g. `https://github.com/<your-username>/<repo-name>`. They can open `d3/index.html` and `d3/dataset.json` to see exactly what runs.
-
-Put the live link in the README (e.g. “**Live visualization:** [link]”) so one repo link gives both the code and a clear way to run the viz.
 
 ## Scripts
 
