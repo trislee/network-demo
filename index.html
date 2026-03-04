@@ -60,6 +60,15 @@
     <iframe src="d3/" title="D3"></iframe>
   </section>
   <section>
+    <h1><a href="d3-force/">D3 - force-directed</a></h1>
+    <p>
+        This visualization uses <a href="https://d3js.org/">D3</a> and the same data as the <a href="d3/">D3 example</a> above. Except instead of using the computed layout (x and y positions) from Gephi, it uses a force-directed layout algorithm to compute the positions of the nodes.
+
+        This kind of "live" network layout is better when the data changes on a regular basis (and you don't want to manually lay it out in Gephi every update), but typically results in less control of the layout and worse performance
+    </p>
+    <iframe src="d3-force/" title="D3 - force-directed"></iframe>
+  </section>
+  <section>
     <h1><a href="sigmajs-fancy/">Sigma.js (fancy)</a></h1>
     <p>This visualization also uses sigma.js, but it's built on the base of a very nice <a href="https://www.sigmajs.org/demo/index.html">demo</a> that shows many of the framework's features. The result is very polished, and includes a description, ability to search by node name, and a way to interact with and show clusters/categories, all with quite good performance. The downside is that it's not straightforward to customize.
     </p>

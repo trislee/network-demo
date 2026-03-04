@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<div class="svg-container">
+  <svg id="svg">
+    <g class="full-network-graph"></g>
+  </svg>
+  <div id="tooltip"></div>
+</div>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; }
+  .svg-container {
+    width: 100%;
+    height: 100%;
+  }
+  #svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  div#tooltip {
+    position: fixed;
+    text-align: left;
+    font: 12px sans-serif;
+    background: white;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  div#tooltip.visible {
+    visibility: visible;
+  }
+</style>
+
+<body>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script>
+
+    const width = 928;
+    const height = 600;
+    const linkedByIndex = {};
+    const options = {
+      linkStrokeWidth: (l) => edgeScaling * l.weight,
+      linkStroke: "#999",
+      nodeStrokeOpacity: 1,
+      linkStrokeOpacity: 1,
+      linkStrokeLinecap: "butt",
+      nodeFill: "#000",
+      nodeStrokeWidth: 1,
+      nodeStroke: "#fff",
+    };
+
+    const nodeId = (d) => d.key;
+    const linkSource = (d) => d.source;
+    const linkTarget = (d) => d.target;
+    const textScaling = 0.7;
+    const nodeScaling = 0.5;
+    const edgeScaling = 0.5;
+    const LABEL_SIZE_THRESHOLD = 30;
+
+    d3.json("../d3/dataset.json").then(function (data) {
+
+      function intern(value) {
+        return value !== null && typeof value === "object"
+          ? value.valueOf()
+          : value;
+      }
+
+      const clusterColorById = (data.clusters || []).reduce((acc, c) => {
+        acc[c.key] = c.color;
+        return acc;
+      }, {});
+
+      const networkData = {
+        nodes: data.nodes,
+        links: (data.edges || []).map((e) => ({ source: e[0], target: e[1], weight: 1 })),
+      };
+
+      function isConnected(a, b) {
+        return (
+          linkedByIndex[`${a.id},${b.id}`] ||
+          linkedByIndex[`${b.id},${a.id}`] ||
+          a.id === b.id
+        );
+      }
+
+      function fade(trueOpacity, falseOpacity, nodeColor, linkColor) {
+        return function (event, d) {
+          node.attr("stroke", function (o) {
+            const thisColor = isConnected(d, o)
+              ? nodeColor
+              : options.nodeStroke;
+            return thisColor;
+          });
+          link
+            .attr("stroke", (o) =>
+              o.source === d || o.target === d
+                ? linkColor
+                : options.linkStroke
+            )
+            .attr("stroke-opacity", (o) =>
+              o.source === d || o.target === d ? trueOpacity : falseOpacity
+            );
+        };
+      }
+
+      const formatViews = (n) => {
+        if (n == null || Number.isNaN(n)) return "—";
+        return new Intl.NumberFormat("en", { notation: "compact", maximumFractionDigits: 0 }).format(n);
+      };
+
+      function createTooltip() {
+        return function (event, d) {
+          var matrix = this.getScreenCTM().translate(
+            +this.getAttribute("cx"),
+            +this.getAttribute("cy")
+          );
+          const label = d.label != null ? d.label : "Node " + d.id;
+          const cluster = d.cluster != null ? d.cluster : "—";
+          const viewsStr = formatViews(d.views);
+          tooltipDiv
+            .html(
+              `<div style="text-align: center; background: #ECEFF1; border-bottom: 1px solid #ddd; padding: 6px; font: 13px sans-serif; margin-bottom: 4px;">${label}</div><div style="padding: 10px;">Cluster: <b>${cluster}</b><br/>Views: <b>${viewsStr}</b></div>`
+            )
+            .style("left", matrix.e + 15 + "px")
+            .style("top", matrix.f - 30 + "px")
+            .classed("visible", true);
+        };
+      }
+
+      const N = d3.map(networkData.nodes, nodeId).map(intern);
+      const LS = d3.map(networkData.links, linkSource).map(intern);
+      const LT = d3.map(networkData.links, linkTarget).map(intern);
+      const nodeTitle = (_, i) => N[i];
+      const T = d3.map(networkData.nodes, nodeTitle);
+      const W = d3.map(networkData.links, options.linkStrokeWidth);
+      const R = d3.map(networkData.nodes, (n) => nodeScaling * (n.size != null ? +n.size : 5));
+
+      // Force-directed: no fixed x,y; simulation assigns positions.
+      const nodes = d3.map(networkData.nodes, (raw, i) => ({
+        id: N[i],
+        radius: R[i],
+        label: raw.label,
+        cluster: raw.cluster ?? raw.category,
+        views: raw.views != null ? +raw.views : null,
+      }));
+      const links = d3.map(networkData.links, (_, i) => ({
+        source: LS[i],
+        target: LT[i],
+        weight: networkData.links[i].weight,
+      }));
+
+      links.forEach((d) => {
+        linkedByIndex[`${d.source},${d.target}`] = 1;
+      });
+
+      // Tuned for a denser, more compact layout.
+      const forceLink = d3
+        .forceLink(links)
+        .id((d) => d.id)
+        .distance(40)
+        .strength(0.3);
+      const forceCollide = d3
+        .forceCollide()
+        .radius((d) => d.radius + 1)
+        .iterations(3);
+
+      const simulation = d3
+        .forceSimulation(nodes)
+        .force("link", forceLink)
+        .force("charge", d3.forceManyBody().strength(-15))
+        .force("center", d3.forceCenter(width / 2, height / 2).strength(0.15))
+        .force("collide", forceCollide)
+        .on("tick", ticked);
+
+      d3.select("#svg")
+        .attr("viewBox", [0, 0, width, height])
+        .attr("preserveAspectRatio", "xMidYMid meet");
+      const parent = d3.select(".full-network-graph");
+
+      const tooltipDiv = d3.select("#tooltip").attr("class", "tooltip");
+
+      const link = parent
+        .append("g")
+        .attr("stroke", options.linkStroke)
+        .attr("stroke-opacity", options.linkStrokeOpacity)
+        .attr("stroke-linecap", options.linkStrokeLinecap)
+        .attr("class", "links")
+        .selectAll("line")
+        .data(links)
+        .join("line")
+        .attr("stroke-width", (d, i) => W[i]);
+
+      const node = parent
+        .append("g")
+        .attr("stroke", options.nodeStroke)
+        .attr("stroke-opacity", options.nodeStrokeOpacity)
+        .attr("stroke-width", options.nodeStrokeWidth)
+        .attr("class", "nodes")
+        .selectAll("circle")
+        .data(nodes)
+        .join("circle")
+        .attr("fill", (d) => (d && clusterColorById[d.cluster]) || options.nodeFill)
+        .attr("r", (d) => d.radius)
+        .on("mouseover.tooltip", createTooltip())
+        .on("mouseover.fade", fade(1, options.linkStrokeOpacity, "#f00", "#f00"))
+        .on("mouseout.tooltip", function () {
+          tooltipDiv.classed("visible", false);
+        })
+        .on("mouseout.fade", fade(options.linkStrokeOpacity, options.linkStrokeOpacity, options.nodeStroke, options.linkStroke))
+        .call(
+          d3.drag()
+            .on("start", dragstarted)
+            .on("drag", dragged)
+            .on("end", dragended)
+        );
+
+      const label = parent
+        .append("g")
+        .attr("class", "labels")
+        .style("pointer-events", "none")
+        .selectAll("text")
+        .data(nodes)
+        .join("text")
+        .text((d) => d.label || "")
+        .attr("text-anchor", "middle")
+        .attr("dominant-baseline", "middle")
+        .attr("fill", "black")
+        .attr("font-family", "sans-serif")
+        .attr("font-size", (d) => `${Math.max(6, d.radius * textScaling)}px`);
+
+      node.attr("id", (d, i) => "channel_" + T[i]);
+
+      let currentTransform = d3.zoomIdentity;
+
+      function updateLabelVisibility() {
+        const k = currentTransform.k;
+        label.attr(
+          "visibility",
+          (d) => (d.radius * k >= LABEL_SIZE_THRESHOLD ? "visible" : "hidden")
+        );
+      }
+
+      const zoom = d3
+        .zoom()
+        .on("zoom", (e) => {
+          currentTransform = e.transform;
+          d3.select("#svg g").attr("transform", e.transform);
+          updateLabelVisibility();
+        });
+
+      d3.select("#svg").call(zoom);
+
+      const initialScale = 2.2;
+      const cx = width / 2;
+      const cy = height / 2;
+      const initialTransform = d3.zoomIdentity
+        .translate(cx * (1 - initialScale), cy * (1 - initialScale))
+        .scale(initialScale);
+      d3.select("#svg").call(zoom.transform, initialTransform);
+      updateLabelVisibility();
+
+      function ticked() {
+        link
+          .attr("x1", (d) => d.source.x)
+          .attr("y1", (d) => d.source.y)
+          .attr("x2", (d) => d.target.x)
+          .attr("y2", (d) => d.target.y);
+        node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
+        label.attr("x", (d) => d.x).attr("y", (d) => d.y);
+      }
+
+      function dragstarted(event) {
+        if (!event.active) simulation.alphaTarget(0.3).restart();
+        event.subject.fx = event.subject.x;
+        event.subject.fy = event.subject.y;
+      }
+
+      function dragged(event) {
+        event.subject.fx = event.x;
+        event.subject.fy = event.y;
+      }
+
+      function dragended(event) {
+        if (!event.active) simulation.alphaTarget(0);
+        event.subject.fx = null;
+        event.subject.fy = null;
+      }
+    });
+
+  </script>
+</body>
