@@ -6,9 +6,7 @@ import numpy as np
 import pandas as pd
 
 import holoviews as hv
-from bokeh.embed import file_html
-from bokeh.models import CustomJS, HoverTool, LabelSet
-from bokeh.resources import CDN
+from bokeh.models import HoverTool
 
 hv.extension('bokeh')
 renderer = hv.renderer('bokeh')
