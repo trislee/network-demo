@@ -132,7 +132,7 @@
             significantly.
         </p>
         <h3><a href="d3/">D3.js (pre-computed)</a></h3>
-        <p>This visualization uses a pre-computed layout (x and y positions) from Gephi, converted into a JSON file using a <a href="https://github.com/trislee/network-demo/blob/main/scripts/02__generate_visualization_d3_sigma.py">Python script</a>.</p>
+        <p>This visualization uses a pre-computed layout (x and y node positions) from Gephi, converted into a JSON file using a <a href="https://github.com/trislee/network-demo/blob/main/scripts/02__generate_visualization_d3_sigma.py">Python script</a>.</p>
         <p><a href="https://observablehq.com/d/8450f35de65ff39e" target="_blank" rel="noopener noreferrer"><img
                     src="https://a11ybadges.com/badge?logo=observable" height="20" alt="Observable"></a></p>
 
@@ -143,12 +143,12 @@
                     src="https://a11ybadges.com/badge?logo=observable" height="20" alt="Observable"></a></p>
         <p>
             This visualization uses <a href="https://d3js.org/">D3</a> and the same data as the pre-computed layout <a href="d3/">D3
-                example</a> above. Except instead of using the computed layout (x and y positions) from Gephi, it uses a
+                example</a> above. Except instead of using the computed layout (x and y node positions) from Gephi, it uses a
             force-directed layout algorithm to compute the positions of the nodes.
 
             This kind of "live" network layout is better when the data changes on a regular basis (and you don't want to
             manually lay it out in Gephi every update), but typically results in less control of the layout and worse
-            performance
+            performance.
         </p>
         <iframe src="d3-force/" title="D3 (force-directed)"></iframe>
     </section>
