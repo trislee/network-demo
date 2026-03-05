@@ -11,7 +11,8 @@ If you want to run this repo yourself, the easiest way is to use the linked Goog
 ## Scripts
 
 To run this locally, install necessary Python package dependencies by running command
-```pip install -r requirements.txt
+```python
+pip install -r requirements.txt
 ```
 from the `scripts/` directory.
 
