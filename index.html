@@ -92,22 +92,22 @@
             <a href="https://holoviews.org/">HoloViews</a> is a Python library for creating interactive data
             visualizations, including <a href="https://holoviews.org/user_guide/Network_Graphs.html">network graphs.</a>
             It works nicely with Pandas DataFrames, and is part of the broader <a
-                href="https://holoviz.org/">Holoviz</a> ecosystem, which enalbes easy integration into other libraries
+                href="https://holoviz.org/">Holoviz</a> ecosystem, which enables easy integration into other libraries
             for high-performance data analysis and visualization. It can be difficult to customize beyond the options
             provided in the library though.
         </p>
-        <p>This visualization was generated using a <a href="https://github.com/trislee/network-demo/blob/main/scripts/01__generate_visualization_holoviews.py"></a>Python script</a> that reads in the GraphML file exported from Gephi and outputs a static HTML file.</p>
+        <p>This visualization was generated using a <a href="https://github.com/trislee/network-demo/blob/main/scripts/01__generate_visualization_holoviews.py">Python script</a> that reads in the GraphML file exported from Gephi and outputs a static HTML file.</p>
         <iframe src="holoviews/" title="HoloViews"></iframe>
     </section>
     <section>
         <h2>Sigma.js</h2>
         <p>
-            <a href="https://www.sigmajs.org/">Sigma.js</a> is a JavaScript library for visualizing graphs. It's easy to get started with (see their <a href="sigmajs.org/storybook/">examples</a>), and
+            <a href="https://www.sigmajs.org/">Sigma.js</a> is a JavaScript library for visualizing graphs. It's easy to get started with (see their <a href="https://www.sigmajs.org/storybook/">examples</a>), and
             has very good performance, but is "opinionated", which limits the customization options or integrating it
             with other features.
         </p>
         <h3><a href="sigmajs/">Sigma.js (simple)</a></h3>
-        <p>This visualization uses the exported GEXF file from Gephi and a default<a href="https://www.sigmajs.org/storybook/?path=/story/load-gexf-file--story">sigma.js example</a> to visualize the network.</p>
+        <p>This visualization uses the exported GEXF file from Gephi and a default <a href="https://www.sigmajs.org/storybook/?path=/story/load-gexf-file--story">sigma.js example</a> to visualize the network.</p>
         <iframe src="sigmajs/" title="Sigma.js"></iframe>
         <br>
         <h3><a href="sigmajs-fancy/">Sigma.js (fancy)</a></h3>
@@ -124,7 +124,7 @@
         <p>
             <a href="https://d3js.org/">D3</a> is a JavaScript library for creating interactive data visualizations. It
             is more of a set of building blocks rather than a complete framework, so you'll need to put together those
-            blocks yourself (or build on <a href="https://observablehq.com/@d3/gallery#networks">examples</a>), The
+            blocks yourself (or build on <a href="https://observablehq.com/@d3/gallery#networks">examples</a>). The
             upside is that it's extremely flexible, there are no real limitations on what you can do.
 
             Its default performance (with SVG rendering) is not great, but using <a
@@ -142,7 +142,7 @@
         <p><a href="https://observablehq.com/d/fcbc77e23fbd958c" target="_blank" rel="noopener noreferrer"><img
                     src="https://a11ybadges.com/badge?logo=observable" height="20" alt="Observable"></a></p>
         <p>
-            This visualization uses <a href="https://d3js.org/">D3</a> and the same data as the pre-computed layout<a href="d3/">D3
+            This visualization uses <a href="https://d3js.org/">D3</a> and the same data as the pre-computed layout <a href="d3/">D3
                 example</a> above. Except instead of using the computed layout (x and y positions) from Gephi, it uses a
             force-directed layout algorithm to compute the positions of the nodes.
 
@@ -160,9 +160,9 @@
         <ul>
             <li><b>Filtering</b>: for visualization purposes, it often makes sense to filter out (remove) particular
                 nodes based on some criteria. The "Appearance Threshold" slider removes guests who have appeared on less
-                than a specificed number of different podcasts. This allows only the most significant guests to be
+                than a specified number of different podcasts. This allows only the most significant guests to be
                 shown.</li>
-            <li><b>Graph type</b>: a <em>bipartite</em> graph has two different kind of nodes, where there's an implicit
+            <li><b>Graph type</b>: a <em>bipartite</em> graph has two different kinds of nodes, where there's an implicit
                 relationship between them. A <em>unipartite</em> graph has only one kind of node. The "Graph Type"
                 section lets you switch between a bipartite graph (where there are two kinds of nodes: podcasts and
                 guests, and every edge indicates a guest appearance on a podcast) and a unipartite graph (there are only
