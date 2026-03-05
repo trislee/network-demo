@@ -1,0 +1,5 @@
+colorcet
+holoviews
+networkx
+numpy
+pandas

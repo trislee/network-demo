@@ -10,6 +10,11 @@ If you want to run this repo yourself, the easiest way is to use the linked Goog
 
 ## Scripts
 
+To run this locally, install necessary Python package dependencies by running command
+```pip install -r requirements.txt
+```
+from the `scripts/` directory.
+
 ### 00__generate_graph.py
 <a href="https://colab.research.google.com/github/trislee/network-demo/blob/main/notebooks/00__generate_graph.ipynb" target="_blank" rel="noopener noreferrer"><img src="https://colab.research.google.com/assets/colab-badge.svg" height="20" alt="Colab"></a>
 
@@ -24,7 +29,7 @@ After laying out the network out using [Gephi](https://gephi.org/), generate an 
 <a href="https://colab.research.google.com/github/trislee/network-demo/blob/main/notebooks/02__generate_visualization_d3_sigma.ipynb" target="_blank" rel="noopener noreferrer"><img src="https://colab.research.google.com/assets/colab-badge.svg" height="20" alt="Colab"></a>
 <a href="https://observablehq.com/d/8450f35de65ff39e" target="_blank" rel="noopener noreferrer"><img src="https://a11ybadges.com/badge?logo=observable" height="20" alt="Observable"></a>
 
-After laying out the network out using [Gephi](https://gephi.org/), convert the network into a JSON file, which is sued in both the [D3.js](https://trislee.github.io/network-demo/sigmajs/) and [sigma.js (fancy)](https://trislee.github.io/network-demo/sigmajs-fancy/) examples.
+After laying out the network out using [Gephi](https://gephi.org/), convert the network into a JSON file, which is used in both the [D3.js](https://trislee.github.io/network-demo/sigmajs/) and [sigma.js (fancy)](https://trislee.github.io/network-demo/sigmajs-fancy/) examples.
 
 ### 03__generate_visualization_choices.py
 

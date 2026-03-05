@@ -57,7 +57,7 @@
     const linkSource = (d) => d.source;
     const linkTarget = (d) => d.target;
 
-    d3.json("dataset.json").then(function (data) {
+    d3.json("dataset-d3.json").then(function (data) {
 
       function intern(value) {
         return value !== null && typeof value === "object"
@@ -162,7 +162,7 @@
           id: N[i],
           radius: R[i],
           label: raw.label,
-          cluster: raw.cluster,
+          cluster: raw.category,
           views: raw.views != null ? +raw.views : null,
           x,
           y,
